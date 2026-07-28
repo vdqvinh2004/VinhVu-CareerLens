@@ -1,0 +1,142 @@
+<codegen-prompt id="careerlens-poc-whole-system" version="0.1-poc" lang="vi">
+  <role>
+    Bạn là senior full-stack engineer. Hãy xây POC CareerLens trong codebase hiện có:
+    Next.js 16 App Router, React 19, TypeScript strict, Drizzle ORM, PostgreSQL, Redis,
+    next-intl, shadcn/base-ui style primitives, existing auth/RBAC.
+  </role>
+
+  <read-first>
+    <file>AGENTS.md</file>
+    <file>docs/engineering/coding-conventions.md</file>
+    <file>lib/db/schema.ts</file>
+    <file>lib/auth/*</file>
+    <file>app/(app)/dashboard/*</file>
+    <file>messages/vi.json</file>
+    <file>messages/en.json</file>
+    <file>node_modules/next/dist/docs/</file>
+  </read-first>
+
+  <product-context>
+    CareerLens giải quyết lệch pha hướng nghiệp tại Việt Nam: học sinh chọn ngành theo cảm tính,
+    xu hướng, hoặc kỳ vọng gia đình; thị trường lại thiếu kỹ năng cục bộ. POC phải nối 3 lớp dữ liệu:
+    profile học sinh, tín hiệu năng lực-sở thích qua tương tác, và tín hiệu tuyển dụng thực tế.
+  </product-context>
+
+  <poc-scope>
+    <must-have>
+      <item>Dashboard học sinh: nhập/cập nhật hồ sơ cá nhân, sở thích, thể thao, hoạt động, học lực, ràng buộc.</item>
+      <item>Memory: lưu profile, interests, abilities, preferences, previous recommendations, student decisions.</item>
+      <item>Market data seed: job postings mẫu, skills, salary, region, posted_at, shortage flags.</item>
+      <item>AI recommendation service: nhận profile + labor signals, sinh 3 lộ trình explainable.</item>
+      <item>Switch-major flow: user chọn đổi ngành/chuyên ngành, AI dùng memory cũ để sinh lộ trình mới.</item>
+      <item>Live related jobs view: button tìm job mới theo vị trí form, lấy job post thật từ nền tảng tuyển dụng, có link trực tiếp, không lưu DB.</item>
+      <item>Ethics guardrail: consent gate, bias exclusion, autonomy note, multi-path choices.</item>
+      <item>Counselor note placeholder: counselor có thể xem lộ trình khi user cho phép, chưa cần realtime collaboration.</item>
+    </must-have>
+    <out-of-scope>
+      <item>Không cần crawler production.</item>
+      <item>Không cần retraining thật.</item>
+      <item>Không cần payment, school integration, enterprise portal hoàn chỉnh.</item>
+      <item>Không cần matching ML phức tạp; heuristic + LLM prompt đủ cho POC.</item>
+    </out-of-scope>
+  </poc-scope>
+
+  <data-model>
+    <tables>
+      <table name="student_profiles">
+        user_id, consent_data_usage, bias_exclusion_flag, education_level, current_region,
+        target_regions, counselor_id, created_at, updated_at
+      </table>
+      <table name="student_preferences">
+        profile_id, target_budget, time_commitment_hours_per_week, work_env_pref,
+        learning_style, health_constraints_opt_in, family_constraints
+      </table>
+      <table name="academic_records">
+        profile_id, subject, score, evidence
+      </table>
+      <table name="self_reported_activities">
+        profile_id, type, name, description, duration, evidence
+      </table>
+      <table name="personal_interests">
+        profile_id, name, category, intensity, why_it_matters
+      </table>
+      <table name="simulated_experiences">
+        profile_id, scenario_name, behavioral_choice, response_time_sec, observed_signal
+      </table>
+      <table name="labor_market_postings">
+        job_id, job_title, industry, region, avg_salary_min, avg_salary_max, currency,
+        experience_level, education_requirement, culture_fit_indicators, posted_at, source
+      </table>
+      <table name="skill_demands">
+        posting_id, skill_name, importance, is_short_supply, is_proprietary
+      </table>
+      <table name="career_recommendations">
+        profile_id, request_intent, target_career_or_major, output_json, student_decision,
+        decision_reason, created_at
+      </table>
+    </tables>
+  </data-model>
+
+  <ai-service>
+    <location>lib/careerlens/ai.ts</location>
+    <requirements>
+      <item>Expose function generateCareerGuidance(input): Promise&lt;CareerGuidanceOutput&gt;.</item>
+      <item>Use docs/ai/careerlens-ai-system-rule.html as system instruction source.</item>
+      <item>Validate input and output with Zod.</item>
+      <item>If OPENAI_API_KEY missing, return deterministic mock output for local POC.</item>
+      <item>Never send gender, hometown, ethnicity, religion to model.</item>
+      <item>Always include disclaimer/autonomy_note.</item>
+    </requirements>
+  </ai-service>
+
+  <routes-and-ui>
+    <route path="/dashboard/careerlens">
+      <item>Server page loads profile, market seed summary, latest recommendation.</item>
+      <item>Client form edits interests, sports, activities, preferences, target regions.</item>
+      <item>Button: "Tạo lộ trình". Button: "Đổi chuyên ngành".</item>
+      <item>Render 3 recommendation cards: safe path, growth path, exploration path.</item>
+      <item>Each card shows why-fit, market evidence, skill gap, roadmap stages, and on-demand live related jobs.</item>
+    </route>
+    <route path="/dashboard/careerlens/actions.ts">
+      <item>Server Actions: saveProfile, generateRecommendation, saveStudentDecision.</item>
+      <item>Authenticate actor. Validate input. Enforce consent_data_usage.</item>
+    </route>
+  </routes-and-ui>
+
+  <recommendation-logic>
+    <step>Normalize profile signals: subjects, activities, sports, hobbies, projects, learning style.</step>
+    <step>Aggregate market signals by career family, region, skill shortage, salary, recency.</step>
+    <step>Score fit = skill overlap + interest overlap + learning/work preference fit + market growth - constraint conflicts.</step>
+    <step>Generate multiple options, not one answer: safe, high-growth, exploration.</step>
+    <step>For each path, create roadmap stages: orientation, foundation, practice, portfolio/CV, interview/job search.</step>
+    <step>For switch-major, compare old path and new target; reuse transferable skills and avoid rejected reasons.</step>
+  </recommendation-logic>
+
+  <ethics-acceptance-criteria>
+    <item>Output never says a career is suitable because of gender or region identity.</item>
+    <item>Region appears only as labor-market filter, salary context, job availability context.</item>
+    <item>Every recommendation has evidence and skill gap.</item>
+    <item>At least one non-university route appears when data supports it.</item>
+    <item>User can accept, reject, revisit, or switch major; decision persists.</item>
+    <item>Health constraints only reduce harmful task suggestions; never lower potential score.</item>
+  </ethics-acceptance-criteria>
+
+  <implementation-rules>
+    <item>Keep POC small. Prefer simple tables, simple Server Actions, simple Zod schemas.</item>
+    <item>Use existing auth and RBAC helpers. Do not expose server-only modules to client.</item>
+    <item>Use Drizzle migrations with schema changes.</item>
+    <item>Use Vietnamese UI copy first, English messages only where existing i18n needs parity.</item>
+    <item>Add focused tests for bias filter, consent gate, mock recommendation, switch-major memory reuse.</item>
+    <item>Run npm run lint, npx tsc --noEmit, npm test before handoff when feasible.</item>
+  </implementation-rules>
+
+  <deliverables>
+    <item>DB schema + migration.</item>
+    <item>Seed data for labor market postings and skill demands.</item>
+    <item>Typed AI input/output schemas.</item>
+    <item>Recommendation service with mock fallback.</item>
+    <item>Dashboard UI for CareerLens POC.</item>
+    <item>Tests for core guardrails.</item>
+    <item>Short README section explaining local use.</item>
+  </deliverables>
+</codegen-prompt>

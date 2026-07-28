@@ -1,0 +1,104 @@
+<project-context id="careerlens" version="0.1-poc" lang="vi">
+  <project>
+    <name>CareerLens</name>
+    <one-liner>
+      CareerLens là hệ thống hướng nghiệp cá nhân hóa cho học sinh Việt Nam, nối hồ sơ năng lực-sở thích
+      với tín hiệu tuyển dụng thật để tạo lộ trình học tập, nghề nghiệp, và việc làm liên quan.
+    </one-liner>
+  </project>
+
+  <problem>
+    Học sinh Việt Nam thường chọn ngành theo cảm tính, trend, hoặc kỳ vọng gia đình.
+    Hệ quả: thừa cử nhân ở một số ngành, thiếu lao động kỹ năng ở ngành khác, thất nghiệp sau tốt nghiệp,
+    và lệch pha giữa đào tạo với nhu cầu thị trường. Chưa có AI POC nào trong dự án nối tốt
+    năng lực-sở thích cá nhân với dữ liệu tuyển dụng theo kỹ năng, salary, vùng, và thời gian.
+  </problem>
+
+  <target-users>
+    <user type="student">
+      Học sinh/sinh viên cần hiểu mình, hiểu thị trường, và có nhiều lộ trình để chọn.
+    </user>
+    <user type="counselor">
+      Chuyên viên tư vấn cần bằng chứng, skill gap, và roadmap để trao đổi với học sinh.
+    </user>
+    <user type="corporate">
+      Doanh nghiệp/track owner có thể cung cấp job posting và skill shortage trực tiếp trong phiên bản sau.
+    </user>
+  </target-users>
+
+  <poc-product-scope>
+    <included>
+      <item>Nhập hồ sơ học sinh: học lực, hoạt động, chứng chỉ, thể thao, sở thích, cách học, môi trường làm việc mong muốn.</item>
+      <item>Lưu memory dài hạn: sở thích ổn định, năng lực nổi bật, lý do từ chối lộ trình, quyết định đổi ngành.</item>
+      <item>Phân tích market seed/crawled-like data: job title, region, salary, skill demand, shortage, trend.</item>
+      <item>Sinh 3 lộ trình explainable: an toàn, tăng trưởng cao, khám phá.</item>
+      <item>Hiển thị nghề/việc làm liên quan và skill gap.</item>
+      <item>Flow đổi ngành/chuyên ngành dùng dữ liệu cũ để tạo lộ trình mới.</item>
+    </included>
+    <excluded>
+      <item>Crawler production, data lake, ML training thật.</item>
+      <item>Cổng doanh nghiệp hoàn chỉnh.</item>
+      <item>Quy trình counselor full workflow.</item>
+      <item>Ứng tuyển job thật trong hệ thống.</item>
+    </excluded>
+  </poc-product-scope>
+
+  <domain-model>
+    <entity name="StudentProfile">
+      Consent, bias exclusion, education level, current region, target regions, counselor link.
+    </entity>
+    <entity name="StudentSignal">
+      Academic records, self-reported activities, sports, hobbies, certificates, projects,
+      simulated experiences, AI conversation memory.
+    </entity>
+    <entity name="LaborMarketPosting">
+      Job title, industry, region, salary, experience level, education requirement,
+      culture indicators, posted_at.
+    </entity>
+    <entity name="SkillDemand">
+      Skill name, importance, short supply flag, proprietary flag.
+    </entity>
+    <entity name="PersonalizedRoadmap">
+      Path category, explainability, skill gaps, modules, milestone tasks, evaluation tests,
+      student decision.
+    </entity>
+  </domain-model>
+
+  <ai-behavior>
+    <must>
+      <item>Personalize with interests, sports, activities, subjects, constraints, and labor signals.</item>
+      <item>Explain why each path fits and what evidence supports it.</item>
+      <item>Recommend multiple choices, not one fixed label.</item>
+      <item>Include vocational/certificate/apprenticeship routes when useful.</item>
+      <item>Preserve user autonomy: all suggestions are reference material.</item>
+      <item>Save useful user decisions so later switch-major advice improves.</item>
+    </must>
+    <must-not>
+      <item>Do not use gender stereotypes.</item>
+      <item>Do not treat region as destiny or ability proxy.</item>
+      <item>Do not rank students by family background.</item>
+      <item>Do not hide uncertainty when labor data is weak.</item>
+      <item>Do not reduce student to MBTI/personality quiz.</item>
+    </must-not>
+  </ai-behavior>
+
+  <success-criteria>
+    <criterion>Skill-signal extraction: identify short-supply skills by region and role.</criterion>
+    <criterion>Personalization: use profile + interests + activities + constraints, not one quiz.</criterion>
+    <criterion>Explainability: every path has market evidence and skill gap.</criterion>
+    <criterion>Opportunity expansion: show several routes, including vocational where relevant.</criterion>
+    <criterion>Usefulness: output understandable for both student and counselor.</criterion>
+    <criterion>Ethics: anti-bias guardrails visible in data flow and UI copy.</criterion>
+  </success-criteria>
+
+  <engineering-notes>
+    <stack>Next.js 16 App Router, React 19, TypeScript, Drizzle, PostgreSQL, Redis, next-intl.</stack>
+    <style>Keep POC lean. Use Server Components by default. Keep AI and DB code server-only.</style>
+    <testing>Focus tests on consent gate, bias filter, recommendation mock, switch-major memory reuse.</testing>
+    <docs>
+      <file>docs/ai/careerlens-ai-system-rule.html</file>
+      <file>docs/ai/careerlens-codegen-prompt.html</file>
+      <file>docs/ai/careerlens-project-context.html</file>
+    </docs>
+  </engineering-notes>
+</project-context>

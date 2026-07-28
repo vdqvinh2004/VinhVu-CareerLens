@@ -1,0 +1,1436 @@
+{
+  "Common": {
+    "skipToContent": "Đi đến nội dung",
+    "homeAria": "Trang chủ CareerLens",
+    "brandName": "CareerLens",
+    "developedBy": "Phát triển bởi MeshMind-AI",
+    "legalNavigation": "Điều hướng pháp lý",
+    "termsOfService": "Điều khoản dịch vụ",
+    "privacyPolicy": "Chính sách bảo mật",
+    "language": {
+      "english": "Tiếng Anh",
+      "vietnamese": "Tiếng Việt",
+      "current": "Ngôn ngữ hiện tại: {language}",
+      "select": "Chọn ngôn ngữ"
+    }
+  },
+  "Preloader": {
+    "loading": "Đang chuẩn bị CareerLens",
+    "progressLabel": "Tiến trình tải",
+    "percent": "{percent}%",
+    "messages": {
+      "semanticPathways": "Đang tải thêm RAM...",
+      "opinionatedAlgorithms": "Đang thương lượng với đám mây...",
+      "filingCabinets": "Đang gom các điểm ảnh đi lạc...",
+      "distributedThoughts": "Đang đánh thức hamster máy chủ...",
+      "tinyGears": "Đang tắt đi bật lại...",
+      "knowledgeThreads": "Đang uốn spline thần kinh..."
+    }
+  },
+  "Theme": {
+    "system": "Hệ thống",
+    "light": "Sáng",
+    "dark": "Tối",
+    "menuLabel": "Giao diện",
+    "currentSwitch": "Giao diện: {theme}. Chuyển sang chế độ {nextTheme}."
+  },
+  "Landing": {
+    "meta": {
+      "title": "AI định hướng nghề nghiệp cho học sinh, sinh viên",
+      "description": "CareerLens kết nối năng lực, mong muốn và tín hiệu thị trường để tạo lộ trình nghề nghiệp có thể hành động."
+    },
+    "primaryNavigation": "Điều hướng chính",
+    "navigation": {
+      "features": "Tính năng",
+      "journey": "Hành trình",
+      "market": "Dữ liệu thị trường",
+      "menu": "Khám phá"
+    },
+    "account": "Tài khoản",
+    "hero": {
+      "badge": "Tầm nhìn CareerLens",
+      "titleLine1": "Hiểu mình hôm nay.",
+      "titleLine2": "Vững hướng đi ngày mai.",
+      "description": "Kết nối năng lực, mong muốn và tín hiệu nghề nghiệp thành một lộ trình có thể hành động.",
+      "primary": "Bắt đầu khám phá",
+      "primaryAuthenticated": "Mở lộ trình của tôi",
+      "secondary": "Xem cách hoạt động",
+      "imageAlt": "Nhóm sinh viên cùng trao đổi trong khuôn viên trường",
+      "preview": {
+        "title": "Career agent",
+        "status": "Đang đối chiếu nguồn mới",
+        "badge": "Minh họa",
+        "searching": "Tìm tín hiệu kỹ năng và nghề nghiệp phù hợp với hồ sơ của bạn",
+        "sourcesLabel": "Nguồn đang được đối chiếu",
+        "result": "Ba hướng đi để so sánh và kiểm chứng"
+      }
+    },
+    "intelligence": {
+      "title": "Một hồ sơ. Ba lớp thấu hiểu.",
+      "description": "CareerLens không khóa bạn vào một bài test. Hệ thống kết nối dữ liệu cá nhân, tiến trình thật và bối cảnh nghề nghiệp đang thay đổi.",
+      "profile": {
+        "title": "Hiểu bản thân",
+        "description": "Tổng hợp năng lực, sở thích, phong cách học và điều kiện thực tế thay vì chỉ dựa trên một nhãn tính cách."
+      },
+      "growth": {
+        "title": "Nhìn thấy tiến bộ",
+        "description": "Giữ lại cột mốc, dự án và lựa chọn qua nhiều năm để mỗi lần tư vấn bắt đầu từ hành trình thật của bạn."
+      },
+      "market": {
+        "title": "Đọc chuyển động thị trường",
+        "description": "Đối chiếu hồ sơ với nghề, kỹ năng, tin tuyển dụng và các tín hiệu toàn cầu có nguồn dẫn rõ ràng."
+      }
+    },
+    "assessment": {
+      "title": "Đánh giá để hiểu, không phải để phán xét.",
+      "description": "Các bài trắc nghiệm khách quan giúp nhận diện năng lực học thuật, động lực và kỹ năng xã hội cần được quan sát thêm.",
+      "signals": {
+        "aptitude": "Tư duy và năng lực nền tảng",
+        "social": "Giao tiếp và hợp tác",
+        "motivation": "Động lực và cách học"
+      },
+      "states": {
+        "observe": "Quan sát",
+        "practice": "Thực hành",
+        "develop": "Phát triển"
+      },
+      "preview": {
+        "badge": "Tình huống khách quan",
+        "question": "Khi một dự án nhóm chậm tiến độ, bạn thường bắt đầu từ đâu?",
+        "options": {
+          "one": "Tự hoàn thành phần còn thiếu",
+          "two": "Làm rõ vấn đề và phân lại vai trò",
+          "three": "Chờ trưởng nhóm đưa ra quyết định"
+        },
+        "reading": "Tín hiệu đang đọc",
+        "note": "Kết quả là điểm khởi đầu cho đối thoại và trải nghiệm thực tế, không phải kết luận cố định."
+      }
+    },
+    "journey": {
+      "badge": "Hồ sơ phát triển dài hạn",
+      "title": "Đi cùng bạn qua từng lần đổi hướng.",
+      "description": "Mỗi cột mốc bổ sung bằng chứng mới để AI điều chỉnh gợi ý, thay vì buộc bạn giữ nguyên lựa chọn ban đầu.",
+      "steps": {
+        "explore": {
+          "stage": "THPT",
+          "title": "Khám phá",
+          "description": "Nhận diện điểm mạnh, thử các môi trường và thu hẹp nhóm ngành đáng tìm hiểu."
+        },
+        "learn": {
+          "stage": "Đại học / học nghề",
+          "title": "Xây nền",
+          "description": "Chọn môn học, dự án và kỹ năng tạo bằng chứng cho hướng đi đang cân nhắc."
+        },
+        "experience": {
+          "stage": "Thực tập",
+          "title": "Kiểm chứng",
+          "description": "Đối chiếu kỳ vọng với công việc thật, phản hồi thật và yêu cầu tuyển dụng thật."
+        },
+        "grow": {
+          "stage": "Công việc đầu tiên",
+          "title": "Phát triển",
+          "description": "Cập nhật mục tiêu, skill gap và bước tiến tiếp theo từ kết quả bạn đã tạo ra."
+        }
+      }
+    },
+    "roadmap": {
+      "title": "Biết kỹ năng nào cần đi trước.",
+      "description": "AI chuyển khoảng cách năng lực thành thứ tự ưu tiên rõ ràng, có cột mốc và bằng chứng để tự kiểm chứng.",
+      "skills": {
+        "foundation": "Kỹ năng nền tảng cho hướng đã chọn",
+        "project": "Thực hành qua dự án có đầu ra",
+        "social": "Giao tiếp và phối hợp trong môi trường thật"
+      },
+      "priority": {
+        "label": "Skill priority",
+        "title": "Thứ tự rèn luyện",
+        "now": "Bắt đầu ngay",
+        "next": "Bước tiếp theo",
+        "maintain": "Duy trì song song",
+        "note": "Ưu tiên thay đổi khi hồ sơ, mục tiêu hoặc thị trường thay đổi."
+      },
+      "paths": {
+        "title": "Ba hướng để thử",
+        "description": "So sánh mức phù hợp, chi phí học và bằng chứng cần tạo trước khi chọn."
+      },
+      "adaptive": {
+        "title": "Lộ trình biết thích nghi",
+        "description": "Mỗi lần check-in là một cơ hội cập nhật mục tiêu, không phải bắt đầu lại từ đầu.",
+        "checkIn": "Check-in",
+        "adjust": "Điều chỉnh"
+      }
+    },
+    "market": {
+      "badge": "Hybrid realtime + agent nền",
+      "title": "Đọc thị trường khi thế giới đang thay đổi.",
+      "description": "Agent tìm kiếm web theo thời gian thực, đối chiếu nguồn và kết hợp các đợt quét nền để phát hiện tín hiệu mới.",
+      "sources": {
+        "labor": "Chỉ số lao động",
+        "macro": "Bối cảnh vĩ mô",
+        "skills": "Nghề và kỹ năng",
+        "future": "Triển vọng tương lai"
+      },
+      "agent": {
+        "title": "Market intelligence agent",
+        "status": "Tìm kiếm, đọc và đối chiếu",
+        "live": "Realtime",
+        "query": "Kỹ năng nào đang xuất hiện nhiều hơn trong các vai trò đầu vào?",
+        "web": "Tin tức và báo cáo",
+        "jobs": "Tin tuyển dụng công khai",
+        "reports": "Nguồn thống kê"
+      },
+      "forecast": {
+        "label": "Kịch bản 3-5 năm",
+        "title": "Triển vọng, không phải lời tiên tri",
+        "description": "Mỗi nhận định đi cùng phạm vi, thời gian, nguồn và mức độ tin cậy.",
+        "states": {
+          "growing": {
+            "title": "Tín hiệu tăng",
+            "description": "Nhiều nguồn độc lập cùng chỉ về một hướng."
+          },
+          "stable": {
+            "title": "Tín hiệu ổn định",
+            "description": "Nhu cầu có nhưng chưa cho thấy thay đổi rõ rệt."
+          },
+          "uncertain": {
+            "title": "Chưa đủ dữ liệu",
+            "description": "AI nói rõ khi bằng chứng chưa đủ để kết luận."
+          }
+        },
+        "note": "CareerLens phân biệt dữ liệu quan sát, ước tính và dự báo; không tự tạo phần trăm độ chính xác."
+      }
+    },
+    "cv": {
+      "imageAlt": "Nhóm sinh viên cùng làm việc quanh một chiếc bàn",
+      "photoCard": {
+        "title": "Từ trải nghiệm thành bằng chứng",
+        "description": "Dự án, vai trò và kết quả cụ thể"
+      },
+      "title": "Biến điều đã làm thành một CV có sức nặng.",
+      "description": "AI giúp cấu trúc nội dung, phát hiện câu viết chung chung và đối chiếu CV với yêu cầu của cơ hội bạn đang nhắm tới.",
+      "review": {
+        "title": "CV review assistant",
+        "status": "Đang đọc theo ngữ cảnh vị trí",
+        "badge": "Tầm nhìn",
+        "items": {
+          "evidence": {
+            "title": "Bổ sung bằng chứng",
+            "description": "Nêu rõ phần bạn thực hiện, đầu ra và điều đã học được."
+          },
+          "clarity": {
+            "title": "Làm rõ tác động",
+            "description": "Thay mô tả chung bằng kết quả có thể kiểm chứng."
+          },
+          "match": {
+            "title": "Đối chiếu với cơ hội",
+            "description": "Ưu tiên trải nghiệm liên quan mà không nhồi từ khóa."
+          }
+        }
+      }
+    },
+    "trust": {
+      "title": "AI có trách nhiệm phải cho bạn biết vì sao.",
+      "description": "Mỗi gợi ý cần được truy ngược về dữ liệu, giới hạn và quyền quyết định của chính người học.",
+      "citations": {
+        "title": "Nguồn dẫn có thể mở",
+        "description": "Nhận định thị trường, nghề và kỹ năng luôn đi cùng URL, ngày xuất bản và thời điểm truy cập."
+      },
+      "privacy": {
+        "title": "Quyền riêng tư từ đầu",
+        "description": "Thông tin nhạy cảm không cần thiết được loại khỏi payload trước khi gửi tới model."
+      },
+      "explain": {
+        "title": "Gợi ý có giải thích",
+        "description": "Bạn thấy điểm mạnh, skill gap và bằng chứng nào đã dẫn đến từng hướng đi."
+      },
+      "autonomy": {
+        "title": "Người học giữ quyền quyết định",
+        "description": "CareerLens đề xuất để bạn thử và kiểm chứng, không lựa chọn tương lai thay bạn."
+      },
+      "scope": {
+        "title": "Phạm vi hiện tại",
+        "description": "AI chat và bản tạo ba lộ trình đang hoạt động ở mức POC. Assessment dài hạn, CV review và dữ liệu web realtime thuộc tầm nhìn sản phẩm đang được xây dựng.",
+        "badge": "Roadmap công khai"
+      }
+    },
+    "faq": {
+      "title": "Những điều nên biết trước khi bắt đầu.",
+      "description": "CareerLens được thiết kế như một công cụ hỗ trợ suy nghĩ và thử nghiệm, không phải máy chấm điểm tương lai.",
+      "items": {
+        "one": {
+          "question": "CareerLens có quyết định nghề nghiệp thay tôi không?",
+          "answer": "Không. Hệ thống đưa ra các hướng để so sánh, câu hỏi cần kiểm chứng và bước hành động tiếp theo; quyết định cuối cùng luôn thuộc về bạn."
+        },
+        "two": {
+          "question": "Thông tin thị trường có luôn là dữ liệu thời gian thực không?",
+          "answer": "Tầm nhìn sản phẩm kết hợp agent tìm kiếm realtime và quét nền định kỳ. Mỗi kết quả sẽ ghi rõ nguồn, ngày xuất bản và thời điểm truy cập để bạn đánh giá độ mới."
+        },
+        "three": {
+          "question": "Kết quả bài test có cố định hồ sơ của tôi không?",
+          "answer": "Không. Kết quả chỉ là một tín hiệu trong hồ sơ phát triển; trải nghiệm, dự án và phản hồi mới có thể thay đổi cách hệ thống hiểu bạn."
+        },
+        "four": {
+          "question": "Tôi có thể đổi hướng sau khi đã có lộ trình không?",
+          "answer": "Có. Lộ trình được thiết kế để cập nhật theo mục tiêu, điều kiện và bằng chứng mới thay vì buộc bạn bắt đầu lại từ đầu."
+        }
+      }
+    },
+    "finalCta": {
+      "title": "Tương lai không cần một câu trả lời vội.",
+      "description": "Bắt đầu bằng việc hiểu mình rõ hơn, thử một hướng nhỏ và để bằng chứng dẫn bạn tới bước tiếp theo."
+    }
+  },
+  "Auth": {
+    "common": {
+      "email": "Email",
+      "password": "Mật khẩu",
+      "backToLogin": "Quay lại đăng nhập",
+      "continue": "Tiếp tục",
+      "passwordMismatch": "Mật khẩu xác nhận không khớp.",
+      "showField": "Hiện {field}",
+      "hideField": "Ẩn {field}"
+    },
+    "login": {
+      "metadataTitle": "Đăng nhập",
+      "title": "Chào mừng bạn trở lại",
+      "description": "Nhập thông tin của bạn để tiếp tục đến CareerLens.",
+      "forgotPassword": "Quên mật khẩu?",
+      "submitting": "Đang đăng nhập...",
+      "submit": "Đăng nhập",
+      "newUser": "Bạn mới sử dụng CareerLens?",
+      "createAccount": "Tạo tài khoản"
+    },
+    "signup": {
+      "metadataTitle": "Đăng ký",
+      "title": "Tạo tài khoản của bạn",
+      "description": "Hoàn thành ba bước ngắn dưới đây để thiết lập hồ sơ.",
+      "steps": {
+        "account": "Tài khoản",
+        "about": "Thông tin cá nhân",
+        "security": "Bảo mật"
+      },
+      "stepTitles": {
+        "email": "Bắt đầu với email của bạn",
+        "about": "Giới thiệu về bạn",
+        "password": "Chọn mật khẩu"
+      },
+      "stepCount": "Bước {current} / {total}",
+      "progress": "Tiến trình đăng ký",
+      "fullName": "Họ và tên",
+      "fullNamePlaceholder": "Nhập họ và tên",
+      "dateOfBirth": "Ngày sinh",
+      "birthDay": "Ngày",
+      "birthMonth": "Tháng sinh",
+      "birthYear": "Năm sinh",
+      "day": "Ngày",
+      "month": "Tháng",
+      "year": "Năm",
+      "months": {
+        "1": "Tháng 1",
+        "2": "Tháng 2",
+        "3": "Tháng 3",
+        "4": "Tháng 4",
+        "5": "Tháng 5",
+        "6": "Tháng 6",
+        "7": "Tháng 7",
+        "8": "Tháng 8",
+        "9": "Tháng 9",
+        "10": "Tháng 10",
+        "11": "Tháng 11",
+        "12": "Tháng 12"
+      },
+      "confirmPassword": "Xác nhận mật khẩu",
+      "passwordHint": "Sử dụng ít nhất 8 ký tự.",
+      "consent": "Tôi đồng ý để CareerLens thu thập, lưu trữ và xử lý dữ liệu liên quan đến tài khoản của tôi, đồng thời chấp thuận <terms>Điều khoản dịch vụ</terms> và <privacy>Chính sách bảo mật</privacy>.",
+      "back": "Quay lại",
+      "submitting": "Đang tạo tài khoản...",
+      "submit": "Tạo tài khoản",
+      "continue": "Tiếp tục",
+      "existingUser": "Bạn đã có tài khoản?",
+      "login": "Đăng nhập"
+    },
+    "forgot": {
+      "metadataTitle": "Khôi phục mật khẩu",
+      "title": "Khôi phục mật khẩu của bạn",
+      "description": "Nhập email để bắt đầu quy trình đặt lại mật khẩu.",
+      "successTitle": "Kiểm tra hộp thư của bạn",
+      "submitting": "Đang gửi...",
+      "submit": "Gửi liên kết đặt lại"
+    },
+    "reset": {
+      "metadataTitle": "Đặt lại mật khẩu",
+      "title": "Đặt mật khẩu mới",
+      "description": "Chọn và xác nhận mật khẩu bạn muốn sử dụng.",
+      "successTitle": "Đã đặt lại mật khẩu",
+      "continueToLogin": "Tiếp tục đến đăng nhập",
+      "newPassword": "Mật khẩu mới",
+      "confirmNewPassword": "Xác nhận mật khẩu mới",
+      "submitting": "Đang đặt lại...",
+      "submit": "Đặt lại mật khẩu"
+    },
+    "superadmin": {
+      "metadataTitle": "Truy cập vận hành",
+      "title": "Truy cập vận hành",
+      "description": "Khu vực hạn chế này yêu cầu thông tin đăng nhập tích hợp và mã xác thực hiện hành.",
+      "authenticationCode": "Mã xác thực",
+      "operationsIdentifier": "Mã định danh vận hành",
+      "submitting": "Đang xác minh...",
+      "verify": "Xác minh và tiếp tục"
+    },
+    "actions": {
+      "checkFields": "Kiểm tra các trường được đánh dấu rồi thử lại.",
+      "serviceUnavailable": "Dịch vụ xác thực tạm thời không khả dụng. Vui lòng thử lại.",
+      "invalidCredentials": "Email hoặc mật khẩu không đúng.",
+      "signupRateLimit": "Bạn đã đăng ký quá nhiều lần. Vui lòng thử lại sau.",
+      "accountCreationFailed": "Không thể tạo tài khoản với thông tin này.",
+      "emailInUse": "Email này đã được sử dụng. Hãy đăng nhập hoặc dùng một email khác.",
+      "accountCreatedLoginUnavailable": "Tài khoản đã được tạo nhưng chưa thể tự động đăng nhập. Vui lòng thử đăng nhập lại sau ít phút.",
+      "loginRateLimit": "Bạn đã đăng nhập quá nhiều lần. Vui lòng thử lại sau.",
+      "tooManyAttemptsRestart": "Bạn đã thử quá nhiều lần. Vui lòng bắt đầu lại quy trình đăng nhập sau.",
+      "invalidAuthenticationCode": "Mã xác thực không hợp lệ hoặc đã hết hạn.",
+      "invalidSuperadminCredentials": "Thông tin đăng nhập không hợp lệ.",
+      "tooManyAttempts": "Bạn đã thử quá nhiều lần. Vui lòng thử lại sau.",
+      "recoverySent": "Nếu tài khoản tồn tại, hướng dẫn đặt lại mật khẩu đã được gửi.",
+      "resetRateLimit": "Bạn đã đặt lại mật khẩu quá nhiều lần. Vui lòng thử lại sau.",
+      "invalidResetLink": "Liên kết đặt lại mật khẩu không hợp lệ hoặc đã hết hạn.",
+      "resetSuccess": "Mật khẩu đã được đặt lại. Bạn có thể đăng nhập ngay bây giờ."
+    },
+    "validation": {
+      "passwordMin": "Mật khẩu phải có ít nhất 8 ký tự.",
+      "dataConsent": "Bạn phải đồng ý cho phép thu thập và xử lý dữ liệu để tạo tài khoản.",
+      "passwordMax": "Mật khẩu không được vượt quá 128 ký tự.",
+      "passwordLong": "Mật khẩu quá dài.",
+      "emailInvalid": "Nhập địa chỉ email hợp lệ.",
+      "fullNameInvalid": "Nhập họ và tên của bạn.",
+      "birthDayInvalid": "Nhập ngày trong tháng hợp lệ.",
+      "birthMonthInvalid": "Chọn tháng sinh hợp lệ.",
+      "birthYearInvalid": "Nhập năm sinh hợp lệ.",
+      "birthDateInvalid": "Nhập ngày sinh hợp lệ.",
+      "birthDateFuture": "Ngày sinh không thể ở tương lai.",
+      "passwordMismatch": "Mật khẩu xác nhận không khớp.",
+      "totpInvalid": "Nhập mã xác thực gồm sáu chữ số."
+    }
+  },
+  "Dashboard": {
+    "metadataTitle": "Tổng quan",
+    "menuMetadataTitle": "Menu",
+    "homeHeading": "Tổng quan",
+    "menuHeading": "Menu",
+    "home": "Trang chủ",
+    "startingPoint": "Điểm xuất phát",
+    "menu": "Menu",
+    "navigation": "Điều hướng bảng điều khiển",
+    "closeNavigation": "Đóng điều hướng",
+    "openNavigation": "Mở điều hướng",
+    "expandSidebar": "Mở rộng thanh bên",
+    "collapseSidebar": "Thu gọn thanh bên",
+    "userMenu": "Menu tài khoản",
+    "openUserMenu": "Mở menu tài khoản của {name}",
+    "profile": "Thông tin cá nhân",
+    "settings": "Cài đặt",
+    "logout": "Đăng xuất",
+    "logoutUser": "Đăng xuất {name}",
+    "careerRoadmap": "Lộ trình AI",
+    "myJourney": "Đường đến chính mình"
+  },
+  "Roadmap": {
+    "metadataTitle": "Lộ trình AI",
+    "eyebrow": "CareerLens Guidance AI",
+    "title": "Từ hiểu mình đến chọn hướng đi",
+    "description": "Kết nối sở thích, trải nghiệm và điều kiện thực tế với tín hiệu tuyển dụng mẫu tại Việt Nam.",
+    "brief": {
+      "status": "Quy trình phân tích",
+      "title": "Bản định hướng, không phải phán quyết",
+      "description": "CareerLens chuyển thông tin bạn chia sẻ thành ba hướng đi để so sánh và kiểm chứng."
+    },
+    "steps": {
+      "profile": {
+        "title": "Hồ sơ của bạn",
+        "description": "Chia sẻ nền tảng, sở thích và điều kiện hiện tại."
+      },
+      "signals": {
+        "title": "Tín hiệu thị trường",
+        "description": "Đối chiếu với dữ liệu nghề và kỹ năng mẫu theo khu vực."
+      },
+      "plan": {
+        "title": "Ba hướng để thử",
+        "description": "So sánh skill gap, roadmap và bằng chứng cần tạo."
+      }
+    },
+    "form": {
+      "badge": "Phân tích riêng cho lần này",
+      "title": "Hồ sơ cho lần phân tích này",
+      "description": "Càng cụ thể về trải nghiệm và điều kiện thực tế, lộ trình càng hữu ích.",
+      "foundation": "Nền tảng hiện tại",
+      "foundationDescription": "Khu vực chỉ được dùng để đối chiếu cơ hội việc làm và mức lương mẫu.",
+      "educationLevel": "Bậc học hiện tại",
+      "educationOptions": {
+        "THPT": "THPT",
+        "college": "Cao đẳng",
+        "university": "Đại học",
+        "graduate": "Sau đại học",
+        "other": "Khác"
+      },
+      "languages": "Ngôn ngữ sử dụng",
+      "languagesPlaceholder": "Tiếng Việt, English",
+      "languagesHint": "Phân tách bằng dấu phẩy.",
+      "currentRegion": "Khu vực hiện tại",
+      "targetRegion": "Khu vực muốn học hoặc làm",
+      "regionHint": "Danh mục 34 tỉnh/thành hiện hành.",
+      "regionPlaceholder": "Gõ để tìm tỉnh/thành",
+      "regionEmpty": "Không tìm thấy tỉnh/thành phù hợp.",
+      "optionalSelect": "Không cung cấp",
+      "strengths": "Điểm mạnh và điều bạn quan tâm",
+      "strengthsDescription": "Hãy dùng trải nghiệm thật, không cần viết theo cách của hồ sơ xin việc.",
+      "subject": "Môn hoặc kỹ năng nổi bật",
+      "subjectPlaceholder": "Ví dụ: Toán, viết nội dung, sửa điện",
+      "score": "Điểm tự đánh giá",
+      "interests": "Sở thích và chủ đề quan tâm",
+      "interestsPlaceholder": "Công nghệ, bóng đá, thiết kế, kinh doanh",
+      "interestsHint": "Nhập các mục cách nhau bằng dấu phẩy, hoặc thêm nhanh từ gợi ý theo môn/kỹ năng.",
+      "suggestionsLabel": "Gợi ý chủ đề quan tâm",
+      "activity": "Hoạt động hoặc dự án bạn từng làm",
+      "activityPlaceholder": "Mô tả vai trò, việc bạn đã làm và phần khiến bạn thấy hứng thú hoặc gặp khó khăn. Có thể để trống.",
+      "conditions": "Điều kiện học tập và làm việc",
+      "conditionsDescription": "Xác định thời gian, ngân sách và môi trường để mỗi hướng đi phù hợp thực tế.",
+      "weeklyHours": "Giờ có thể học mỗi tuần",
+      "budget": "Ngân sách dự kiến",
+      "budgetPlaceholder": "Ví dụ: dưới 20 triệu đồng/năm",
+      "workEnvironment": "Môi trường làm việc mong muốn",
+      "learningStyle": "Cách học phù hợp",
+      "constraints": "Ràng buộc cần cân nhắc",
+      "constraintsPlaceholder": "Ví dụ: cần học gần nhà, cần vừa học vừa làm. Có thể để trống.",
+      "constraintsHint": "Không nhập giới tính, tôn giáo, dân tộc hoặc thông tin nhận dạng không cần thiết.",
+      "goal": "Mục tiêu của lần tư vấn",
+      "goalDescription": "Nêu điều bạn mong muốn để bản phân tích ưu tiên hỗ trợ. Có thể để trống.",
+      "intent": "Bạn muốn giải quyết điều gì?",
+      "question": "Điều bạn mong muốn nhất là gì",
+      "questionPlaceholder": "Ví dụ: Bạn muốn tìm một hướng phù hợp với điểm mạnh hiện tại và ngân sách học tập. Có thể để trống.",
+      "consent": "Tôi đồng ý dùng dữ liệu trong form để tạo lộ trình hướng nghiệp.",
+      "consentHint": "AI chỉ đưa gợi ý tham khảo và không quyết định thay người học.",
+      "footerHint": "Mỗi lần tạo sẽ sinh ba lựa chọn có giải thích.",
+      "submit": "Tạo lộ trình",
+      "submitting": "Đang tạo lộ trình",
+      "options": {
+        "intent": {
+          "initial_guidance": "Khám phá hướng nghề ban đầu",
+          "switch_major": "Cân nhắc đổi ngành",
+          "find_jobs": "Tìm role và việc làm liên quan",
+          "compare_paths": "So sánh các hướng nghề",
+          "roadmap_detail": "Tạo roadmap chi tiết"
+        },
+        "workEnvironment": {
+          "hybrid": "Kết hợp online và tại chỗ",
+          "team_based": "Làm việc theo nhóm",
+          "independent": "Làm việc độc lập",
+          "hands_on": "Thực hành, thao tác trực tiếp",
+          "fieldwork": "Di chuyển và làm việc hiện trường",
+          "office": "Văn phòng",
+          "remote": "Từ xa"
+        },
+        "learningStyle": {
+          "project_based": "Học qua dự án",
+          "mentor_guided": "Có mentor hướng dẫn",
+          "self_paced": "Tự học theo nhịp riêng",
+          "classroom": "Lớp học có cấu trúc",
+          "apprenticeship": "Học việc tại môi trường thật"
+        }
+      }
+    },
+    "actions": {
+      "userOnly": "Tính năng tạo lộ trình chỉ khả dụng cho tài khoản người học.",
+      "checkFields": "Hãy kiểm tra lại các trường được đánh dấu.",
+      "invalidValue": "Giá trị chưa hợp lệ.",
+      "success": "Lộ trình đã sẵn sàng. Bạn có thể so sánh và mở từng roadmap bên dưới.",
+      "failed": "Chưa thể tạo lộ trình lúc này. Vui lòng thử lại sau ít phút.",
+      "fields": {
+        "activity": "Nội dung hoạt động hoặc dự án đang quá dài.",
+        "consent": "Cần có sự đồng ý trước khi phân tích dữ liệu.",
+        "currentRegion": "Khu vực hiện tại chưa hợp lệ.",
+        "educationLevel": "Bậc học hiện tại chưa hợp lệ.",
+        "familyConstraints": "Nội dung ràng buộc đang quá dài.",
+        "interests": "Nội dung sở thích đang quá dài.",
+        "intent": "Mục tiêu tư vấn chưa hợp lệ.",
+        "languages": "Nội dung ngôn ngữ đang quá dài.",
+        "learningStyle": "Cách học chưa hợp lệ.",
+        "question": "Nội dung mong muốn đang quá dài.",
+        "strongSubject": "Nội dung môn hoặc kỹ năng nổi bật đang quá dài.",
+        "subjectScore": "Điểm tự đánh giá phải nằm trong khoảng 0-10.",
+        "targetBudget": "Nội dung ngân sách đang quá dài.",
+        "targetRegion": "Khu vực mục tiêu chưa hợp lệ.",
+        "weeklyHours": "Số giờ học phải nằm trong khoảng 0-80.",
+        "workEnvironment": "Môi trường làm việc chưa hợp lệ."
+      }
+    },
+    "market": {
+      "badge": "Dữ liệu seed",
+      "title": "Dữ liệu thị trường mẫu",
+      "description": "POC chưa dùng crawler production. Các con số dưới đây chỉ mô tả bộ seed hiện tại.",
+      "postings": "tin tuyển dụng",
+      "regions": "tỉnh/thành",
+      "roles": "nghề mỗi tỉnh",
+      "industries": "nhóm ngành",
+      "sourceDate": "Nguồn mẫu ngày {date}"
+    },
+    "privacy": {
+      "title": "Quyền riêng tư được lọc trước",
+      "description": "Giới tính, quê quán, dân tộc và tôn giáo không nằm trong payload gửi tới model."
+    },
+    "principles": {
+      "title": "Cách bản phân tích được tạo",
+      "profile": "AI kết hợp học lực, sở thích, cách học và tín hiệu thị trường.",
+      "roadmap": "Mỗi hướng có skill gap và các chặng thực hành kiểm chứng được.",
+      "market": "Role và salary chỉ lấy từ market seed được cung cấp cho lần chạy."
+    },
+    "loading": "Đang tạo lộ trình",
+    "wizard": {
+      "editBadge": "Chỉnh sửa lộ trình",
+      "newBadge": "Lộ trình mới",
+      "title": "Xây dựng lộ trình tư vấn",
+      "description": "Kiểm tra dữ liệu hiện có, bổ sung bối cảnh và nêu rõ quyết định bạn cần hỗ trợ.",
+      "cancel": "Quay lại lộ trình",
+      "progressLabel": "Tiến trình xây dựng lộ trình",
+      "back": "Quay lại",
+      "next": "Tiếp tục",
+      "reviewErrors": "Kiểm tra mục lỗi",
+      "confirm": {
+        "title": "Xác nhận Điểm xuất phát",
+        "description": "Kiểm tra thông tin đã có trước khi dùng để cá nhân hóa lộ trình.",
+        "hint": "Nếu thông tin chưa đúng, hãy cập nhật tại Điểm xuất phát rồi quay lại.",
+        "consent": "Tôi xác nhận thông tin trên và đồng ý dùng dữ liệu này để tạo lộ trình.",
+        "consentHint": "AI chỉ đưa gợi ý tham khảo và không quyết định thay người học.",
+        "editStartingPoint": "Cập nhật Điểm xuất phát"
+      },
+      "foundation": {
+        "title": "Nền tảng hiện tại",
+        "description": "Bổ sung bậc học, khu vực, ngôn ngữ và năng lực nổi bật của bạn.",
+        "hint": "Các câu trả lời ở bước này bổ sung cho bảng điểm và kinh nghiệm đã lưu."
+      },
+      "interests": {
+        "title": "Sở thích và chủ đề quan tâm",
+        "description": "Nêu những chủ đề bạn chủ động tìm hiểu hoặc muốn dành thời gian khám phá.",
+        "hint": "Có thể nhập nhiều nội dung và phân tách bằng dấu phẩy."
+      },
+      "conditions": {
+        "title": "Điều kiện học tập và làm việc",
+        "description": "Xác định thời gian, ngân sách, cách học và môi trường phù hợp thực tế.",
+        "hint": "Chỉ nhập những ràng buộc có ảnh hưởng trực tiếp đến lựa chọn học tập hoặc công việc."
+      },
+      "goal": {
+        "title": "Mục tiêu của lần tư vấn",
+        "description": "Nêu quyết định hoặc vấn đề mà bạn cần lộ trình này hỗ trợ.",
+        "hint": "Không cần chọn trước một ngành hoặc nghề. Hãy tập trung vào câu hỏi cần được giải đáp."
+      }
+    },
+    "saved": {
+      "badge": "Lộ trình đang chọn",
+      "defaultTitle": "Lộ trình hướng nghiệp",
+      "updatedAt": "Cập nhật {date}",
+      "edit": "Chỉnh sửa",
+      "createNew": "Xây dựng lộ trình mới",
+      "listTitle": "Các lộ trình đã lưu",
+      "listDescription": "Chọn một lộ trình để xem lại hoặc tiếp tục chỉnh sửa.",
+      "current": "Đang xem",
+      "newTitle": "Cần một góc nhìn khác?",
+      "newDescription": "Bạn có thể xây dựng lộ trình mới mà không làm mất lộ trình hiện tại."
+    },
+    "tabs": {
+      "label": "Không gian lộ trình",
+      "roadmap": "Lộ trình",
+      "following": "Đang theo dõi"
+    },
+    "follow": {
+      "start": "Theo dõi lộ trình này",
+      "following": "Đang theo dõi",
+      "cardTitle": "Theo dõi lộ trình này",
+      "cardDescription": "Chuyển hướng đang chọn thành danh sách việc cần làm, tài liệu học và lịch sử tiến độ.",
+      "alreadyTitle": "Lộ trình này đang được theo dõi",
+      "alreadyDescription": "Mở tab Đang theo dõi để cập nhật công việc, tài liệu và lịch sử.",
+      "confirmTitle": "Theo dõi lộ trình này?",
+      "confirmDescription": "Bắt đầu theo dõi các nhiệm vụ trong lộ trình này.",
+      "confirmReplace": "Một lộ trình khác đang hoạt động. Theo dõi lộ trình này sẽ dừng lộ trình cũ và xoá tiến độ đang hoạt động.",
+      "confirmAction": "Theo dõi lộ trình",
+      "cancel": "Hủy",
+      "stop": "Dừng theo dõi",
+      "stopTitle": "Dừng theo dõi lộ trình?",
+      "stopDescription": "Lộ trình vẫn được lưu, nhưng không còn là lộ trình đang hoạt động.",
+      "stopAction": "Dừng theo dõi",
+      "activeBadge": "Lộ trình đang hoạt động",
+      "startedAt": "Bắt đầu {date}",
+      "unknownDate": "không rõ ngày",
+      "progress": "Tiến độ",
+      "tasksTitle": "Công việc và bài tập",
+      "tasksDescription": "Đánh dấu hoàn thành khi bạn tạo được bằng chứng tương ứng.",
+      "done": "Xong",
+      "markDone": "Đánh dấu xong",
+      "emptyBadge": "Chưa có lộ trình hoạt động",
+      "emptyTitle": "Theo dõi một lộ trình để quản lý tiến độ",
+      "emptyDescription": "Tạo hoặc mở một lộ trình, rồi chọn Theo dõi lộ trình này.",
+      "resourcesTitle": "Tài liệu học",
+      "resourcesDescription": "Liên kết tài liệu trực tiếp từ lộ trình đang theo dõi.",
+      "noResources": "Chưa có tài liệu.",
+      "historyTitle": "Lịch sử theo dõi",
+      "historyDescription": "Các lộ trình đã theo dõi gần đây.",
+      "historyActive": "Đang hoạt động",
+      "historyStopped": "Đã dừng {date}",
+      "historyStarted": "Bắt đầu {date}",
+      "noHistory": "Chưa có lịch sử theo dõi lộ trình."
+    },
+    "startingPoint": {
+      "title": "Thông tin Điểm xuất phát",
+      "description": "Dữ liệu đã được tích hợp ngắn gọn vào lần phân tích này.",
+      "emptyDescription": "Bạn vẫn có thể tiếp tục và bổ sung thông tin trực tiếp trong các bước tiếp theo.",
+      "emptyTitle": "Chưa có thông tin Điểm xuất phát",
+      "personality": "Kết quả tính cách",
+      "education": "Học vấn, bảng điểm và nghiên cứu",
+      "certificates": "Chứng chỉ",
+      "experience": "Kinh nghiệm làm việc",
+      "competitions": "Cuộc thi và giải thưởng",
+      "activities": "Hoạt động khác",
+      "notProvided": "Chưa có thông tin.",
+      "current": "Hiện tại",
+      "hasEvidence": "có minh chứng",
+      "skills": "Kỹ năng: {value}",
+      "learnings": "Tích lũy: {value}",
+      "average": "{stage}: {value}",
+      "levels": {
+        "HIGH_SCHOOL": "Trung học phổ thông",
+        "UNDERGRADUATE": "Đại học",
+        "GRADUATE": "Cao học"
+      },
+      "stages": {
+        "GRADE_10": "TB lớp 10",
+        "GRADE_11": "TB lớp 11",
+        "GRADE_12": "TB lớp 12",
+        "CUMULATIVE": "Điểm tích lũy"
+      }
+    },
+    "results": {
+      "eyebrow": "Kết quả phân tích",
+      "title": "Ba hướng để bạn kiểm chứng",
+      "description": "So sánh mức phù hợp, skill gap và công sức cần đầu tư trước khi chọn.",
+      "directionCount": "hướng để so sánh",
+      "confidenceLabel": "độ tin cậy hồ sơ",
+      "disclaimerTitle": "Đây là gợi ý tham khảo",
+      "profileTitle": "Hồ sơ AI đã đọc",
+      "profileDescription": "Độ tin cậy dữ liệu: {confidence}",
+      "strengths": "Điểm mạnh",
+      "interests": "Sở thích và tín hiệu",
+      "noStrengths": "Chưa đủ dữ liệu để kết luận.",
+      "noInterests": "Chưa có tín hiệu cá nhân rõ ràng.",
+      "marketTitle": "Tín hiệu thị trường",
+      "marketDescription": "Các kỹ năng thiếu hụt nổi bật trong market seed.",
+      "noMarket": "Chưa đủ dữ liệu để xác định kỹ năng thiếu hụt.",
+      "fitLabel": "điểm phù hợp tham khảo",
+      "fitValue": "Mức phù hợp: {value}",
+      "selected": "Đang chọn",
+      "otherDirectionsTitle": "Các hướng khác trong lần tư vấn này",
+      "otherDirectionsDescription": "Đổi hướng đang chọn nếu một phương án khác phù hợp hơn sau khi so sánh.",
+      "chooseDirection": "Chọn hướng này",
+      "applyToJourney": "Áp dụng vào hành trình",
+      "matchedTitle": "Vì sao hướng này đáng thử",
+      "evidenceTitle": "Bằng chứng thị trường",
+      "skillGapsTitle": "Skill gap cần ưu tiên",
+      "levelRange": "{current} đến {target}",
+      "roadmapTitle": "Roadmap thực hành",
+      "roadmapDiagramDescription": "Bấm vào từng chặng trên sơ đồ để xem mục tiêu, công việc và bằng chứng cần hoàn thành.",
+      "roadmapClickHint": "Bấm để xem chi tiết chặng này",
+      "stages": {
+        "learning": "Học tập",
+        "internship": "Thực tập",
+        "full_time": "Công việc chính thức"
+      },
+      "relatedJobsTitle": "Việc làm liên quan đang tuyển",
+      "jobSearchButton": "Tìm việc liên quan",
+      "jobSearchLoading": "Đang tìm việc",
+      "jobSearchDescription": "Dùng hướng lộ trình và vị trí trong form ({location}) để lấy job post công khai mới nhất. Kết quả không được lưu.",
+      "jobSearchEmpty": "Hiện chưa tìm thấy job công khai phù hợp với hướng này và vị trí này.",
+      "jobSearchFailed": "Chưa thể tìm việc lúc này.",
+      "jobSearchFallbackReason": "Lấy từ kết quả trực tiếp của nền tảng tuyển dụng theo hướng lộ trình và vị trí đã chọn.",
+      "followUpTitle": "Câu hỏi cho lần tư vấn tiếp theo",
+      "followUpDescription": "Trả lời thêm các câu này để thu hẹp skill gap và chi phí.",
+      "autonomy": "Bạn có thể chọn, thử lại hoặc đổi hướng sau khi kiểm chứng thêm.",
+      "category": {
+        "university": "Đại học",
+        "college": "Cao đẳng",
+        "vocational": "Học nghề",
+        "certificate": "Chứng chỉ",
+        "apprenticeship": "Học việc",
+        "self_learning": "Tự học có hướng dẫn"
+      },
+      "confidence": {
+        "low": "thấp",
+        "medium": "trung bình",
+        "high": "cao"
+      },
+      "learning": {
+        "track": "Ngành hoặc hướng chuyên sâu",
+        "subjects": "Môn và nội dung cần học",
+        "evidence": "Bằng chứng: {value}",
+        "certificates": "Chứng chỉ nên cân nhắc",
+        "certificateTiming": "Thời điểm: {value}",
+        "activities": "Nghiên cứu, cuộc thi và dự án CLB",
+        "milestones": "Mốc hoàn thành"
+      },
+      "internship": {
+        "where": "Nên tìm cơ hội ở đâu",
+        "cv": "Chuẩn bị CV và portfolio",
+        "knowledge": "Kiến thức cần áp dụng",
+        "interview": "Chuẩn bị vòng phỏng vấn",
+        "success": "Kết quả cần đạt sau kỳ intern",
+        "evidence": "Bằng chứng: {value}"
+      },
+      "fullTime": {
+        "roles": "Công việc và cách đánh giá offer",
+        "responsibilities": "Trách nhiệm chính",
+        "salary": "Lương, thưởng và phúc lợi",
+        "readiness": "Tín hiệu sẵn sàng: {value}",
+        "first90": "Kế hoạch 90 ngày đầu",
+        "promotion": "Đường phát triển lên vị trí cao hơn",
+        "readinessProof": "Bằng chứng sẵn sàng: {value}"
+      }
+    }
+  },
+  "Journey": {
+    "metadataTitle": "Đường đến chính mình",
+    "eyebrow": "Nhật ký phát triển của bạn",
+    "title": "Đường đến chính mình",
+    "description": "Biến kế hoạch thành những việc có thể hoàn thành, nhìn lại tiến bộ và tiếp tục lớn lên theo cách của riêng bạn.",
+    "add": "Thêm một dấu mốc",
+    "askAi": "Chỉnh cùng AI",
+    "edit": "Chỉnh sửa dấu mốc",
+    "toggle": "Đánh dấu hoàn thành cho {title}",
+    "done": "Đã hoàn thành",
+    "fromRoadmap": "Từ {source}",
+    "sourceLegend": "Nguồn nội dung",
+    "sources": {
+      "manual": "Bạn tự tạo",
+      "roadmap": "AI tạo từ lộ trình",
+      "ai": "AI thêm qua hội thoại"
+    },
+    "progress": "Đã hoàn thành {completed}/{total} dấu mốc",
+    "yearNavigation": "Chọn năm trên hành trình",
+    "imported": "Đã thêm {count} dấu mốc mới từ lộ trình. Nhật ký cũ được giữ nguyên.",
+    "importFailed": "Không tìm thấy lộ trình phù hợp để thêm.",
+    "addTitle": "Thêm dấu mốc mới",
+    "editTitle": "Chỉnh sửa dấu mốc",
+    "entryDescription": "Bạn luôn có thể đổi nội dung hoặc thời gian để kế hoạch sát với nhịp sống thực tế.",
+    "save": "Lưu dấu mốc",
+    "cancel": "Hủy",
+    "delete": "Xoá dấu mốc",
+    "deleteTitle": "Xoá dấu mốc này?",
+    "deleteDescription": "{title} sẽ bị xoá vĩnh viễn khỏi hành trình của bạn. Hành động này không thể hoàn tác.",
+    "confirmDelete": "Xoá vĩnh viễn",
+    "deleteError": "Chưa thể xoá dấu mốc lúc này. Vui lòng thử lại.",
+    "fields": {
+      "title": "Việc bạn muốn thực hiện",
+      "description": "Ghi chú",
+      "descriptionHint": "Mô tả kết quả bạn muốn nhìn thấy hoặc cách để biết mình đã hoàn thành.",
+      "date": "Ngày dự kiến",
+      "category": "Nhóm dấu mốc"
+    },
+    "categories": {
+      "learning": "Học tập",
+      "experience": "Trải nghiệm",
+      "career": "Nghề nghiệp",
+      "personal": "Bản thân"
+    },
+    "empty": {
+      "title": "Trang đầu tiên đang chờ bạn viết",
+      "description": "Thêm một việc bạn muốn làm hoặc áp dụng lộ trình AI để bắt đầu hành trình này.",
+      "action": "Viết dấu mốc đầu tiên"
+    },
+    "reflection": {
+      "label": "Lời nhắn từ AI",
+      "empty": "Bạn không cần nhìn thấy toàn bộ con đường mới có thể bắt đầu. Một dấu mốc thật lòng là đủ.",
+      "progress": "Bạn đã giữ lời với chính mình ở {completed} trong {total} dấu mốc. Đó là tiến bộ có thật.",
+      "next": "Bước gần nhất đang chờ bạn: {title}. Hãy làm nó vừa đủ nhỏ để có thể bắt đầu hôm nay.",
+      "complete": "Bạn đã hoàn thành mọi dấu mốc hiện có. Đây là lúc nhìn lại, ghi nhận và chọn thử thách tiếp theo.",
+      "identity": "Mỗi việc hoàn thành là một bằng chứng về con người bạn đang trở thành"
+    },
+    "future": {
+      "eyebrow": "Dải tương lai của bạn",
+      "label": "Kỳ vọng trong 3 tháng tới",
+      "empty": "Thêm một dấu mốc gần để tương lai bắt đầu có hình hài",
+      "expand": "Mở rộng",
+      "collapse": "Thu gọn"
+    },
+    "ai": {
+      "title": "Cùng AI chỉnh hành trình",
+      "description": "Nói điều bạn muốn thay đổi. AI có thể dời thời gian, viết lại, thêm hoặc xoá dấu mốc khi bạn yêu cầu rõ ràng.",
+      "name": "AI đồng hành",
+      "welcome": "Bạn muốn điều chỉnh điều gì? Ví dụ: Dời các mục học chứng chỉ sang tháng 10, chia mục chuẩn bị CV thành hai bước hoặc xoá một dấu mốc không còn phù hợp.",
+      "placeholder": "Mô tả thay đổi bạn muốn...",
+      "hint": "Enter để gửi, Shift + Enter để xuống dòng",
+      "send": "Gửi yêu cầu",
+      "working": "Đang sắp xếp lại hành trình...",
+      "error": "AI chưa thể chỉnh hành trình lúc này. Hãy thử lại hoặc sửa trực tiếp từng dấu mốc."
+    }
+  },
+  "Assistant": {
+    "home": "Tổng quan",
+    "welcome": "Chào mừng trở lại, {name}",
+    "overviewDescription": "Tiếp tục hội thoại gần đây, bắt đầu một phiên tư vấn tập trung hoặc xây dựng lộ trình nghề nghiệp.",
+    "openRoadmap": "Mở Lộ trình AI",
+    "workspaceSnapshot": "Tổng quan không gian",
+    "conversationCount": "hội thoại đã lưu",
+    "modelCount": "model AI khả dụng",
+    "followingTitle": "Lộ trình đang theo dõi",
+    "followingProgress": "Đã xong {completed}/{total} việc",
+    "openFollowing": "Mở lộ trình đang theo dõi",
+    "newChat": "Cuộc trò chuyện mới",
+    "newConversation": "Tạo cuộc trò chuyện",
+    "conversations": "Cuộc trò chuyện",
+    "delete": "Xóa cuộc trò chuyện",
+    "deleteTitle": "Xóa cuộc trò chuyện này?",
+    "deleteDescription": "Cuộc trò chuyện và toàn bộ tin nhắn sẽ bị xóa vĩnh viễn.",
+    "deleteCancel": "Giữ cuộc trò chuyện",
+    "deleteConfirm": "Xóa cuộc trò chuyện",
+    "deleting": "Đang xóa...",
+    "model": "Model",
+    "provider": "FPT Cloud AI",
+    "placeholder": "Hỏi về học tập, lộ trình, ngành nghề...",
+    "messageLabel": "Tin nhắn gửi trợ lý AI",
+    "send": "Gửi tin nhắn",
+    "stop": "Dừng trả lời",
+    "disclaimer": "MeshMind AI hỗ trợ các câu hỏi về giáo dục và định hướng nghề nghiệp.",
+    "emptyTitle": "Bắt đầu một câu hỏi",
+    "emptyDescription": "Trợ lý AI có thể giúp bạn khám phá ngành học, xây lộ trình và chuẩn bị cho cơ hội đầu tiên.",
+    "sessionsError": "Không thể tải danh sách cuộc trò chuyện.",
+    "messageLoadError": "Không thể tải tin nhắn. Nội dung hiện tại vẫn được giữ lại.",
+    "loadingMessages": "Đang tải tin nhắn",
+    "loadingSuggestions": "Đang tạo gợi ý phù hợp với bạn",
+    "createError": "Không thể tạo cuộc trò chuyện. Vui lòng thử lại.",
+    "deleteError": "Không thể xóa cuộc trò chuyện. Vui lòng thử lại.",
+    "sendError": "Tin nhắn chưa thể hoàn tất. Cuộc trò chuyện đã được đồng bộ lại khi có thể.",
+    "jumpToLatest": "Đến tin nhắn mới nhất",
+    "messageError": "Đã xảy ra lỗi. Vui lòng thử lại.",
+    "cancelled": "Đã dừng câu trả lời. Phần nội dung an toàn vẫn được giữ lại.",
+    "retry": "Thử lại",
+    "errors": {
+      "privateWebForbidden": "Không thể nghiên cứu web vì yêu cầu chứa dữ liệu cá nhân hoặc nội dung riêng tư.",
+      "forceWebUnavailable": "Nghiên cứu web hiện không khả dụng.",
+      "forceWebNotUsed": "Đã bật tìm kiếm web nhưng không thể hoàn tất.",
+      "deadlineExceeded": "Yêu cầu mất quá nhiều thời gian. Vui lòng thử lại.",
+      "sessionBusy": "Cuộc trò chuyện này đang xử lý một yêu cầu khác.",
+      "sessionNotFound": "Cuộc trò chuyện này không còn khả dụng.",
+      "modelMismatch": "Model đã chọn không khớp với cuộc trò chuyện.",
+      "historyUnavailable": "Không thể tải lịch sử cuộc trò chuyện.",
+      "runIncomplete": "Phản hồi trước chưa hoàn tất. Bạn có thể thử lại hoặc gửi tin nhắn mới."
+    },
+    "web": {
+      "auto": "Web: tự động",
+      "on": "Web: bật",
+      "autoLabel": "Tự động dùng web khi cần",
+      "onLabel": "Dùng tìm kiếm web cho tin nhắn này",
+      "autoTitle": "Chế độ tự động: trợ lý quyết định khi nào cần nghiên cứu web",
+      "onTitle": "Đã bật: dùng tìm kiếm web cho tin nhắn này"
+    },
+    "research": {
+      "thinking": "Đang suy nghĩ",
+      "searching": "Đang tìm trên web",
+      "reading": "Đang đọc nguồn",
+      "synthesizing": "Đang tổng hợp",
+      "sourceCount": "{count} nguồn"
+    },
+    "sources": {
+      "title": "Nguồn tham khảo",
+      "published": "Xuất bản",
+      "accessed": "Truy cập",
+      "unknownDate": "Không rõ",
+      "evidence": "Trích dẫn bằng chứng",
+      "external": "Mở nguồn bên ngoài",
+      "citation": "Trích dẫn {ordinal}: {title}"
+    },
+    "prompts": {
+      "major": "Làm thế nào để chọn ngành học phù hợp với sở thích và năng lực?",
+      "coding": "Lộ trình học lập trình từ con số 0 cho người mới bắt đầu?",
+      "university": "Cần chuẩn bị gì để thi đỗ vào đại học top đầu Việt Nam?",
+      "skills": "Những kỹ năng quan trọng nhất sinh viên cần có trong thời đại AI?",
+      "scholarship": "Học bổng du học Nhật Bản và Hàn Quốc dành cho sinh viên Việt Nam?"
+    }
+  },
+  "StartingPoint": {
+    "metadataTitle": "Điểm xuất phát",
+    "title": "Điểm xuất phát",
+    "description": "Tập hợp kết quả tính cách, học vấn, kinh nghiệm và những dấu mốc giúp bạn hiểu rõ nền tảng hiện tại của mình.",
+    "cvImport": {
+      "title": "Nhập dữ liệu từ CV",
+      "description": "Tải CV lên để hệ thống nhận diện học vấn, chứng chỉ, thành tích, hoạt động và kinh nghiệm làm việc. Chỉ những thông tin chưa có mới được bổ sung vào hồ sơ.",
+      "badge": "AI hỗ trợ",
+      "fileLabel": "CV của bạn",
+      "fileHint": "Chấp nhận PDF tối đa 6 MB và 15 trang. File cần có lớp văn bản có thể chọn được.",
+      "selectedFile": "Đã chọn: {name}",
+      "privacy": "CV chỉ được xử lý trong lần nhập này và không được lưu dưới dạng tệp. Bạn có thể chỉnh sửa từng mục sau khi hoàn tất.",
+      "submit": "Phân tích và bổ sung hồ sơ",
+      "processing": "Đang đọc và chuẩn hoá CV...",
+      "successTitle": "Đã cập nhật Điểm xuất phát",
+      "errorTitle": "Chưa thể nhập CV",
+      "counts": {
+        "education": "{count} học vấn",
+        "transcriptEntries": "{count} môn học",
+        "certificates": "{count} chứng chỉ",
+        "competitions": "{count} cuộc thi",
+        "activities": "{count} hoạt động",
+        "workExperiences": "{count} kinh nghiệm",
+        "duplicates": "{count} mục trùng hoặc không tương thích được bỏ qua"
+      },
+      "actions": {
+        "saved": "Đã bổ sung {count} mục từ CV. Hãy kiểm tra lại thông tin bên dưới.",
+        "noNewData": "Không có thông tin mới để bổ sung. Những mục trùng với hồ sơ hiện tại đã được giữ nguyên.",
+        "checkFile": "Hãy chọn lại một file CV phù hợp.",
+        "analysisFailed": "Hệ thống chưa thể nhận diện dữ liệu trong CV này. Vui lòng kiểm tra nội dung file và thử lại.",
+        "failed": "Không thể lưu dữ liệu từ CV lúc này. Vui lòng thử lại.",
+        "unavailable": "Tài khoản này không có hồ sơ Điểm xuất phát để cập nhật."
+      },
+      "validation": {
+        "required": "Hãy chọn file CV PDF.",
+        "tooLarge": "File CV phải có dung lượng không quá 6 MB.",
+        "invalidType": "Chỉ chấp nhận file PDF có phần mở rộng .pdf.",
+        "invalidContent": "Nội dung file không đúng định dạng PDF.",
+        "tooManyPages": "CV chỉ được dài tối đa 15 trang.",
+        "noText": "Không tìm thấy đủ văn bản trong PDF. Nếu đây là bản scan, hãy xuất lại CV dưới dạng PDF có thể chọn chữ.",
+        "readFailed": "Không thể đọc file PDF này. File có thể bị hỏng hoặc được bảo vệ bằng mật khẩu."
+      }
+    }
+  },
+  "Profile": {
+    "metadataTitle": "Thông tin cá nhân",
+    "title": "Thông tin cá nhân",
+    "description": "Cập nhật thông tin giúp CareerLens cá nhân hóa trải nghiệm của bạn.",
+    "summary": "Thông tin này được dùng để nhận diện tài khoản và điều chỉnh trải nghiệm phù hợp với bạn.",
+    "personality": {
+      "emptyTitle": "Khám phá phong cách của bạn",
+      "emptyDescription": "Hoàn thành 12 câu hỏi ngắn để nhận diện những khuynh hướng nổi bật trong cách bạn suy nghĩ và hành động.",
+      "completedTitle": "Kết quả tính cách",
+      "completedDescription": "Xem lại kết quả gần nhất hoặc làm lại bài test khi bạn muốn cập nhật góc nhìn về bản thân.",
+      "completedOn": "Hoàn thành {date}",
+      "takeTest": "Làm bài test",
+      "retake": "Làm lại bài test",
+      "viewDetails": "Xem chi tiết"
+    },
+  "form": {
+      "title": "Chi tiết hồ sơ",
+      "description": "Chỉnh sửa thông tin tài khoản của bạn bên dưới.",
+      "fullName": "Họ và tên",
+      "fullNameHint": "Tên hiển thị trong tài khoản của bạn.",
+      "email": "Email",
+      "emailHint": "Đây cũng là email bạn dùng để đăng nhập.",
+      "dateOfBirth": "Ngày sinh",
+      "dateOfBirthHint": "Nhập đầy đủ ngày, tháng và năm sinh của bạn.",
+      "birthDay": "Ngày sinh",
+      "birthMonth": "Tháng sinh",
+      "birthYear": "Năm sinh",
+      "save": "Lưu thay đổi",
+    "saving": "Đang lưu..."
+  },
+  "extended": {
+    "title": "Hồ sơ học tập và kinh nghiệm",
+    "description": "Bổ sung các dấu mốc quan trọng để hồ sơ phản ánh đầy đủ năng lực và hành trình của bạn.",
+    "common": {
+      "add": "Thêm mới",
+      "edit": "Chỉnh sửa",
+      "delete": "Xoá",
+      "cancel": "Huỷ",
+      "save": "Lưu thông tin",
+      "saving": "Đang lưu...",
+      "deleting": "Đang xoá...",
+      "deleteTitle": "Xoá thông tin này?",
+      "deleteDescription": "Thông tin đã xoá không thể khôi phục.",
+      "optional": "Không bắt buộc",
+      "period": "Khoảng thời gian",
+      "startDate": "Bắt đầu",
+      "endDate": "Kết thúc",
+      "month": "Tháng",
+      "year": "Năm"
+    },
+    "education": {
+      "title": "Học vấn",
+      "description": "Sắp xếp theo lộ trình từ Trung học phổ thông đến Cao học.",
+      "empty": "Chưa có thông tin học vấn.",
+      "add": "Thêm học vấn",
+      "editTitle": "Chỉnh sửa học vấn",
+      "addTitle": "Thêm thông tin học vấn",
+      "dialogDescription": "Ghi lại trường học, thời gian học và nhập bảng điểm đúng theo từng bậc.",
+      "level": "Bậc học",
+      "levels": {
+        "HIGH_SCHOOL": "Trung học phổ thông",
+        "UNDERGRADUATE": "Đại học",
+        "GRADUATE": "Cao học"
+      },
+      "institutionName": "Tên trường",
+      "fieldOfStudy": "Ngành học, chương trình hoặc chuyên ban",
+      "fieldOfStudyHint": "Ví dụ: Khoa học máy tính, Toán chuyên hoặc chương trình Thạc sĩ Quản trị kinh doanh.",
+      "fieldLabels": {
+        "HIGH_SCHOOL": "Chuyên ban, tổ hợp hoặc lớp chuyên",
+        "UNDERGRADUATE": "Ngành học",
+        "GRADUATE": "Chuyên ngành hoặc chương trình cao học"
+      },
+      "fieldHints": {
+        "HIGH_SCHOOL": "Ví dụ: lớp chuyên Toán, tổ hợp Khoa học tự nhiên.",
+        "UNDERGRADUATE": "Ví dụ: Khoa học máy tính, Kinh tế quốc tế.",
+        "GRADUATE": "Ví dụ: Thạc sĩ Trí tuệ nhân tạo, Tiến sĩ Kinh tế học."
+      },
+      "transcriptImport": "Nhập bảng điểm Excel",
+      "downloadTemplate": "Tải file Excel mẫu",
+      "grade10File": "Bảng điểm lớp 10",
+      "grade11File": "Bảng điểm lớp 11",
+      "grade12File": "Bảng điểm lớp 12",
+      "transcriptFile": "Bảng điểm tích luỹ",
+      "optionalOnEdit": "Tệp .xlsx tối đa 2 MB. Để trống nếu không muốn thay bảng điểm đã lưu.",
+      "highSchoolTranscriptHint": "Mỗi khối nhập một tệp .xlsx gồm 2 cột: Môn học và Điểm trung bình cả năm. Hệ thống tự tính điểm trung bình trên thang 10.",
+      "higherEducationTranscriptHint": "Tệp .xlsx tối đa 2 MB gồm 3 cột: Môn học, Tín chỉ và Điểm. Hệ thống tự tính điểm trung bình tích luỹ có trọng số tín chỉ.",
+      "scoreScale": "Thang điểm",
+      "scoreScaleHint": "Chọn đúng thang điểm dùng trong tệp Excel.",
+      "scale4": "Thang 4",
+      "scale10": "Thang 10",
+      "transcriptStages": {
+        "GRADE_10": "Lớp 10",
+        "GRADE_11": "Lớp 11",
+        "GRADE_12": "Lớp 12",
+        "CUMULATIVE": "Điểm tích luỹ"
+      },
+      "subjectCount": "{count} môn",
+      "creditCount": "{count} tín chỉ",
+      "noTranscript": "Chưa nhập bảng điểm.",
+      "research": "Nghiên cứu khoa học",
+      "researchHint": "Chỉ áp dụng cho Đại học và Cao học. Nhập đầy đủ tên và mô tả nếu có nghiên cứu.",
+      "researchTitle": "Tên nghiên cứu",
+      "researchDescription": "Mô tả nghiên cứu"
+    },
+    "certificate": {
+      "title": "Chứng chỉ",
+      "description": "Các chứng chỉ chuyên môn kèm bản mềm minh chứng.",
+      "empty": "Chưa có chứng chỉ nào.",
+      "add": "Thêm chứng chỉ",
+      "editTitle": "Chỉnh sửa chứng chỉ",
+      "addTitle": "Thêm chứng chỉ",
+      "dialogDescription": "Nhập tên chứng chỉ, năm cấp và tải lên PDF hoặc ảnh minh chứng.",
+      "name": "Tên chứng chỉ",
+      "issuedYear": "Năm cấp",
+      "evidence": "Bản mềm minh chứng",
+      "evidenceHint": "PDF, JPG, PNG hoặc WebP, tối đa 5 MB.",
+      "replaceEvidenceHint": "Chỉ chọn tệp mới nếu muốn thay minh chứng hiện tại.",
+      "viewEvidence": "Xem minh chứng",
+      "issuedIn": "cấp năm {year}"
+    },
+    "work": {
+      "title": "Kinh nghiệm làm việc",
+      "description": "Hiển thị công việc gần nhất trước, cùng điều đã học và kỹ năng tích luỹ.",
+      "empty": "Chưa có kinh nghiệm làm việc.",
+      "add": "Thêm kinh nghiệm",
+      "editTitle": "Chỉnh sửa kinh nghiệm",
+      "addTitle": "Thêm kinh nghiệm làm việc",
+      "dialogDescription": "Mô tả nơi làm việc, khoảng thời gian và những giá trị bạn tích luỹ được.",
+      "workplaceName": "Nơi làm việc",
+      "position": "Vị trí hoặc vai trò",
+      "startDate": "Thời gian bắt đầu",
+      "endDate": "Thời gian kết thúc",
+      "month": "Tháng",
+      "year": "Năm",
+      "isCurrent": "Tôi đang làm việc tại đây",
+      "present": "Hiện tại",
+      "learnings": "Điều đã học được",
+      "learningsHint": "Những kiến thức, bài học hoặc trải nghiệm đáng chú ý.",
+      "skills": "Kỹ năng tích luỹ",
+      "skillsHint": "Ví dụ: quản lý dự án, giao tiếp, phân tích dữ liệu."
+    },
+    "competition": {
+      "title": "Cuộc thi và thành tích",
+      "description": "Các cuộc thi đã tham gia, ưu tiên năm gần nhất.",
+      "empty": "Chưa có thông tin cuộc thi.",
+      "add": "Thêm cuộc thi",
+      "editTitle": "Chỉnh sửa cuộc thi",
+      "addTitle": "Thêm cuộc thi",
+      "dialogDescription": "Ghi tên cuộc thi, giải thưởng đạt được nếu có và năm tham gia.",
+      "name": "Tên cuộc thi",
+      "awardName": "Tên giải hoặc thành tích",
+      "awardHint": "Để trống nếu chỉ tham gia.",
+      "participated": "Đã tham gia",
+      "resultYear": "Năm tham gia hoặc nhận giải"
+    },
+    "activity": {
+      "title": "Hoạt động khác",
+      "description": "Hoạt động ngoại khoá, cộng đồng, tình nguyện hoặc dự án cá nhân.",
+      "empty": "Chưa có hoạt động khác.",
+      "add": "Thêm hoạt động",
+      "editTitle": "Chỉnh sửa hoạt động",
+      "addTitle": "Thêm hoạt động khác",
+      "dialogDescription": "Nhập tên hoạt động hoặc dự án bạn muốn ghi lại.",
+      "name": "Tên hoạt động"
+    },
+    "actions": {
+      "saved": "Đã lưu thông tin.",
+      "deleted": "Đã xoá thông tin.",
+      "checkFields": "Kiểm tra các trường được đánh dấu rồi thử lại.",
+      "failed": "Chưa thể lưu thông tin. Vui lòng thử lại.",
+      "deleteFailed": "Chưa thể xoá thông tin. Vui lòng thử lại.",
+      "notFound": "Không tìm thấy thông tin hoặc bạn không có quyền chỉnh sửa.",
+      "unavailable": "Tài khoản này không có hồ sơ để chỉnh sửa."
+    },
+    "validation": {
+      "id": "Thông tin không hợp lệ.",
+      "level": "Chọn một bậc học hợp lệ.",
+      "institutionName": "Nhập tên trường.",
+      "fieldOfStudy": "Nội dung ngành học hoặc chuyên ban quá dài.",
+      "scoreScale": "Chọn thang điểm 4 hoặc 10.",
+      "researchTitle": "Tên nghiên cứu quá dài.",
+      "researchDescription": "Mô tả nghiên cứu quá dài.",
+      "research": "Nhập đầy đủ cả tên và mô tả nghiên cứu.",
+      "name": "Nhập tên hợp lệ.",
+      "issuedYear": "Nhập năm cấp hợp lệ.",
+      "awardName": "Tên giải hoặc thành tích quá dài.",
+      "year": "Nhập năm hợp lệ.",
+      "workplaceName": "Nhập tên nơi làm việc.",
+      "position": "Tên vị trí hoặc vai trò quá dài.",
+      "startMonth": "Chọn tháng bắt đầu hợp lệ.",
+      "startYear": "Nhập năm bắt đầu hợp lệ.",
+      "endMonth": "Chọn tháng kết thúc hợp lệ.",
+      "endYear": "Nhập năm kết thúc hợp lệ.",
+      "endDate": "Nhập thời gian kết thúc hợp lệ.",
+      "isCurrent": "Trạng thái công việc không hợp lệ.",
+      "learnings": "Nội dung bài học quá dài.",
+      "skills": "Nội dung kỹ năng quá dài.",
+      "endDateRequired": "Nhập đầy đủ tháng và năm kết thúc hoặc chọn đang làm việc tại đây.",
+      "endDateBeforeStart": "Thời gian kết thúc không được trước thời gian bắt đầu.",
+      "transcriptFile": {
+        "fileTooLarge": "Tệp bảng điểm phải nhỏ hơn hoặc bằng 2 MB.",
+        "invalidFile": "Chọn một tệp Excel .xlsx hợp lệ.",
+        "missingHeaders": "Tệp Excel thiếu hoặc đặt sai tên cột yêu cầu.",
+        "empty": "Tệp Excel chưa có dữ liệu môn học.",
+        "tooManyRows": "Bảng điểm chỉ được có tối đa 200 môn học.",
+        "invalidRow": "Dữ liệu tại dòng {row} không hợp lệ hoặc vượt quá thang điểm.",
+        "duplicateSubject": "Môn học tại dòng {row} bị trùng.",
+        "reimportRequired": "Khi đổi thang điểm, hãy nhập lại bảng điểm tích luỹ."
+      },
+      "evidence": {
+        "required": "Tải lên bản mềm minh chứng.",
+        "tooLarge": "Tệp minh chứng phải nhỏ hơn hoặc bằng 5 MB.",
+        "invalidType": "Chỉ chấp nhận PDF, JPG, PNG hoặc WebP.",
+        "invalidContent": "Nội dung tệp không khớp với định dạng được khai báo."
+      }
+    }
+  },
+  "months": {
+      "1": "Tháng 1",
+      "2": "Tháng 2",
+      "3": "Tháng 3",
+      "4": "Tháng 4",
+      "5": "Tháng 5",
+      "6": "Tháng 6",
+      "7": "Tháng 7",
+      "8": "Tháng 8",
+      "9": "Tháng 9",
+      "10": "Tháng 10",
+      "11": "Tháng 11",
+      "12": "Tháng 12"
+    },
+    "validation": {
+      "email": "Nhập địa chỉ email hợp lệ.",
+      "fullName": "Nhập họ và tên có ít nhất 2 ký tự.",
+      "birthDate": "Nhập ngày sinh hợp lệ và không ở tương lai.",
+      "birthDay": "Nhập ngày trong tháng hợp lệ.",
+      "birthMonth": "Chọn tháng sinh hợp lệ.",
+      "birthYear": "Nhập năm sinh từ 1900 đến năm hiện tại."
+    },
+    "actions": {
+      "saved": "Đã lưu thông tin cá nhân.",
+      "checkFields": "Kiểm tra các trường được đánh dấu rồi thử lại.",
+      "emailInUse": "Email này đã được sử dụng bởi một tài khoản khác.",
+      "failed": "Chưa thể lưu thay đổi. Vui lòng thử lại.",
+      "unavailable": "Tài khoản này không có hồ sơ cá nhân để chỉnh sửa."
+    }
+  },
+  "PersonalityTest": {
+    "metadataTitle": "Bài test tính cách",
+    "title": "Bài test tính cách",
+    "description": "Khám phá cách bạn nạp năng lượng, tiếp nhận thông tin, đưa ra quyết định và tổ chức cuộc sống.",
+    "backToProfile": "Quay lại Điểm xuất phát",
+    "intro": {
+      "title": "Hiểu mình rõ hơn qua 12 câu hỏi",
+      "description": "Chọn phương án giống bạn nhất trong phần lớn tình huống. Không có câu trả lời đúng hay sai.",
+      "currentResult": "Kết quả hiện tại của bạn",
+      "timeTitle": "Khoảng 3 phút",
+      "timeDescription": "Bài test ngắn, tập trung vào những lựa chọn quen thuộc trong đời sống.",
+      "answerTitle": "Trả lời theo phản xạ đầu tiên",
+      "answerDescription": "Chọn điều bạn thường làm, không phải điều bạn mong mình sẽ làm.",
+      "noteTitle": "Một công cụ để tự khám phá",
+      "note": "Kết quả phản ánh khuynh hướng tại thời điểm làm bài và không thay thế đánh giá chuyên môn về tâm lý.",
+      "start": "Bắt đầu làm bài",
+      "retake": "Bắt đầu làm lại"
+    },
+    "question": {
+      "progress": "Câu {current} / {total}",
+      "guidance": "Chọn phương án gần với bạn hơn.",
+      "required": "Hãy chọn một phương án để tiếp tục.",
+      "back": "Câu trước",
+      "next": "Câu tiếp theo",
+      "finish": "Xem kết quả",
+      "submitting": "Đang lưu..."
+    },
+    "result": {
+      "title": "Kết quả của bạn đã sẵn sàng",
+      "description": "Bốn chữ cái dưới đây tóm tắt những khuynh hướng bạn đã thể hiện trong bài test.",
+      "traitsTitle": "Bốn khuynh hướng nổi bật",
+      "noteTitle": "Hãy dùng kết quả như một điểm bắt đầu",
+      "note": "Tính cách có thể thay đổi theo bối cảnh và trải nghiệm. Bạn có thể làm lại bài test khi cảm thấy kết quả không còn phù hợp.",
+      "retake": "Làm lại bài test",
+      "backToProfile": "Xem tại Điểm xuất phát"
+    },
+    "traits": {
+      "E": {
+        "title": "Hướng ngoại",
+        "description": "Bạn thường nạp năng lượng qua tương tác và thích suy nghĩ bằng cách trao đổi với người khác."
+      },
+      "I": {
+        "title": "Hướng nội",
+        "description": "Bạn thường nạp năng lượng trong không gian riêng và thích suy nghĩ kỹ trước khi chia sẻ."
+      },
+      "S": {
+        "title": "Thực tế",
+        "description": "Bạn chú ý đến dữ kiện cụ thể, kinh nghiệm trực tiếp và những gì có thể áp dụng ngay."
+      },
+      "N": {
+        "title": "Trực giác",
+        "description": "Bạn dễ nhận ra các mẫu liên kết, khả năng tương lai và ý nghĩa phía sau thông tin."
+      },
+      "T": {
+        "title": "Lý trí",
+        "description": "Bạn thường ưu tiên tính nhất quán, bằng chứng và nguyên tắc khi đưa ra quyết định."
+      },
+      "F": {
+        "title": "Cảm xúc",
+        "description": "Bạn thường cân nhắc giá trị cá nhân, nhu cầu và tác động của quyết định đến con người."
+      },
+      "J": {
+        "title": "Nguyên tắc",
+        "description": "Bạn cảm thấy thoải mái hơn khi có kế hoạch, mốc rõ ràng và mọi việc được hoàn tất đúng hạn."
+      },
+      "P": {
+        "title": "Linh hoạt",
+        "description": "Bạn thích giữ các lựa chọn mở, khám phá trong quá trình làm và điều chỉnh theo tình huống."
+      }
+    },
+    "types": {
+      "INTJ": { "title": "Nhà chiến lược" },
+      "INTP": { "title": "Nhà phân tích" },
+      "ENTJ": { "title": "Người kiến tạo" },
+      "ENTP": { "title": "Người khám phá" },
+      "INFJ": { "title": "Người định hướng" },
+      "INFP": { "title": "Người hòa giải" },
+      "ENFJ": { "title": "Người truyền cảm hứng" },
+      "ENFP": { "title": "Người khơi mở" },
+      "ISTJ": { "title": "Người tổ chức" },
+      "ISFJ": { "title": "Người đồng hành" },
+      "ESTJ": { "title": "Người điều phối" },
+      "ESFJ": { "title": "Người kết nối" },
+      "ISTP": { "title": "Người giải quyết" },
+      "ISFP": { "title": "Người trải nghiệm" },
+      "ESTP": { "title": "Người hành động" },
+      "ESFP": { "title": "Người tạo năng lượng" }
+    },
+    "questions": {
+      "0": {
+        "prompt": "Sau một tuần bận rộn, điều gì giúp bạn lấy lại năng lượng tốt hơn?",
+        "a": "Gặp gỡ bạn bè hoặc tham gia một hoạt động có nhiều người",
+        "b": "Dành thời gian yên tĩnh một mình hoặc với một vài người thân"
+      },
+      "1": {
+        "prompt": "Khi bước vào một nhóm hoàn toàn mới, bạn thường làm gì?",
+        "a": "Chủ động bắt chuyện và làm quen với nhiều người",
+        "b": "Quan sát trước rồi kết nối với một vài người phù hợp"
+      },
+      "2": {
+        "prompt": "Khi có một ý tưởng chưa hoàn chỉnh, bạn thích xử lý nó theo cách nào?",
+        "a": "Nói ra để cùng người khác làm rõ ý tưởng",
+        "b": "Tự suy nghĩ cho rõ rồi mới chia sẻ"
+      },
+      "3": {
+        "prompt": "Khi học một chủ đề mới, cách bắt đầu nào hữu ích với bạn hơn?",
+        "a": "Xem ví dụ cụ thể và làm thử từng bước",
+        "b": "Hiểu bức tranh tổng thể và các khả năng trước"
+      },
+      "4": {
+        "prompt": "Bạn thường tin tưởng loại thông tin nào hơn?",
+        "a": "Dữ kiện rõ ràng và chi tiết có thể kiểm chứng",
+        "b": "Mẫu liên kết và ý nghĩa có thể suy ra từ nhiều nguồn"
+      },
+      "5": {
+        "prompt": "Với một nhiệm vụ mới, bạn muốn nhận hướng dẫn như thế nào?",
+        "a": "Có quy trình và tiêu chí cụ thể để thực hiện",
+        "b": "Có mục tiêu chung và không gian để tự khám phá cách làm"
+      },
+      "6": {
+        "prompt": "Khi phải đưa ra một quyết định khó, bạn thường ưu tiên điều gì?",
+        "a": "Lựa chọn nhất quán với bằng chứng và nguyên tắc",
+        "b": "Lựa chọn phù hợp với giá trị và tác động đến mọi người"
+      },
+      "7": {
+        "prompt": "Khi góp ý cho một người đang gặp khó khăn, bạn thường làm gì trước?",
+        "a": "Phân tích vấn đề và nói thẳng giải pháp khả thi",
+        "b": "Lắng nghe cảm xúc và lựa lời để họ dễ tiếp nhận"
+      },
+      "8": {
+        "prompt": "Trong một bất đồng, điều gì quan trọng với bạn hơn?",
+        "a": "Tìm ra cách giải quyết công bằng theo cùng một tiêu chuẩn",
+        "b": "Giữ kết nối và cân nhắc nhu cầu riêng của từng người"
+      },
+      "9": {
+        "prompt": "Khi bắt đầu một dự án dài, bạn thường chọn cách nào?",
+        "a": "Lập kế hoạch, chia mốc và theo dõi tiến độ",
+        "b": "Bắt tay vào làm, khám phá rồi điều chỉnh kế hoạch dần"
+      },
+      "10": {
+        "prompt": "Một chuyến đi khiến bạn thoải mái hơn khi được chuẩn bị thế nào?",
+        "a": "Có lịch trình và các lựa chọn chính được chốt trước",
+        "b": "Có vài điểm chính nhưng vẫn đủ tự do để thay đổi"
+      },
+      "11": {
+        "prompt": "Khi có thời hạn quan trọng, nhịp làm việc nào giống bạn hơn?",
+        "a": "Tạo cấu trúc sớm và hoàn thành từng phần theo kế hoạch",
+        "b": "Giữ nhịp linh hoạt và tăng tốc khi đã có đủ thông tin"
+      }
+    },
+    "actions": {
+      "saved": "Kết quả đã được lưu vào hồ sơ của bạn.",
+      "failed": "Có lỗi xảy ra khi lưu. Vui lòng thử lại.",
+      "unavailable": "Tài khoản này không thể lưu kết quả bài test."
+    }
+  },
+  "Settings": {
+    "metadataTitle": "Cài đặt",
+    "title": "Cài đặt",
+    "description": "Quản lý cách các tính năng AI hoạt động cho tài khoản của bạn.",
+    "career": {
+      "title": "Phân tích lộ trình",
+      "description": "Model này được dùng tự động khi tạo hoặc cập nhật lộ trình.",
+      "model": "Model tư vấn",
+      "modelHint": "Bạn có thể thay đổi model tại đây mà không cần nhập lại trong mỗi lần tư vấn.",
+      "footerHint": "Thay đổi chỉ áp dụng cho các lần tạo lộ trình tiếp theo.",
+      "save": "Lưu cài đặt",
+      "saving": "Đang lưu"
+    },
+    "roadmapData": {
+      "title": "Dữ liệu tạo lộ trình",
+      "description": "Chọn cách điền sẵn thông tin khi bạn xây dựng một lộ trình mới.",
+      "reuseLabel": "Dùng dữ liệu từ lộ trình gần nhất",
+      "reuseHint": "Khi tạo lộ trình mới, hệ thống điền sẵn toàn bộ thông tin đã nhập hoặc chọn ở lần gần nhất. Bạn vẫn có thể sửa từng trường trước khi tạo.",
+      "footerHint": "Cài đặt này không thay đổi dữ liệu của các lộ trình đã lưu.",
+      "save": "Lưu cài đặt dữ liệu",
+      "saving": "Đang lưu",
+      "resetTitle": "Làm mới dữ liệu",
+      "resetDescription": "Bắt đầu lần tạo lộ trình tiếp theo với biểu mẫu mới.",
+      "resetHint": "Thao tác này chỉ bỏ nguồn dữ liệu điền sẵn hiện tại. Các lộ trình đã lưu và dữ liệu dùng để chỉnh sửa từng lộ trình không bị xoá.",
+      "resetFooterHint": "Sau khi làm mới, lộ trình mới đầu tiên sẽ không lấy dữ liệu từ các lộ trình cũ.",
+      "reset": "Làm mới dữ liệu",
+      "resetting": "Đang làm mới"
+    },
+    "actions": {
+      "userOnly": "Cài đặt này chỉ khả dụng cho tài khoản người học.",
+      "invalidModel": "Hãy chọn một model đang khả dụng.",
+      "saved": "Đã lưu cài đặt lộ trình.",
+      "roadmapDataSaved": "Đã lưu cách dùng dữ liệu cho lộ trình mới.",
+      "roadmapDataReset": "Đã làm mới dữ liệu điền sẵn."
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.git
+.next
+.claude
+.agents
+node_modules
+coverage
+.env
+.env.*
+npm-debug.log*

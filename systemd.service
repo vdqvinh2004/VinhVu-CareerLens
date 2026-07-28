@@ -1,0 +1,22 @@
+[Unit]
+Description=MeshMind-AI web application
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=meshmindai
+Group=meshmindai
+WorkingDirectory=/opt/meshmind-ai
+EnvironmentFile=/opt/meshmind-ai/.env
+ExecStart=/usr/bin/npm run start -- --hostname 127.0.0.1 --port 3000 --keepAliveTimeout 70000
+Restart=on-failure
+RestartSec=5
+KillSignal=SIGTERM
+TimeoutStopSec=30
+NoNewPrivileges=true
+PrivateTmp=true
+UMask=0027
+
+[Install]
+WantedBy=multi-user.target

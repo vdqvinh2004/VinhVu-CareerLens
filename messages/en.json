@@ -1,0 +1,1272 @@
+{
+  "Common": {
+    "skipToContent": "Skip to content",
+    "homeAria": "CareerLens home",
+    "brandName": "CareerLens",
+    "developedBy": "Developed by MeshMind-AI",
+    "legalNavigation": "Legal navigation",
+    "termsOfService": "Terms of Service",
+    "privacyPolicy": "Privacy Policy",
+    "language": {
+      "english": "English",
+      "vietnamese": "Vietnamese",
+      "current": "Current language: {language}",
+      "select": "Select language"
+    }
+  },
+  "Preloader": {
+    "loading": "Preparing CareerLens",
+    "progressLabel": "Loading progress",
+    "percent": "{percent}%",
+    "messages": {
+      "semanticPathways": "Downloading more RAM...",
+      "opinionatedAlgorithms": "Negotiating with the cloud...",
+      "filingCabinets": "Herding stray pixels...",
+      "distributedThoughts": "Waking the server hamsters...",
+      "tinyGears": "Turning it off and on again...",
+      "knowledgeThreads": "Reticulating neural splines..."
+    }
+  },
+  "Theme": {
+    "system": "System",
+    "light": "Light",
+    "dark": "Dark",
+    "menuLabel": "Theme",
+    "currentSwitch": "Theme: {theme}. Switch to {nextTheme}."
+  },
+  "Landing": {
+    "meta": {
+      "title": "AI career guidance for students",
+      "description": "CareerLens connects strengths, aspirations, and market signals into an actionable career roadmap."
+    },
+    "primaryNavigation": "Primary navigation",
+    "navigation": {
+      "features": "Features",
+      "journey": "Journey",
+      "market": "Market data",
+      "menu": "Explore"
+    },
+    "account": "Account",
+    "hero": {
+      "badge": "The CareerLens vision",
+      "titleLine1": "Understand who you are.",
+      "titleLine2": "Build where you go next.",
+      "description": "Turn strengths, aspirations, and career signals into a roadmap you can act on.",
+      "primary": "Start exploring",
+      "primaryAuthenticated": "Open my roadmap",
+      "secondary": "See how it works",
+      "imageAlt": "A group of students talking together on campus",
+      "preview": {
+        "title": "Career agent",
+        "status": "Cross-checking new sources",
+        "badge": "Preview",
+        "searching": "Finding skills and career signals that match your profile",
+        "sourcesLabel": "Sources being compared",
+        "result": "Three directions to compare and test"
+      }
+    },
+    "intelligence": {
+      "title": "One profile. Three layers of insight.",
+      "description": "CareerLens does not lock you into a single test. It connects personal signals, real progress, and a changing world of work.",
+      "profile": {
+        "title": "Understand yourself",
+        "description": "Combine strengths, interests, learning style, and real constraints instead of relying on one personality label."
+      },
+      "growth": {
+        "title": "See your progress",
+        "description": "Keep milestones, projects, and decisions across years so every session begins with your real journey."
+      },
+      "market": {
+        "title": "Read the market",
+        "description": "Compare your profile with careers, skills, job signals, and global developments backed by visible sources."
+      }
+    },
+    "assessment": {
+      "title": "Assess to understand, never to judge.",
+      "description": "Objective scenarios help reveal academic strengths, motivation, and social skills that deserve closer observation.",
+      "signals": {
+        "aptitude": "Thinking and foundational ability",
+        "social": "Communication and collaboration",
+        "motivation": "Motivation and learning style"
+      },
+      "states": {
+        "observe": "Observe",
+        "practice": "Practise",
+        "develop": "Develop"
+      },
+      "preview": {
+        "badge": "Objective scenario",
+        "question": "When a group project falls behind, where do you usually begin?",
+        "options": {
+          "one": "Finish the missing work yourself",
+          "two": "Clarify the issue and reset responsibilities",
+          "three": "Wait for the group leader to decide"
+        },
+        "reading": "Signals in view",
+        "note": "Results begin a conversation and real-world experiments. They are never a fixed verdict."
+      }
+    },
+    "journey": {
+      "badge": "A long-term growth profile",
+      "title": "Stay supported through every change of direction.",
+      "description": "Each milestone adds new evidence so AI can adapt its guidance instead of holding you to your first choice.",
+      "steps": {
+        "explore": {
+          "stage": "High school",
+          "title": "Explore",
+          "description": "Notice strengths, try different environments, and narrow the career areas worth investigating."
+        },
+        "learn": {
+          "stage": "University / training",
+          "title": "Build foundations",
+          "description": "Choose subjects, projects, and skills that create evidence for the direction you are considering."
+        },
+        "experience": {
+          "stage": "Internship",
+          "title": "Test assumptions",
+          "description": "Compare expectations with real work, real feedback, and real hiring requirements."
+        },
+        "grow": {
+          "stage": "First role",
+          "title": "Keep growing",
+          "description": "Update your goal, skill gaps, and next move using the outcomes you have already created."
+        }
+      }
+    },
+    "roadmap": {
+      "title": "Know which skill should come first.",
+      "description": "AI turns skill gaps into clear priorities, milestones, and evidence you can use to test your progress.",
+      "skills": {
+        "foundation": "Foundational skills for your chosen direction",
+        "project": "Practice through projects with tangible outcomes",
+        "social": "Communication in real collaborative settings"
+      },
+      "priority": {
+        "label": "Skill priority",
+        "title": "A sequence for growth",
+        "now": "Start now",
+        "next": "Next step",
+        "maintain": "Build alongside",
+        "note": "Priorities adapt when your profile, goals, or the market changes."
+      },
+      "paths": {
+        "title": "Three paths to test",
+        "description": "Compare fit, learning cost, and proof to build before committing."
+      },
+      "adaptive": {
+        "title": "A roadmap that adapts",
+        "description": "Every check-in is a chance to adjust your goal without starting over.",
+        "checkIn": "Check-in",
+        "adjust": "Adjust"
+      }
+    },
+    "market": {
+      "badge": "Hybrid realtime + background agent",
+      "title": "Read the market while the world keeps moving.",
+      "description": "An agent searches the web in real time, cross-checks sources, and combines background monitoring to detect new signals.",
+      "sources": {
+        "labor": "Labour indicators",
+        "macro": "Macro context",
+        "skills": "Careers and skills",
+        "future": "Future outlook"
+      },
+      "agent": {
+        "title": "Market intelligence agent",
+        "status": "Searching, reading, and comparing",
+        "live": "Realtime",
+        "query": "Which skills are appearing more often in entry-level roles?",
+        "web": "News and reports",
+        "jobs": "Public job listings",
+        "reports": "Statistical sources"
+      },
+      "forecast": {
+        "label": "3-5 year scenarios",
+        "title": "An outlook, not a prophecy",
+        "description": "Every signal includes its scope, time horizon, sources, and confidence level.",
+        "states": {
+          "growing": {
+            "title": "Growing signal",
+            "description": "Independent sources point in the same direction."
+          },
+          "stable": {
+            "title": "Stable signal",
+            "description": "Demand exists without a clear shift yet."
+          },
+          "uncertain": {
+            "title": "Not enough evidence",
+            "description": "AI says when the available data cannot support a conclusion."
+          }
+        },
+        "note": "CareerLens separates observed, estimated, and forecast data. It never invents an accuracy percentage."
+      }
+    },
+    "cv": {
+      "imageAlt": "A group of students working together around a table",
+      "photoCard": {
+        "title": "Turn experience into evidence",
+        "description": "Projects, responsibilities, and concrete outcomes"
+      },
+      "title": "Turn what you have done into a stronger CV.",
+      "description": "AI helps structure your story, find vague claims, and compare your CV with the opportunity you are pursuing.",
+      "review": {
+        "title": "CV review assistant",
+        "status": "Reading in the context of the role",
+        "badge": "Vision",
+        "items": {
+          "evidence": {
+            "title": "Add evidence",
+            "description": "Clarify what you owned, what you produced, and what you learned."
+          },
+          "clarity": {
+            "title": "Make the impact clear",
+            "description": "Replace generic descriptions with outcomes that can be verified."
+          },
+          "match": {
+            "title": "Match the opportunity",
+            "description": "Prioritise relevant experience without stuffing keywords."
+          }
+        }
+      }
+    },
+    "trust": {
+      "title": "Responsible AI should show you why.",
+      "description": "Every recommendation should trace back to evidence, limitations, and the learner's right to decide.",
+      "citations": {
+        "title": "Sources you can open",
+        "description": "Market, career, and skill claims include a URL, publication date, and retrieval time."
+      },
+      "privacy": {
+        "title": "Privacy from the start",
+        "description": "Unnecessary sensitive information is removed before a payload is sent to the model."
+      },
+      "explain": {
+        "title": "Guidance with reasons",
+        "description": "See the strengths, skill gaps, and evidence behind every suggested direction."
+      },
+      "autonomy": {
+        "title": "Learners stay in control",
+        "description": "CareerLens suggests paths to test. It never chooses your future for you."
+      },
+      "scope": {
+        "title": "Current scope",
+        "description": "AI chat and the three-path roadmap work today as a POC. Long-term assessment, CV review, and realtime web data are part of the product vision now being built.",
+        "badge": "Public roadmap"
+      }
+    },
+    "faq": {
+      "title": "What to know before you begin.",
+      "description": "CareerLens is a tool for reflection and experimentation, not a machine that scores your future.",
+      "items": {
+        "one": {
+          "question": "Will CareerLens choose a career for me?",
+          "answer": "No. It gives you directions to compare, questions to test, and practical next steps. The final decision always remains yours."
+        },
+        "two": {
+          "question": "Is market information always realtime?",
+          "answer": "The product vision combines on-demand web research with scheduled background monitoring. Every result will show its source, publication date, and retrieval time so you can judge freshness."
+        },
+        "three": {
+          "question": "Does a test result permanently define my profile?",
+          "answer": "No. A result is one signal in a growing profile. New experience, projects, and feedback can change how the system understands you."
+        },
+        "four": {
+          "question": "Can I change direction after receiving a roadmap?",
+          "answer": "Yes. The roadmap is designed to adapt to new goals, constraints, and evidence without forcing you to start again."
+        }
+      }
+    },
+    "finalCta": {
+      "title": "Your future does not need a rushed answer.",
+      "description": "Start by understanding yourself, test one small direction, and let real evidence guide the next move."
+    }
+  },
+  "Auth": {
+    "common": {
+      "email": "Email",
+      "password": "Password",
+      "backToLogin": "Back to login",
+      "continue": "Continue",
+      "passwordMismatch": "Passwords do not match.",
+      "showField": "Show {field}",
+      "hideField": "Hide {field}"
+    },
+    "login": {
+      "metadataTitle": "Log in",
+      "title": "Welcome back",
+      "description": "Enter your details to continue to CareerLens.",
+      "forgotPassword": "Forgot password?",
+      "submitting": "Logging in...",
+      "submit": "Log in",
+      "newUser": "New to CareerLens?",
+      "createAccount": "Create an account"
+    },
+    "signup": {
+      "metadataTitle": "Sign up",
+      "title": "Create your account",
+      "description": "Complete the three short steps below to set up your profile.",
+      "steps": {
+        "account": "Account",
+        "about": "About you",
+        "security": "Security"
+      },
+      "stepTitles": {
+        "email": "Start with your email",
+        "about": "Tell us about you",
+        "password": "Choose a password"
+      },
+      "stepCount": "Step {current} of {total}",
+      "progress": "Signup progress",
+      "fullName": "Full name",
+      "fullNamePlaceholder": "Your full name",
+      "dateOfBirth": "Date of birth",
+      "birthDay": "Day of birth",
+      "birthMonth": "Birth month",
+      "birthYear": "Birth year",
+      "day": "Day",
+      "month": "Month",
+      "year": "Year",
+      "months": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      },
+      "confirmPassword": "Confirm password",
+      "passwordHint": "Use at least 8 characters.",
+      "consent": "I consent to CareerLens collecting, storing, and processing data related to my account, and I agree to the <terms>Terms of Service</terms> and <privacy>Privacy Policy</privacy>.",
+      "back": "Back",
+      "submitting": "Creating account...",
+      "submit": "Create account",
+      "continue": "Continue",
+      "existingUser": "Already have an account?",
+      "login": "Log in"
+    },
+    "forgot": {
+      "metadataTitle": "Recover password",
+      "title": "Recover your password",
+      "description": "Enter your email and we’ll prepare the reset flow.",
+      "successTitle": "Check your inbox",
+      "submitting": "Sending...",
+      "submit": "Send reset link"
+    },
+    "reset": {
+      "metadataTitle": "Reset password",
+      "title": "Set a new password",
+      "description": "Choose and confirm the password you want to use next.",
+      "successTitle": "Password reset complete",
+      "continueToLogin": "Continue to login",
+      "newPassword": "New password",
+      "confirmNewPassword": "Confirm new password",
+      "submitting": "Resetting...",
+      "submit": "Reset password"
+    },
+    "superadmin": {
+      "metadataTitle": "Operations access",
+      "title": "Operations access",
+      "description": "This restricted sign-in requires the built-in credentials and a current authentication code.",
+      "authenticationCode": "Authentication code",
+      "operationsIdentifier": "Operations identifier",
+      "submitting": "Verifying...",
+      "verify": "Verify and continue"
+    },
+    "actions": {
+      "checkFields": "Check the highlighted fields and try again.",
+      "serviceUnavailable": "Authentication is temporarily unavailable. Please try again.",
+      "invalidCredentials": "Invalid email or password.",
+      "signupRateLimit": "Too many signup attempts. Please try again later.",
+      "accountCreationFailed": "Could not create an account with those details.",
+      "emailInUse": "An account with this email already exists. Log in or use a different email.",
+      "accountCreatedLoginUnavailable": "Your account was created, but automatic sign-in is unavailable. Try logging in again shortly.",
+      "loginRateLimit": "Too many login attempts. Please try again later.",
+      "tooManyAttemptsRestart": "Too many attempts. Start the sign-in process again later.",
+      "invalidAuthenticationCode": "Invalid or expired authentication code.",
+      "invalidSuperadminCredentials": "Invalid credentials.",
+      "tooManyAttempts": "Too many attempts. Please try again later.",
+      "recoverySent": "If that account exists, password reset instructions have been sent.",
+      "resetRateLimit": "Too many reset attempts. Please try again later.",
+      "invalidResetLink": "This password reset link is invalid or has expired.",
+      "resetSuccess": "Your password has been reset. You can now log in."
+    },
+    "validation": {
+      "passwordMin": "Password must be at least 8 characters.",
+      "dataConsent": "You must consent to data collection and processing to create an account.",
+      "passwordMax": "Password must be at most 128 characters.",
+      "passwordLong": "Password is too long.",
+      "emailInvalid": "Enter a valid email address.",
+      "fullNameInvalid": "Enter your full name.",
+      "birthDayInvalid": "Enter a valid day of birth.",
+      "birthMonthInvalid": "Enter a valid birth month.",
+      "birthYearInvalid": "Enter a valid birth year.",
+      "birthDateInvalid": "Enter a valid date of birth.",
+      "birthDateFuture": "Date of birth cannot be in the future.",
+      "passwordMismatch": "Passwords do not match.",
+      "totpInvalid": "Enter the six-digit authentication code."
+    }
+  },
+  "Dashboard": {
+    "metadataTitle": "Overview",
+    "menuMetadataTitle": "Menu",
+    "homeHeading": "Overview",
+    "menuHeading": "Menu",
+    "home": "Home",
+    "startingPoint": "Starting point",
+    "menu": "Menu",
+    "navigation": "Dashboard navigation",
+    "closeNavigation": "Close navigation",
+    "openNavigation": "Open navigation",
+    "expandSidebar": "Expand sidebar",
+    "collapseSidebar": "Collapse sidebar",
+    "userMenu": "Account menu",
+    "openUserMenu": "Open the account menu for {name}",
+    "profile": "Personal information",
+    "settings": "Settings",
+    "logout": "Log out",
+    "logoutUser": "Log out {name}",
+    "careerRoadmap": "AI Roadmap",
+    "myJourney": "The way to myself"
+  },
+  "Roadmap": {
+    "metadataTitle": "AI Roadmap",
+    "eyebrow": "CareerLens Guidance AI",
+    "title": "Turn self-knowledge into a next step",
+    "description": "Connect interests, experience, and real constraints with sample hiring signals from Vietnam.",
+    "brief": {
+      "status": "Analysis protocol",
+      "title": "A decision brief, not a verdict",
+      "description": "CareerLens turns the information you share into three directions you can compare and test."
+    },
+    "steps": {
+      "profile": {
+        "title": "Your profile",
+        "description": "Share your current foundation, interests, and constraints."
+      },
+      "signals": {
+        "title": "Market signals",
+        "description": "Compare sample roles and skills by region."
+      },
+      "plan": {
+        "title": "Three directions",
+        "description": "Compare skill gaps, roadmaps, and proof to build."
+      }
+    },
+    "form": {
+      "badge": "Personalised for this run",
+      "title": "Profile for this analysis",
+      "description": "The more specific your experience and constraints, the more useful the roadmap becomes.",
+      "foundation": "Current foundation",
+      "foundationDescription": "Region is used only to compare job opportunities and sample salary data.",
+      "educationLevel": "Current education level",
+      "educationOptions": {
+        "THPT": "High school",
+        "college": "College",
+        "university": "University",
+        "graduate": "Graduate school",
+        "other": "Other"
+      },
+      "languages": "Languages",
+      "languagesPlaceholder": "Vietnamese, English",
+      "languagesHint": "Separate languages with commas.",
+      "currentRegion": "Current region",
+      "targetRegion": "Where you want to study or work",
+      "regionHint": "Current list of 34 provinces and cities.",
+      "regionPlaceholder": "Search for a province or city",
+      "regionEmpty": "No matching province or city found.",
+      "optionalSelect": "Not provided",
+      "strengths": "Strengths and interests",
+      "strengthsDescription": "Use real experiences. You do not need to write like a resume.",
+      "subject": "Notable subject or skill",
+      "subjectPlaceholder": "Example: maths, content writing, electrical repair",
+      "score": "Self-assessed score",
+      "interests": "Interests and topics",
+      "interestsPlaceholder": "Technology, football, design, business",
+      "interestsHint": "Separate items with commas, or add a suggestion based on your subject or skill.",
+      "suggestionsLabel": "Suggested topics",
+      "activity": "Activities or projects you have done",
+      "activityPlaceholder": "Describe your role, what you did, and what felt interesting or difficult. You can leave this blank.",
+      "conditions": "Learning and work conditions",
+      "conditionsDescription": "Set the time, budget, and environment that make a direction realistic.",
+      "weeklyHours": "Hours available to learn each week",
+      "budget": "Expected budget",
+      "budgetPlaceholder": "Example: under VND 20 million per year",
+      "workEnvironment": "Preferred work environment",
+      "learningStyle": "Learning style that fits you",
+      "constraints": "Constraints to consider",
+      "constraintsPlaceholder": "Example: need to study near home or work while studying. Optional.",
+      "constraintsHint": "Do not include gender, religion, ethnicity, or unnecessary identifying information.",
+      "goal": "Goal for this session",
+      "goalDescription": "Share what you want the analysis to prioritise. You can leave this blank.",
+      "intent": "What do you want to solve?",
+      "question": "What do you want most?",
+      "questionPlaceholder": "Example: I want a direction that fits my strengths and learning budget. You can leave this blank.",
+      "consent": "I agree to use the form data to create career guidance.",
+      "consentHint": "AI provides suggestions for consideration and does not decide for the learner.",
+      "footerHint": "Each run creates three explained options.",
+      "submit": "Create roadmap",
+      "submitting": "Creating roadmap",
+      "options": {
+        "intent": {
+          "initial_guidance": "Explore an initial career direction",
+          "switch_major": "Consider changing majors",
+          "find_jobs": "Find related roles and jobs",
+          "compare_paths": "Compare career directions",
+          "roadmap_detail": "Create a detailed roadmap"
+        },
+        "workEnvironment": {
+          "hybrid": "A mix of online and on-site",
+          "team_based": "Team-based work",
+          "independent": "Independent work",
+          "hands_on": "Hands-on work",
+          "fieldwork": "Travel and fieldwork",
+          "office": "Office",
+          "remote": "Remote"
+        },
+        "learningStyle": {
+          "project_based": "Project-based learning",
+          "mentor_guided": "Mentor-guided learning",
+          "self_paced": "Self-paced learning",
+          "classroom": "Structured classes",
+          "apprenticeship": "Learning in a real workplace"
+        }
+      }
+    },
+    "actions": {
+      "userOnly": "Roadmap creation is available only for learner accounts.",
+      "checkFields": "Check the highlighted fields and try again.",
+      "invalidValue": "This value is not valid.",
+      "success": "Your roadmap is ready. Compare the options and open each roadmap below.",
+      "failed": "We could not create the roadmap right now. Please try again in a few minutes.",
+      "fields": {
+        "activity": "The activity or project description is too long.",
+        "consent": "Consent is required before analysing the data.",
+        "currentRegion": "The current region is not valid.",
+        "educationLevel": "The current education level is not valid.",
+        "familyConstraints": "The constraints text is too long.",
+        "interests": "The interests text is too long.",
+        "intent": "The guidance goal is not valid.",
+        "languages": "The languages text is too long.",
+        "learningStyle": "The learning style is not valid.",
+        "question": "Your response is too long.",
+        "strongSubject": "The notable subject or skill text is too long.",
+        "subjectScore": "The self-assessed score must be between 0 and 10.",
+        "targetBudget": "The budget text is too long.",
+        "targetRegion": "The target region is not valid.",
+        "weeklyHours": "Learning time must be between 0 and 80 hours.",
+        "workEnvironment": "The work environment is not valid."
+      }
+    },
+    "market": {
+      "badge": "Seed snapshot",
+      "title": "Sample market data",
+      "description": "This POC does not use a production crawler. These figures describe the current seed only.",
+      "postings": "job postings",
+      "regions": "provinces/cities",
+      "roles": "roles per region",
+      "industries": "industry groups",
+      "sourceDate": "Sample source dated {date}"
+    },
+    "privacy": {
+      "title": "Privacy filtered first",
+      "description": "Gender, hometown, ethnicity, and religion are not included in the payload sent to the model."
+    },
+    "principles": {
+      "title": "How the analysis works",
+      "profile": "AI combines academic signals, interests, learning style, and market signals.",
+      "roadmap": "Each direction includes skill gaps and verifiable practice stages.",
+      "market": "Roles and salary signals come only from the market seed provided for this run."
+    },
+    "loading": "Creating roadmap",
+    "wizard": {
+      "editBadge": "Edit roadmap",
+      "newBadge": "New roadmap",
+      "title": "Build a guidance roadmap",
+      "description": "Review existing data, add context, and define the decision you want help with.",
+      "cancel": "Back to roadmap",
+      "progressLabel": "Roadmap creation progress",
+      "back": "Back",
+      "next": "Continue",
+      "reviewErrors": "Review invalid section",
+      "confirm": {
+        "title": "Confirm your Starting point",
+        "description": "Review the information available before using it to personalise your roadmap.",
+        "hint": "If anything is incorrect, update your Starting point and return here.",
+        "consent": "I confirm the information above and agree to use it to create this roadmap.",
+        "consentHint": "AI provides suggestions for consideration and does not decide for the learner.",
+        "editStartingPoint": "Update Starting point"
+      },
+      "foundation": {
+        "title": "Current foundation",
+        "description": "Add your education level, location, languages, and notable abilities.",
+        "hint": "These answers complement your saved transcript and experience."
+      },
+      "interests": {
+        "title": "Interests and topics",
+        "description": "Share topics you actively explore or want to spend more time learning.",
+        "hint": "You can enter multiple topics separated by commas."
+      },
+      "conditions": {
+        "title": "Learning and work conditions",
+        "description": "Set realistic time, budget, learning style, and work environment preferences.",
+        "hint": "Include only constraints that directly affect education or work decisions."
+      },
+      "goal": {
+        "title": "Goal for this session",
+        "description": "Describe the decision or problem this roadmap should help you address.",
+        "hint": "You do not need to choose a career or major first. Focus on the question you need answered."
+      }
+    },
+    "saved": {
+      "badge": "Selected roadmap",
+      "defaultTitle": "Career roadmap",
+      "updatedAt": "Updated {date}",
+      "edit": "Edit",
+      "createNew": "Build a new roadmap",
+      "listTitle": "Saved roadmaps",
+      "listDescription": "Choose a roadmap to review or continue editing.",
+      "current": "Viewing",
+      "newTitle": "Need another perspective?",
+      "newDescription": "You can build a new roadmap without losing the current one."
+    },
+    "tabs": {
+      "label": "Roadmap workspace",
+      "roadmap": "Roadmap",
+      "following": "Following"
+    },
+    "follow": {
+      "start": "Follow this roadmap",
+      "following": "Following",
+      "cardTitle": "Follow this roadmap",
+      "cardDescription": "Turn the selected direction into tracked tasks, learning references, and progress history.",
+      "alreadyTitle": "This roadmap is being followed",
+      "alreadyDescription": "Open the Following tab to track tasks, resources, and history.",
+      "confirmTitle": "Follow this roadmap?",
+      "confirmDescription": "This starts tracking tasks for this roadmap.",
+      "confirmReplace": "A different roadmap is already active. Following this one will stop the old roadmap and clear active progress.",
+      "confirmAction": "Follow roadmap",
+      "cancel": "Cancel",
+      "stop": "Stop following",
+      "stopTitle": "Stop following roadmap?",
+      "stopDescription": "The roadmap stays saved, but it will no longer be tracked as active.",
+      "stopAction": "Stop following",
+      "activeBadge": "Active roadmap",
+      "startedAt": "Started {date}",
+      "unknownDate": "unknown date",
+      "progress": "Progress",
+      "tasksTitle": "Tasks and assignments",
+      "tasksDescription": "Mark each roadmap task complete as you produce evidence.",
+      "done": "Done",
+      "markDone": "Mark done",
+      "emptyBadge": "No active roadmap",
+      "emptyTitle": "Follow a roadmap to track progress",
+      "emptyDescription": "Build or open a roadmap, then choose Follow this roadmap.",
+      "resourcesTitle": "Learning references",
+      "resourcesDescription": "Direct document links from the active roadmap.",
+      "noResources": "No resources yet.",
+      "historyTitle": "Follow history",
+      "historyDescription": "Recently followed roadmaps.",
+      "historyActive": "Active now",
+      "historyStopped": "Stopped {date}",
+      "historyStarted": "Started {date}",
+      "noHistory": "No followed roadmap history yet."
+    },
+    "startingPoint": {
+      "title": "Starting point information",
+      "description": "Your saved information has been integrated into this analysis in a concise format.",
+      "emptyTitle": "No Starting point information yet",
+      "emptyDescription": "You can still continue and provide information in the following steps.",
+      "personality": "Personality result",
+      "education": "Education, grades, and research",
+      "certificates": "Certificates",
+      "experience": "Work experience",
+      "competitions": "Competitions and awards",
+      "activities": "Other activities",
+      "notProvided": "No information provided.",
+      "current": "Present",
+      "hasEvidence": "evidence attached",
+      "skills": "Skills: {value}",
+      "learnings": "Learnings: {value}",
+      "average": "{stage}: {value}",
+      "levels": {
+        "HIGH_SCHOOL": "High school",
+        "UNDERGRADUATE": "University",
+        "GRADUATE": "Graduate school"
+      },
+      "stages": {
+        "GRADE_10": "Grade 10 average",
+        "GRADE_11": "Grade 11 average",
+        "GRADE_12": "Grade 12 average",
+        "CUMULATIVE": "Cumulative grade"
+      }
+    },
+    "results": {
+      "eyebrow": "Analysis results",
+      "title": "Three directions to test",
+      "description": "Compare fit, skill gaps, and the investment required before choosing.",
+      "directionCount": "directions to compare",
+      "confidenceLabel": "profile confidence",
+      "disclaimerTitle": "Suggestions for consideration",
+      "profileTitle": "Profile read by AI",
+      "profileDescription": "Data confidence: {confidence}",
+      "strengths": "Strengths",
+      "interests": "Interests and signals",
+      "noStrengths": "There is not enough data to conclude yet.",
+      "noInterests": "There are no clear personal signals yet.",
+      "marketTitle": "Market signals",
+      "marketDescription": "Notable short-supply skills in the market seed.",
+      "noMarket": "There is not enough data to identify short-supply skills.",
+      "fitLabel": "fit score for reference",
+      "fitValue": "Fit score: {value}",
+      "selected": "Selected",
+      "otherDirectionsTitle": "Other directions from this session",
+      "otherDirectionsDescription": "Change the selected direction if another option fits better after comparison.",
+      "chooseDirection": "Choose this direction",
+      "applyToJourney": "Add to my journey",
+      "matchedTitle": "Why this direction is worth trying",
+      "evidenceTitle": "Market evidence",
+      "skillGapsTitle": "Priority skill gaps",
+      "levelRange": "{current} to {target}",
+      "roadmapTitle": "Practice roadmap",
+      "roadmapDiagramDescription": "Select each stage in the diagram to review its goals, tasks, and completion evidence.",
+      "roadmapClickHint": "Select to view stage details",
+      "stages": {
+        "learning": "Learning",
+        "internship": "Internship",
+        "full_time": "Full-time employment"
+      },
+      "relatedJobsTitle": "Live related jobs",
+      "jobSearchButton": "Find related jobs",
+      "jobSearchLoading": "Finding jobs",
+      "jobSearchDescription": "Uses your roadmap direction and form location ({location}) to fetch current public job posts. Results are not saved.",
+      "jobSearchEmpty": "No public jobs were found for this direction and location right now.",
+      "jobSearchFailed": "Could not find jobs right now.",
+      "jobSearchFallbackReason": "Fetched from the live platform result for this roadmap direction and location.",
+      "followUpTitle": "Questions for the next session",
+      "followUpDescription": "Answer these to narrow the skill gap and cost.",
+      "autonomy": "You can choose, test again, or change direction after further validation.",
+      "category": {
+        "university": "University",
+        "college": "College",
+        "vocational": "Vocational training",
+        "certificate": "Certificate",
+        "apprenticeship": "Apprenticeship",
+        "self_learning": "Guided self-learning"
+      },
+      "confidence": {
+        "low": "low",
+        "medium": "medium",
+        "high": "high"
+      },
+      "learning": {
+        "track": "Specialisation or track",
+        "subjects": "Subjects and topics to learn",
+        "evidence": "Evidence: {value}",
+        "certificates": "Certificates to consider",
+        "certificateTiming": "Timing: {value}",
+        "activities": "Research, competitions, and club projects",
+        "milestones": "Completion milestones"
+      },
+      "internship": {
+        "where": "Where to look for opportunities",
+        "cv": "CV and portfolio preparation",
+        "knowledge": "Knowledge to apply",
+        "interview": "Interview preparation",
+        "success": "Success measures after the internship",
+        "evidence": "Evidence: {value}"
+      },
+      "fullTime": {
+        "roles": "Roles and how to evaluate an offer",
+        "responsibilities": "Core responsibilities",
+        "salary": "Salary, bonus, and benefits",
+        "readiness": "Readiness signal: {value}",
+        "first90": "First 90-day plan",
+        "promotion": "Path toward a more senior role",
+        "readinessProof": "Proof of readiness: {value}"
+      }
+    }
+  },
+  "Journey": {
+    "metadataTitle": "The way to myself",
+    "eyebrow": "Your growth journal",
+    "title": "The way to myself",
+    "description": "Turn plans into finishable steps, see your progress, and keep growing into a life that feels like your own.",
+    "add": "Add a milestone",
+    "askAi": "Edit with AI",
+    "edit": "Edit milestone",
+    "toggle": "Mark {title} as complete",
+    "done": "Completed",
+    "fromRoadmap": "From {source}",
+    "sourceLegend": "Content source",
+    "sources": {
+      "manual": "Created by you",
+      "roadmap": "AI from roadmap",
+      "ai": "AI from conversation"
+    },
+    "progress": "Completed {completed}/{total} milestones",
+    "yearNavigation": "Choose a year on your journey",
+    "imported": "Added {count} new milestones from the roadmap. Your existing journal stayed unchanged.",
+    "importFailed": "No matching roadmap was found to add.",
+    "addTitle": "Add a new milestone",
+    "editTitle": "Edit milestone",
+    "entryDescription": "Change the content or timing whenever your plan needs to match real life more closely.",
+    "save": "Save milestone",
+    "cancel": "Cancel",
+    "delete": "Delete milestone",
+    "deleteTitle": "Delete this milestone?",
+    "deleteDescription": "{title} will be permanently removed from your journey. This action cannot be undone.",
+    "confirmDelete": "Delete permanently",
+    "deleteError": "This milestone could not be deleted. Please try again.",
+    "fields": {
+      "title": "What you want to do",
+      "description": "Notes",
+      "descriptionHint": "Describe the result you want to see or how you will know it is complete.",
+      "date": "Target date",
+      "category": "Milestone category"
+    },
+    "categories": {
+      "learning": "Learning",
+      "experience": "Experience",
+      "career": "Career",
+      "personal": "Self"
+    },
+    "empty": {
+      "title": "Your first page is waiting",
+      "description": "Add something you want to do, or apply an AI roadmap to begin this journey.",
+      "action": "Write the first milestone"
+    },
+    "reflection": {
+      "label": "A note from AI",
+      "empty": "You do not need to see the whole path before you begin. One honest milestone is enough.",
+      "progress": "You kept a promise to yourself in {completed} of {total} milestones. That is real progress.",
+      "next": "Your nearest step is {title}. Make it small enough to begin today.",
+      "complete": "You completed every milestone currently here. Take a moment to notice it, then choose what comes next.",
+      "identity": "Every completed step is evidence of the person you are becoming"
+    },
+    "future": {
+      "eyebrow": "Your future ribbon",
+      "label": "Your next 3 months",
+      "empty": "Add a near-term milestone and give the future a clearer shape",
+      "expand": "Expand",
+      "collapse": "Collapse"
+    },
+    "ai": {
+      "title": "Edit the journey with AI",
+      "description": "Describe what should change. AI can move dates, rewrite, add, or delete milestones when you make a clear request.",
+      "name": "Journey AI",
+      "welcome": "What would you like to adjust? For example: Move certificate goals to October, split CV preparation into smaller steps, or delete a milestone that no longer fits.",
+      "placeholder": "Describe the change you want...",
+      "hint": "Enter to send, Shift + Enter for a new line",
+      "send": "Send request",
+      "working": "Reorganizing your journey...",
+      "error": "AI cannot edit the journey right now. Try again, or edit each milestone directly."
+    }
+  },
+  "Assistant": {
+    "home": "Overview",
+    "welcome": "Welcome back, {name}",
+    "overviewDescription": "Continue a recent conversation, start a focused guidance session, or build your career roadmap.",
+    "openRoadmap": "Open AI Roadmap",
+    "workspaceSnapshot": "Workspace snapshot",
+    "conversationCount": "saved conversations",
+    "modelCount": "available AI models",
+    "followingTitle": "Following roadmap",
+    "followingProgress": "{completed}/{total} tasks done",
+    "openFollowing": "Open following roadmap",
+    "newChat": "New conversation",
+    "newConversation": "Create conversation",
+    "conversations": "Conversations",
+    "delete": "Delete conversation",
+    "deleteTitle": "Delete this conversation?",
+    "deleteDescription": "This conversation and its messages will be permanently deleted.",
+    "deleteCancel": "Keep conversation",
+    "deleteConfirm": "Delete conversation",
+    "deleting": "Deleting...",
+    "model": "Model",
+    "provider": "FPT Cloud AI",
+    "placeholder": "Ask about learning, roadmaps, or careers...",
+    "messageLabel": "Message to the AI assistant",
+    "send": "Send message",
+    "stop": "Stop response",
+    "disclaimer": "MeshMind AI supports questions about education and career guidance.",
+    "emptyTitle": "Start with a question",
+    "emptyDescription": "Explore majors, build a roadmap, or prepare for your first opportunity.",
+    "sessionsError": "Could not load conversations.",
+    "messageLoadError": "Could not load messages. Your current conversation was preserved.",
+    "loadingMessages": "Loading messages",
+    "loadingSuggestions": "Creating personalized suggestions",
+    "createError": "Could not create the conversation. Please try again.",
+    "deleteError": "Could not delete the conversation. Please try again.",
+    "sendError": "The message could not be completed. The conversation was reconciled where possible.",
+    "jumpToLatest": "Jump to latest",
+    "messageError": "Something went wrong. Please try again.",
+    "cancelled": "Response stopped. Partial text was kept.",
+    "retry": "Retry",
+    "errors": {
+      "privateWebForbidden": "Web research cannot be used because this request contains personal or private information.",
+      "forceWebUnavailable": "Web research is not available right now.",
+      "forceWebNotUsed": "Web search was on but could not be completed.",
+      "deadlineExceeded": "The request took too long. Please try again.",
+      "sessionBusy": "This conversation is already processing another request.",
+      "sessionNotFound": "This conversation is no longer available.",
+      "modelMismatch": "The selected model does not match this conversation.",
+      "historyUnavailable": "The conversation history could not be loaded.",
+      "runIncomplete": "The previous response did not finish. You can retry it or send a new message."
+    },
+    "web": {
+      "auto": "Web: auto",
+      "on": "Web: on",
+      "autoLabel": "Use the web automatically when needed",
+      "onLabel": "Use web search for this message",
+      "autoTitle": "Auto mode: the assistant decides whether web research is needed",
+      "onTitle": "On: use web search for this message"
+    },
+    "research": {
+      "thinking": "Thinking",
+      "searching": "Searching the web",
+      "reading": "Reading sources",
+      "synthesizing": "Synthesizing",
+      "sourceCount": "{count, plural, one {# source} other {# sources}}"
+    },
+    "sources": {
+      "title": "Sources",
+      "published": "Published",
+      "accessed": "Accessed",
+      "unknownDate": "Unknown",
+      "evidence": "Evidence quote",
+      "external": "Opens external source",
+      "citation": "Citation {ordinal}: {title}"
+    },
+    "prompts": {
+      "major": "How do I choose a major that fits my interests and strengths?",
+      "coding": "What is a beginner-friendly programming roadmap from zero?",
+      "university": "How should I prepare for a top university entrance exam in Vietnam?",
+      "skills": "Which skills matter most for students in the age of AI?",
+      "scholarship": "What scholarships in Japan and South Korea are available to Vietnamese students?"
+    }
+  },
+  "StartingPoint": {
+    "metadataTitle": "Starting point",
+    "title": "Starting point",
+    "description": "Bring together your personality result, education, experience, and key milestones to understand where you are today.",
+    "cvImport": {
+      "title": "Import from your CV",
+      "description": "Upload your CV to identify education, certificates, achievements, activities, and work experience. Only information not already in your profile will be added.",
+      "badge": "AI-assisted",
+      "fileLabel": "Your CV",
+      "fileHint": "PDF only, up to 6 MB and 15 pages. The file must contain selectable text.",
+      "selectedFile": "Selected: {name}",
+      "privacy": "Your CV is processed only for this import and is not stored as a file. You can edit every imported item afterward.",
+      "submit": "Analyze and complete profile",
+      "processing": "Reading and organizing your CV...",
+      "successTitle": "Starting point updated",
+      "errorTitle": "CV import unavailable",
+      "counts": {
+        "education": "{count, plural, one {# education record} other {# education records}}",
+        "transcriptEntries": "{count, plural, one {# course} other {# courses}}",
+        "certificates": "{count, plural, one {# certificate} other {# certificates}}",
+        "competitions": "{count, plural, one {# competition} other {# competitions}}",
+        "activities": "{count, plural, one {# activity} other {# activities}}",
+        "workExperiences": "{count, plural, one {# work experience} other {# work experiences}}",
+        "duplicates": "{count, plural, one {# duplicate or incompatible item skipped} other {# duplicate or incompatible items skipped}}"
+      },
+      "actions": {
+        "saved": "Added {count, plural, one {# item} other {# items}} from your CV. Review the information below.",
+        "noNewData": "There was no new information to add. Items already in your profile were left unchanged.",
+        "checkFile": "Choose a suitable CV file and try again.",
+        "analysisFailed": "We could not identify profile data in this CV. Check the file content and try again.",
+        "failed": "We could not save data from your CV right now. Please try again.",
+        "unavailable": "This account does not have a Starting point profile to update."
+      },
+      "validation": {
+        "required": "Choose a PDF CV.",
+        "tooLarge": "The CV file must be 6 MB or smaller.",
+        "invalidType": "Only PDF files with a .pdf extension are accepted.",
+        "invalidContent": "The file content is not a valid PDF.",
+        "tooManyPages": "The CV can contain at most 15 pages.",
+        "noText": "Not enough text was found in the PDF. If this is a scan, export it again as a PDF with selectable text.",
+        "readFailed": "We could not read this PDF. The file may be damaged or password-protected."
+      }
+    }
+  },
+  "Profile": {
+    "metadataTitle": "Personal information",
+    "title": "Personal information",
+    "description": "Keep your details current so CareerLens can personalize your experience.",
+    "summary": "These details identify your account and help tailor your experience to you.",
+    "personality": {
+      "emptyTitle": "Discover your personal style",
+      "emptyDescription": "Answer 12 short questions to identify patterns in how you think, decide, and act.",
+      "completedTitle": "Personality result",
+      "completedDescription": "Review your latest result or retake the test whenever you want a fresh perspective.",
+      "completedOn": "Completed {date}",
+      "takeTest": "Take the test",
+      "retake": "Retake the test",
+      "viewDetails": "View details"
+    },
+  "form": {
+      "title": "Profile details",
+      "description": "Edit your account information below.",
+      "fullName": "Full name",
+      "fullNameHint": "The name shown across your account.",
+      "email": "Email",
+      "emailHint": "This is also the email you use to sign in.",
+      "dateOfBirth": "Date of birth",
+      "dateOfBirthHint": "Enter your complete date of birth.",
+      "birthDay": "Day",
+      "birthMonth": "Birth month",
+      "birthYear": "Birth year",
+      "save": "Save changes",
+    "saving": "Saving..."
+  },
+  "extended": {
+    "title": "Education and experience",
+    "description": "Add meaningful milestones so your profile reflects your capabilities and journey.",
+    "common": { "add": "Add", "edit": "Edit", "delete": "Delete", "cancel": "Cancel", "save": "Save information", "saving": "Saving...", "deleting": "Deleting...", "deleteTitle": "Delete this information?", "deleteDescription": "Deleted information cannot be recovered.", "optional": "Optional", "period": "Period", "startDate": "Start", "endDate": "End", "month": "Month", "year": "Year" },
+    "education": {
+      "title": "Education", "description": "Ordered from high school through graduate study.", "empty": "No education information yet.", "add": "Add education", "editTitle": "Edit education", "addTitle": "Add education", "dialogDescription": "Record your school, study period, and transcript in the format for that level.", "level": "Education level",
+      "levels": { "HIGH_SCHOOL": "High school", "UNDERGRADUATE": "University", "GRADUATE": "Graduate study" },
+      "institutionName": "School name", "fieldOfStudy": "Field, program, or concentration", "fieldOfStudyHint": "For example: Computer Science, advanced Mathematics, or MBA.",
+      "fieldLabels": { "HIGH_SCHOOL": "Concentration or advanced class", "UNDERGRADUATE": "Field of study", "GRADUATE": "Graduate specialization or program" },
+      "fieldHints": { "HIGH_SCHOOL": "For example: advanced Mathematics or Natural Sciences.", "UNDERGRADUATE": "For example: Computer Science or International Economics.", "GRADUATE": "For example: MSc in Artificial Intelligence or PhD in Economics." },
+      "transcriptImport": "Import Excel transcript", "downloadTemplate": "Download Excel template", "grade10File": "Grade 10 transcript", "grade11File": "Grade 11 transcript", "grade12File": "Grade 12 transcript", "transcriptFile": "Cumulative transcript", "optionalOnEdit": "A .xlsx file up to 2 MB. Leave empty to keep the saved transcript.", "highSchoolTranscriptHint": "Upload one .xlsx file per grade with 2 columns: Subject and Year average. The system calculates the average on a 10-point scale.", "higherEducationTranscriptHint": "Upload a .xlsx file up to 2 MB with 3 columns: Subject, Credits, and Score. The system calculates the credit-weighted cumulative average.", "scoreScale": "Score scale", "scoreScaleHint": "Choose the scale used in the Excel file.", "scale4": "4-point scale", "scale10": "10-point scale", "transcriptStages": { "GRADE_10": "Grade 10", "GRADE_11": "Grade 11", "GRADE_12": "Grade 12", "CUMULATIVE": "Cumulative average" }, "subjectCount": "{count} subjects", "creditCount": "{count} credits", "noTranscript": "No transcript imported yet.", "research": "Scientific research", "researchHint": "Available for university and graduate study only. Enter both a title and description when adding research.", "researchTitle": "Research title", "researchDescription": "Research description"
+    },
+    "certificate": { "title": "Certificates", "description": "Professional certificates with supporting documents.", "empty": "No certificates yet.", "add": "Add certificate", "editTitle": "Edit certificate", "addTitle": "Add certificate", "dialogDescription": "Enter the certificate name, issue year, and upload supporting evidence.", "name": "Certificate name", "issuedYear": "Issue year", "evidence": "Supporting document", "evidenceHint": "PDF, JPG, PNG, or WebP, up to 5 MB.", "replaceEvidenceHint": "Choose a new file only if you want to replace the current evidence.", "viewEvidence": "View evidence", "issuedIn": "issued in {year}" },
+    "work": { "title": "Work experience", "description": "Most recent roles appear first, with learnings and skills gained.", "empty": "No work experience yet.", "add": "Add experience", "editTitle": "Edit experience", "addTitle": "Add work experience", "dialogDescription": "Describe the workplace, period, and value you gained.", "workplaceName": "Workplace", "position": "Position or role", "startDate": "Start date", "endDate": "End date", "month": "Month", "year": "Year", "isCurrent": "I currently work here", "present": "Present", "learnings": "What you learned", "learningsHint": "Notable knowledge, lessons, or experiences.", "skills": "Skills gained", "skillsHint": "For example: project management, communication, data analysis." },
+    "competition": { "title": "Competitions and achievements", "description": "Competitions you joined, with recent years first.", "empty": "No competition information yet.", "add": "Add competition", "editTitle": "Edit competition", "addTitle": "Add competition", "dialogDescription": "Record the competition, any award, and participation year.", "name": "Competition name", "awardName": "Award or achievement", "awardHint": "Leave blank if you participated without an award.", "participated": "Participated", "resultYear": "Participation or award year" },
+    "activity": { "title": "Other activities", "description": "Extracurricular, community, volunteer, or personal projects.", "empty": "No other activities yet.", "add": "Add activity", "editTitle": "Edit activity", "addTitle": "Add other activity", "dialogDescription": "Enter the activity or project you want to record.", "name": "Activity name" },
+    "actions": { "saved": "Information saved.", "deleted": "Information deleted.", "checkFields": "Check the highlighted fields and try again.", "failed": "We could not save this information. Please try again.", "deleteFailed": "We could not delete this information. Please try again.", "notFound": "The information was not found or you cannot edit it.", "unavailable": "This account has no editable profile." },
+    "validation": {
+      "id": "Invalid information.", "level": "Choose a valid education level.", "institutionName": "Enter the school name.", "fieldOfStudy": "The field or concentration is too long.", "scoreScale": "Choose a 4-point or 10-point scale.", "researchTitle": "The research title is too long.", "researchDescription": "The research description is too long.", "research": "Enter both the research title and description.", "name": "Enter a valid name.", "issuedYear": "Enter a valid issue year.", "awardName": "The award name is too long.", "year": "Enter a valid year.", "workplaceName": "Enter the workplace name.", "position": "The position or role is too long.", "startMonth": "Choose a valid start month.", "startYear": "Enter a valid start year.", "endMonth": "Choose a valid end month.", "endYear": "Enter a valid end year.", "endDate": "Enter a valid end date.", "isCurrent": "Invalid employment status.", "learnings": "The learnings are too long.", "skills": "The skills are too long.", "endDateRequired": "Enter both an end month and year, or mark this as your current role.", "endDateBeforeStart": "The end date cannot be before the start date.",
+      "transcriptFile": { "fileTooLarge": "The transcript file must be 2 MB or smaller.", "invalidFile": "Choose a valid .xlsx Excel file.", "missingHeaders": "The Excel file is missing required column headers.", "empty": "The Excel file has no subject data.", "tooManyRows": "A transcript can contain at most 200 subjects.", "invalidRow": "Data on row {row} is invalid or outside the selected score scale.", "duplicateSubject": "The subject on row {row} is duplicated.", "reimportRequired": "Re-import the cumulative transcript when changing the score scale." },
+      "evidence": { "required": "Upload a supporting document.", "tooLarge": "The supporting file must be 5 MB or smaller.", "invalidType": "Only PDF, JPG, PNG, or WebP files are accepted.", "invalidContent": "The file content does not match its declared format." }
+    }
+  },
+  "months": {
+      "1": "January",
+      "2": "February",
+      "3": "March",
+      "4": "April",
+      "5": "May",
+      "6": "June",
+      "7": "July",
+      "8": "August",
+      "9": "September",
+      "10": "October",
+      "11": "November",
+      "12": "December"
+    },
+    "validation": {
+      "email": "Enter a valid email address.",
+      "fullName": "Enter a full name with at least 2 characters.",
+      "birthDate": "Enter a valid date of birth that is not in the future.",
+      "birthDay": "Enter a valid day of birth.",
+      "birthMonth": "Choose a valid birth month.",
+      "birthYear": "Enter a birth year between 1900 and the current year."
+    },
+    "actions": {
+      "saved": "Your personal information has been saved.",
+      "checkFields": "Check the highlighted fields and try again.",
+      "emailInUse": "This email is already used by another account.",
+      "failed": "We could not save your changes. Please try again.",
+      "unavailable": "This account does not have a personal profile to edit."
+    }
+  },
+  "PersonalityTest": {
+    "metadataTitle": "Personality test",
+    "title": "Personality test",
+    "description": "Explore how you recharge, take in information, make decisions, and organize daily life.",
+    "backToProfile": "Back to Starting point",
+    "intro": {
+      "title": "Understand yourself through 12 questions",
+      "description": "Choose the option that sounds most like you in everyday situations. There are no right or wrong answers.",
+      "currentResult": "Your current result",
+      "timeTitle": "About 3 minutes",
+      "timeDescription": "A short test focused on familiar choices from daily life.",
+      "answerTitle": "Trust your first response",
+      "answerDescription": "Choose what you usually do, not what you think you should do.",
+      "noteTitle": "A tool for self-discovery",
+      "note": "Your result reflects current preferences and does not replace a professional psychological assessment.",
+      "start": "Start the test",
+      "retake": "Start again"
+    },
+    "question": {
+      "progress": "Question {current} / {total}",
+      "guidance": "Choose the option that is closer to you.",
+      "required": "Choose one option to continue.",
+      "back": "Previous",
+      "next": "Next question",
+      "finish": "View result",
+      "submitting": "Saving..."
+    },
+    "result": {
+      "title": "Your result is ready",
+      "description": "These four letters summarize the preferences shown in your answers.",
+      "traitsTitle": "Your four leading preferences",
+      "noteTitle": "Use this result as a starting point",
+      "note": "Personality can shift across contexts and experiences. You can retake the test when the result no longer feels right.",
+      "retake": "Retake the test",
+      "backToProfile": "View in Starting point"
+    },
+    "traits": {
+      "E": {
+        "title": "Extraversion",
+        "description": "You often recharge through interaction and like to develop ideas by talking with others."
+      },
+      "I": {
+        "title": "Introversion",
+        "description": "You often recharge in private and prefer to reflect before sharing your thoughts."
+      },
+      "S": {
+        "title": "Sensing",
+        "description": "You notice concrete facts, direct experience, and information you can apply right away."
+      },
+      "N": {
+        "title": "Intuition",
+        "description": "You readily notice patterns, future possibilities, and meaning behind information."
+      },
+      "T": {
+        "title": "Thinking",
+        "description": "You often prioritize consistency, evidence, and principles when making decisions."
+      },
+      "F": {
+        "title": "Feeling",
+        "description": "You often consider personal values, individual needs, and the human impact of decisions."
+      },
+      "J": {
+        "title": "Judging",
+        "description": "You feel more comfortable with plans, clear milestones, and work completed on schedule."
+      },
+      "P": {
+        "title": "Perceiving",
+        "description": "You prefer to keep options open, explore as you go, and adjust to the situation."
+      }
+    },
+    "types": {
+      "INTJ": { "title": "The Strategist" },
+      "INTP": { "title": "The Analyst" },
+      "ENTJ": { "title": "The Builder" },
+      "ENTP": { "title": "The Explorer" },
+      "INFJ": { "title": "The Guide" },
+      "INFP": { "title": "The Mediator" },
+      "ENFJ": { "title": "The Inspirer" },
+      "ENFP": { "title": "The Catalyst" },
+      "ISTJ": { "title": "The Organizer" },
+      "ISFJ": { "title": "The Supporter" },
+      "ESTJ": { "title": "The Coordinator" },
+      "ESFJ": { "title": "The Connector" },
+      "ISTP": { "title": "The Problem Solver" },
+      "ISFP": { "title": "The Experiencer" },
+      "ESTP": { "title": "The Doer" },
+      "ESFP": { "title": "The Energizer" }
+    },
+    "questions": {
+      "0": {
+        "prompt": "After a busy week, what helps you recharge more?",
+        "a": "Meeting friends or joining an activity with plenty of people",
+        "b": "Spending quiet time alone or with a few people close to me"
+      },
+      "1": {
+        "prompt": "When you enter a completely new group, what do you usually do?",
+        "a": "Start conversations and get to know several people",
+        "b": "Observe first, then connect with a few people who feel right"
+      },
+      "2": {
+        "prompt": "When an idea is still taking shape, how do you prefer to work through it?",
+        "a": "Talk it through with others until it becomes clearer",
+        "b": "Think it through privately before sharing it"
+      },
+      "3": {
+        "prompt": "When learning a new subject, which starting point helps you more?",
+        "a": "Seeing a concrete example and trying it step by step",
+        "b": "Understanding the big picture and possible directions first"
+      },
+      "4": {
+        "prompt": "Which kind of information do you tend to trust more?",
+        "a": "Clear facts and details that can be verified",
+        "b": "Patterns and meaning that emerge across several sources"
+      },
+      "5": {
+        "prompt": "How would you rather receive instructions for a new task?",
+        "a": "With a clear process and specific criteria to follow",
+        "b": "With an overall goal and room to discover my own approach"
+      },
+      "6": {
+        "prompt": "When making a difficult decision, what do you usually prioritize?",
+        "a": "The choice that best fits the evidence and consistent principles",
+        "b": "The choice that best fits my values and its effect on people"
+      },
+      "7": {
+        "prompt": "When giving feedback to someone who is struggling, what do you do first?",
+        "a": "Analyze the issue and state a practical solution directly",
+        "b": "Listen to their feelings and phrase feedback with care"
+      },
+      "8": {
+        "prompt": "During a disagreement, what matters more to you?",
+        "a": "Finding a fair solution based on the same standard for everyone",
+        "b": "Preserving the relationship and considering individual needs"
+      },
+      "9": {
+        "prompt": "When starting a long project, which approach feels more natural?",
+        "a": "Plan the work, set milestones, and track progress",
+        "b": "Begin, explore, and adjust the plan as I learn"
+      },
+      "10": {
+        "prompt": "What kind of preparation makes a trip feel more comfortable?",
+        "a": "A schedule with the main choices settled in advance",
+        "b": "A few anchor points with freedom to change plans"
+      },
+      "11": {
+        "prompt": "When an important deadline is approaching, which rhythm sounds more like you?",
+        "a": "Create structure early and complete each part according to plan",
+        "b": "Stay flexible and accelerate once I have enough information"
+      }
+    },
+    "actions": {
+      "saved": "Your result has been saved to your profile.",
+      "failed": "Something went wrong while saving. Please try again.",
+      "unavailable": "This account cannot save a personality test result."
+    }
+  },
+  "Settings": {
+    "metadataTitle": "Settings",
+    "title": "Settings",
+    "description": "Manage how AI features work for your account.",
+    "career": {
+      "title": "Roadmap analysis",
+      "description": "This model is used automatically when creating or updating a roadmap.",
+      "model": "Guidance model",
+      "modelHint": "Change the model here instead of selecting it during every guidance session.",
+      "footerHint": "Changes apply to future roadmap generations.",
+      "save": "Save settings",
+      "saving": "Saving"
+    },
+    "roadmapData": {
+      "title": "Roadmap data",
+      "description": "Choose how information is prefilled when you build a new roadmap.",
+      "reuseLabel": "Use data from the latest roadmap",
+      "reuseHint": "When creating a new roadmap, the system prefills every answer and selection from the latest one. You can still edit each field before generating.",
+      "footerHint": "This setting does not change data stored with existing roadmaps.",
+      "save": "Save data settings",
+      "saving": "Saving",
+      "resetTitle": "Refresh roadmap data",
+      "resetDescription": "Start the next roadmap with a fresh form.",
+      "resetHint": "This only clears the current prefill source. Saved roadmaps and the data used to edit each roadmap are not deleted.",
+      "resetFooterHint": "After refreshing, the first new roadmap will not reuse data from older roadmaps.",
+      "reset": "Refresh data",
+      "resetting": "Refreshing"
+    },
+    "actions": {
+      "userOnly": "This setting is available only for learner accounts.",
+      "invalidModel": "Choose an available model.",
+      "saved": "Roadmap settings saved.",
+      "roadmapDataSaved": "New-roadmap data settings saved.",
+      "roadmapDataReset": "Roadmap prefill data refreshed."
+    }
+  }
+}

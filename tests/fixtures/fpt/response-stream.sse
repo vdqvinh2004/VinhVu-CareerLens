@@ -1,0 +1,52 @@
+event: response.created
+data: {"type":"response.created","sequence_number":0,"response":{"id":"resp_fixture_stream","object":"response","status":"in_progress","output":[]}}
+
+event: response.output_item.added
+data: {"type":"response.output_item.added","sequence_number":1,"output_index":0,"item":{"id":"msg_stream_001","type":"message","status":"in_progress","role":"assistant","content":[]}}
+
+event: response.content_part.added
+data: {"type":"response.content_part.added","sequence_number":2,"item_id":"msg_stream_001","output_index":0,"content_index":0,"part":{"type":"output_text","annotations":[],"text":""}}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","sequence_number":3,"item_id":"msg_stream_001","output_index":0,"content_index":0,"delta":"Weather in "}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","sequence_number":4,"item_id":"msg_stream_001","output_index":0,"content_index":0,"delta":"Hà Nội"}
+
+event: response.output_text.done
+data: {"type":"response.output_text.done","sequence_number":5,"item_id":"msg_stream_001","output_index":0,"content_index":0,"text":"Weather in Hà Nội"}
+
+event: response.content_part.done
+data: {"type":"response.content_part.done","sequence_number":6,"item_id":"msg_stream_001","output_index":0,"content_index":0,"part":{"type":"output_text","annotations":[],"text":"Weather in Hà Nội"}}
+
+event: response.output_item.done
+data: {"type":"response.output_item.done","sequence_number":7,"output_index":0,"item":{"id":"msg_stream_001","type":"message","status":"completed","role":"assistant","content":[{"type":"output_text","annotations":[],"text":"Weather in Hà Nội"}]}}
+
+event: response.output_item.added
+data: {"type":"response.output_item.added","sequence_number":8,"output_index":1,"item":{"id":"fc_stream_001","type":"function_call","status":"in_progress","call_id":"call_stream_001","name":"get_weather","arguments":""}}
+
+event: response.output_item.added
+data: {"type":"response.output_item.added","sequence_number":9,"output_index":2,"item":{"id":"fc_stream_002","type":"function_call","status":"in_progress","call_id":"call_stream_002","name":"get_weather","arguments":""}}
+
+event: response.function_call_arguments.delta
+data: {"type":"response.function_call_arguments.delta","sequence_number":10,"item_id":"fc_stream_001","output_index":1,"call_id":"call_stream_001","delta":"{\"city\":\""}
+
+event: response.function_call_arguments.delta
+data: {"type":"response.function_call_arguments.delta","sequence_number":11,"item_id":"fc_stream_002","output_index":2,"call_id":"call_stream_002","delta":"{\"city\":\"Da Nang\"}"}
+
+event: response.function_call_arguments.delta
+data: {"type":"response.function_call_arguments.delta","sequence_number":12,"item_id":"fc_stream_001","output_index":1,"call_id":"call_stream_001","delta":"Hà Nội\"}"}
+
+event: response.function_call_arguments.done
+data: {"type":"response.function_call_arguments.done","sequence_number":13,"item_id":"fc_stream_001","output_index":1,"call_id":"call_stream_001","name":"get_weather","arguments":"{\"city\":\"Hà Nội\"}"}
+
+event: response.output_item.done
+data: {"type":"response.output_item.done","sequence_number":14,"output_index":1,"item":{"id":"fc_stream_001","type":"function_call","status":"completed","call_id":"call_stream_001","name":"get_weather","arguments":"{\"city\":\"Hà Nội\"}"}}
+
+event: response.output_item.done
+data: {"type":"response.output_item.done","sequence_number":15,"output_index":2,"item":{"id":"fc_stream_002","type":"function_call","status":"completed","call_id":"call_stream_002","name":"get_weather","arguments":"{\"city\":\"Da Nang\"}"}}
+
+event: response.completed
+data: {"type":"response.completed","sequence_number":16,"response":{"id":"resp_fixture_stream","object":"response","status":"completed","output":[],"usage":{"input_tokens":42,"output_tokens":23,"total_tokens":65}}}
+
+data: [DONE]
