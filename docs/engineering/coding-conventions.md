@@ -9,9 +9,9 @@ Precedence: security and correctness, framework requirements, this document, the
 ## Scope and structure
 
 - Keep changes focused on the requested outcome; do not refactor unrelated code.
-- Prefer the existing project layout: `app/`, `components/`, `lib/`, `tests/`, and `scripts/` at the repository root.
+- Prefer the existing project layout: `app/`, `components/`, `lib/`, `tests/` at the repository root.
 - Use kebab-case file names (`login-form.tsx`, `rate-limit.ts`) and PascalCase React component exports.
-- Keep UI primitives in `components/ui`, route-specific components beside their route, and shared server/domain code in `lib`.
+- Keep UI primitives in `components/ui`, route-specific components beside their route, and shared browser/domain code in `lib`.
 - Split a function or component when it has more than one responsibility or cannot be understood without scrolling extensively. Do not split solely to meet a line-count target.
 
 ## Naming and TypeScript
@@ -24,18 +24,17 @@ Precedence: security and correctness, framework requirements, this document, the
 
 ## Data, validation, and errors
 
-- Validate untrusted input at boundaries: Server Actions, Route Handlers, environment configuration, cookies, and external service responses. Use Zod for request/form validation.
-- Normalize user-visible error messages. Log actionable server-side context without exposing secrets, tokens, passwords, email reset data, or raw request bodies.
+- Validate untrusted input at boundaries: forms, imported files, localStorage, AI configuration, and external service responses. Use Zod for request/form validation.
+- Normalize user-visible error messages. Never log API keys, raw CV text, or private profile data.
 - Do not swallow errors. Either handle them deliberately with a documented fallback or rethrow/return a typed failure.
-- Fetch only the database columns required by the use case. Keep PostgreSQL schema changes and generated Drizzle migrations together.
-- Use Redis only for ephemeral data such as sessions, rate limits, challenges, and replay prevention. PostgreSQL remains authoritative for persistent account and authorization data.
+- Persist browser data through `lib/browser-storage.ts`. Save to localStorage before publishing updated state; storage failures must leave the previous workspace intact.
 
 ## Next.js and React
 
-- Default to Server Components. Add `"use client"` only to the smallest interactive component that needs browser APIs, state, effects, or event handlers.
-- Keep database, Redis, email, cryptography, and secrets in server-only modules. Never import them into Client Components.
-- Treat every Server Action and Route Handler as a public boundary: authenticate the actor, authorize the action, validate input, and return only data the caller may receive.
-- Use `next/link`, `next/font`, and framework APIs where applicable. Avoid client-side fetches for data that can be rendered securely on the server.
+- Build a static export. Interactive routes use Client Components and browser storage; static content may render at build time.
+- Do not add authentication, databases, API routes, Server Actions, environment secrets, or deployment workflows.
+- AI requests go directly to the user-configured provider. Validate provider URLs, inputs, and outputs, and surface CORS/network failures.
+- Use `next/link`, `next/font`, and framework APIs compatible with static export.
 - Derive display state during render where possible. Use effects only to synchronize with an external system.
 - Use functional state updates when the next value depends on the previous value.
 
@@ -46,19 +45,18 @@ Precedence: security and correctness, framework requirements, this document, the
 - Avoid memoization by default. Add `useMemo`, `useCallback`, dynamic imports, caching, or parallelization only when profiling, a measurable cost, or a framework boundary justifies it.
 - Run independent asynchronous work concurrently with `Promise.all` when failure and ordering semantics allow it.
 
-## Authentication and authorization
+## Browser privacy
 
-- Use the existing authentication, session, and RBAC helpers; do not reimplement permission checks in UI code.
-- Enforce authorization in the server-side data-access/action layer, not only through hidden UI controls.
-- Invalidate or rotate sessions through the established helpers after password, role, or account-status changes.
-- Do not log credentials, password hashes, session identifiers, TOTP secrets, reset tokens, or full authorization headers.
+- Store user API keys only in localStorage. Mask key fields; never include keys in data exports.
+- Explain that localStorage is readable by scripts on the origin and people with browser access.
+- Send profile/CV data to the configured provider only for requested AI features.
 
 ## Tests and review
 
-- Add or update a focused test for changed behavior, especially validation, authorization, session, rate-limit, and failure paths.
+- Add or update a focused test for changed behavior, especially validation, browser persistence, imports, and failure paths.
 - Name tests by observable behavior and use Arrange–Act–Assert when it makes the test easier to scan.
-- Before handoff, run the relevant checks: `npm run lint`, `npx tsc --noEmit`, and the focused Vitest suite. Run `npm run test:integration` for Redis-dependent changes.
-- Review the diff for unused imports, unrelated formatting, duplicated logic, missing authorization, and accidental client exposure of server code.
+- Before handoff, run the relevant checks: `npm run lint`, `npx tsc --noEmit`, and the focused Vitest suite. Run `npm run build` to confirm static export.
+- Review the diff for unused imports, unrelated formatting, duplicated logic, unsafe URLs, leaked API keys, and stale backend references.
 
 ## Deliberate exceptions
 

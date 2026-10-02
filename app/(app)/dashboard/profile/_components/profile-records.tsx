@@ -1,4 +1,5 @@
 "use client";
+import { downloadFile, readWorkspace } from "@/lib/browser-storage";
 
 import {
   cloneElement,
@@ -10,7 +11,6 @@ import {
   useTransition,
   type ReactNode,
 } from "react";
-import { useRouter } from "next/navigation";
 import {
   Award,
   BookOpen,
@@ -90,7 +90,7 @@ import {
   saveCompetitionAction,
   saveEducationAction,
   saveWorkExperienceAction,
-} from "../profile-record-actions";
+} from "../profile-record-operations";
 
 const initialState: ProfileRecordActionState = { status: "idle" };
 const monthNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] as const;
@@ -237,7 +237,6 @@ function RecordDialog({
 
 function DeleteRecordButton({ id, kind }: { id: string; kind: ProfileRecordKind }) {
   const t = useTranslations("Profile.extended");
-  const router = useRouter();
   const [open, setOpen] = useState(false);
   const [isPending, startTransition] = useTransition();
   const [error, setError] = useState<string>();
@@ -251,7 +250,6 @@ function DeleteRecordButton({ id, kind }: { id: string; kind: ProfileRecordKind 
         return;
       }
       setOpen(false);
-      router.refresh();
     });
   }
 
@@ -338,7 +336,14 @@ function EducationFields({ record, currentYear }: { record?: EducationRecordDto;
   const [scoreScale, setScoreScale] = useState<4 | 10>(
     record?.scoreScale ?? 4,
   );
-  const templateHref = `/api/profile/transcript-template?level=${level}&scale=${level === "HIGH_SCHOOL" ? 10 : scoreScale}&locale=${locale === "en" ? "en" : "vi"}`;
+  async function downloadTemplate() {
+    const { createTranscriptTemplate, transcriptTemplateFileName } = await import("@/lib/transcript-template");
+    const language = locale === "en" ? "en" : "vi";
+    try {
+      const blob = await createTranscriptTemplate(level, scoreScale, language);
+      downloadFile(blob, transcriptTemplateFileName(level, scoreScale, language));
+    } catch (error) { window.alert(error instanceof Error ? error.message : "Download failed."); }
+  }
 
   return (
     <FieldGroup>
@@ -365,10 +370,10 @@ function EducationFields({ record, currentYear }: { record?: EducationRecordDto;
             <FieldLegend>{t("education.transcriptImport")}</FieldLegend>
             <div className="mt-2 flex flex-wrap items-center justify-between gap-3">
               <FieldDescription>{t("education.highSchoolTranscriptHint")}</FieldDescription>
-              <a href={templateHref} className={buttonVariants({ variant: "outline", size: "sm" })}>
+              <button onClick={downloadTemplate} type="button" className={buttonVariants({ variant: "outline", size: "sm" })}>
                 <Download data-icon="inline-start" />
                 {t("education.downloadTemplate")}
-              </a>
+              </button>
             </div>
             <FieldGroup className="mt-3">
               <TranscriptFileField field="grade10File" label={t("education.grade10File")} description={t("education.optionalOnEdit")} />
@@ -389,10 +394,10 @@ function EducationFields({ record, currentYear }: { record?: EducationRecordDto;
             <FieldLegend>{t("education.transcriptImport")}</FieldLegend>
             <div className="mt-2 flex flex-wrap items-center justify-between gap-3">
               <FieldDescription>{t("education.higherEducationTranscriptHint")}</FieldDescription>
-              <a href={templateHref} className={buttonVariants({ variant: "outline", size: "sm" })}>
+              <button onClick={downloadTemplate} type="button" className={buttonVariants({ variant: "outline", size: "sm" })}>
                 <Download data-icon="inline-start" />
                 {t("education.downloadTemplate")}
-              </a>
+              </button>
             </div>
             <FieldGroup className="mt-3">
               <TranscriptFileField field="transcriptFile" label={t("education.transcriptFile")} description={t("education.optionalOnEdit")} />
@@ -601,7 +606,7 @@ export function ProfileRecords({ activities, certificates, competitions, current
       </SectionCard>
 
       <SectionCard icon={FileBadge} title={t("certificate.title")} description={t("certificate.description")} action={<CertificateDialog currentYear={currentYear} />}>
-        {certificates.length === 0 ? <EmptyRecords icon={FileBadge} text={t("certificate.empty")} /> : <div className="grid gap-3 sm:grid-cols-2">{certificates.map((record) => <article key={record.id} className="flex min-w-0 gap-3 rounded-2xl border p-4"><div className="min-w-0 flex-1"><h3 className="font-medium">{record.name}</h3><p className="mt-1 text-sm text-muted-foreground">{formatPeriod(record)} · {t("certificate.issuedIn", { year: record.issuedYear })}</p>{record.attachment ? <a href={`/api/profile/certificates/${record.id}/attachment`} target="_blank" rel="noreferrer" className={cn(buttonVariants({ variant: "link", size: "sm" }), "mt-2 px-0")}><ExternalLink data-icon="inline-start" />{t("certificate.viewEvidence")}</a> : null}</div><RecordActions id={record.id} kind="certificate"><CertificateDialog record={record} currentYear={currentYear} /></RecordActions></article>)}</div>}
+        {certificates.length === 0 ? <EmptyRecords icon={FileBadge} text={t("certificate.empty")} /> : <div className="grid gap-3 sm:grid-cols-2">{certificates.map((record) => <article key={record.id} className="flex min-w-0 gap-3 rounded-2xl border p-4"><div className="min-w-0 flex-1"><h3 className="font-medium">{record.name}</h3><p className="mt-1 text-sm text-muted-foreground">{formatPeriod(record)} · {t("certificate.issuedIn", { year: record.issuedYear })}</p>{record.attachment ? <a href={readWorkspace().certificates.find(item => item.id === record.id)?.dataUrl} download={record.attachment.fileName} target="_blank" rel="noreferrer" className={cn(buttonVariants({ variant: "link", size: "sm" }), "mt-2 px-0")}><ExternalLink data-icon="inline-start" />{t("certificate.viewEvidence")}</a> : null}</div><RecordActions id={record.id} kind="certificate"><CertificateDialog record={record} currentYear={currentYear} /></RecordActions></article>)}</div>}
       </SectionCard>
 
       <div className="grid gap-6 lg:grid-cols-2">

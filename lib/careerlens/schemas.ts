@@ -5,7 +5,7 @@ const optionalText = z.string().trim().max(2_000).nullable();
 const confidenceSchema = z.enum(["low", "medium", "high"]);
 const referenceDocumentSchema = z.object({
   title: nonEmptyText,
-  url: z.url().max(2_000),
+  url: z.url().max(2_000).refine(value => ["https:", "http:"].includes(new URL(value).protocol), "Use a web URL"),
 });
 
 const roadmapActivityTypeSchema = z.preprocess((value) => {

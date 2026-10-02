@@ -1,7 +1,6 @@
-import type { Metadata } from "next";
-import { redirect } from "next/navigation";
-import { eq } from "drizzle-orm";
-import { getTranslations } from "next-intl/server";
+"use client";
+import { useWorkspace } from "@/lib/browser-storage";
+import { useTranslations } from "next-intl";
 
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import {
@@ -11,16 +10,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { requireViewer } from "@/lib/auth/dal";
-import { getDb } from "@/lib/db";
-import { users } from "@/lib/db/schema";
 
 import { ProfileForm } from "./_components/profile-form";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("Profile");
-  return { title: t("metadataTitle") };
-}
 
 function initialsFor(name: string) {
   return name
@@ -31,24 +23,9 @@ function initialsFor(name: string) {
     .join("");
 }
 
-export default async function ProfilePage() {
-  const [viewer, t] = await Promise.all([
-    requireViewer(),
-    getTranslations("Profile"),
-  ]);
-  if (viewer.actor.kind !== "user") redirect("/dashboard");
-
-  const [profile] = await getDb()
-    .select({
-      birthDate: users.birthDate,
-      email: users.email,
-      fullName: users.fullName,
-    })
-    .from(users)
-    .where(eq(users.id, viewer.actor.userId))
-    .limit(1);
-  if (!profile) redirect("/login");
-
+export default function ProfilePage() {
+  const { profile } = useWorkspace();
+  const t = useTranslations("Profile");
   const [birthYear, birthMonth, birthDay] = profile.birthDate
     .split("-")
     .map(Number);

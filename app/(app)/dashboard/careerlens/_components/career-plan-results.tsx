@@ -36,13 +36,13 @@ import {
 } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import type { CareerGuidanceOutput } from "@/lib/careerlens/schemas";
-import { applyRoadmapToJourneyAction } from "@/app/(app)/dashboard/my-journey/actions";
+import { applyRoadmapToJourneyAction } from "@/app/(app)/dashboard/my-journey/operations";
 
 import {
   findRelatedJobsAction,
   selectCareerRecommendationAction,
   type RelatedJobsActionState,
-} from "../actions";
+} from "../operations";
 
 function cleanText(value: string) {
   return value.replace(/[–—]/g, "-");

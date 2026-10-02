@@ -1,44 +1,19 @@
-import type { Metadata } from "next";
+"use client";
+import { useWorkspace } from "@/lib/browser-storage";
 import Link from "next/link";
-import { redirect } from "next/navigation";
-import { eq } from "drizzle-orm";
 import { ArrowLeft } from "lucide-react";
-import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
 
 import { buttonVariants } from "@/components/ui/button";
-import { requireViewer } from "@/lib/auth/dal";
-import { getDb } from "@/lib/db";
-import { personalityTestResults } from "@/lib/db/schema";
 import type { PersonalityType } from "@/lib/personality-test";
 
 import { PersonalityTest } from "./_components/personality-test";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("PersonalityTest");
-  return { title: t("metadataTitle") };
-}
 
-export default async function PersonalityTestPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ view?: string | string[] }>;
-}) {
-  const [viewer, t, query] = await Promise.all([
-    requireViewer(),
-    getTranslations("PersonalityTest"),
-    searchParams,
-  ]);
-
-  if (viewer.actor.kind !== "user") {
-    redirect("/dashboard");
-  }
-
-  const [currentResult] = await getDb()
-    .select({ resultType: personalityTestResults.resultType })
-    .from(personalityTestResults)
-    .where(eq(personalityTestResults.userId, viewer.actor.userId))
-    .limit(1);
-
+export default function PersonalityTestPage() {
+  const { personality: currentResult } = useWorkspace();
+  const t = useTranslations("PersonalityTest");
+  const query = { view: new URLSearchParams(window.location.search).get("view") };
   return (
     <section className="mx-auto w-full max-w-4xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
       <Link

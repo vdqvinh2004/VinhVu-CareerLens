@@ -102,7 +102,7 @@ import {
   stopFollowingCareerRoadmapAction,
   toggleCareerRoadmapTaskAction,
   type CareerLensActionState,
-} from "../actions";
+} from "../operations";
 import { CareerPlanResults } from "./career-plan-results";
 import { InterestProfileFields } from "./interest-profile-fields";
 import { ProvinceCombobox } from "./province-combobox";

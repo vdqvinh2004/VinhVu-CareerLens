@@ -1,19 +1,5 @@
-import "server-only";
-
-import { eq, inArray } from "drizzle-orm";
-
-import { getDb } from "@/lib/db";
-import {
-  certificates,
-  competitions,
-  educationRecords,
-  profileActivities,
-  transcriptEntries,
-  workExperiences,
-} from "@/lib/db/schema";
-
+import { updateWorkspace } from "@/lib/browser-storage";
 import type { CvImportData } from "./schema";
-
 export type CvImportCounts = {
   education: number;
   transcriptEntries: number;
@@ -85,179 +71,51 @@ function transcriptKey(value: { stage: string; subjectName: string }) {
   return `${value.stage}|${normalizeCvImportKey(value.subjectName)}`;
 }
 
-export async function persistCvImport(
-  userId: string,
-  data: CvImportData,
-): Promise<CvImportResult> {
-  return getDb().transaction(async (transaction) => {
-    const [education, certificateRows, competitionRows, activityRows, workRows] =
-      await Promise.all([
-        transaction
-          .select({
-            id: educationRecords.id,
-            level: educationRecords.level,
-            institutionName: educationRecords.institutionName,
-            fieldOfStudy: educationRecords.fieldOfStudy,
-            startMonth: educationRecords.startMonth,
-            startYear: educationRecords.startYear,
-            scoreScale: educationRecords.scoreScale,
-          })
-          .from(educationRecords)
-          .where(eq(educationRecords.userId, userId)),
-        transaction
-          .select({ name: certificates.name, issuedYear: certificates.issuedYear })
-          .from(certificates)
-          .where(eq(certificates.userId, userId)),
-        transaction
-          .select({ name: competitions.name, year: competitions.year })
-          .from(competitions)
-          .where(eq(competitions.userId, userId)),
-        transaction
-          .select({
-            name: profileActivities.name,
-            startMonth: profileActivities.startMonth,
-            startYear: profileActivities.startYear,
-          })
-          .from(profileActivities)
-          .where(eq(profileActivities.userId, userId)),
-        transaction
-          .select({
-            workplaceName: workExperiences.workplaceName,
-            position: workExperiences.position,
-            startMonth: workExperiences.startMonth,
-            startYear: workExperiences.startYear,
-          })
-          .from(workExperiences)
-          .where(eq(workExperiences.userId, userId)),
-      ]);
-
-    const educationByKey = new Map(
-      education.map((record) => [
-        educationKey(record),
-        { id: record.id, scoreScale: record.scoreScale },
-      ]),
-    );
-    const existingEducationIds = education.map((record) => record.id);
-    const existingTranscriptRows = existingEducationIds.length
-      ? await transaction
-          .select({
-            educationRecordId: transcriptEntries.educationRecordId,
-            stage: transcriptEntries.stage,
-            subjectName: transcriptEntries.subjectName,
-          })
-          .from(transcriptEntries)
-          .where(inArray(transcriptEntries.educationRecordId, existingEducationIds))
-      : [];
-    const transcriptKeysByEducation = new Map<string, Set<string>>();
-    for (const entry of existingTranscriptRows) {
-      const keys = transcriptKeysByEducation.get(entry.educationRecordId) ?? new Set();
-      keys.add(transcriptKey(entry));
-      transcriptKeysByEducation.set(entry.educationRecordId, keys);
-    }
-
-    const imported = emptyCounts();
-    let skippedDuplicates = 0;
-
+export async function persistCvImport(data: CvImportData): Promise<CvImportResult> {
+  const imported = emptyCounts();
+  let skippedDuplicates = 0;
+  updateWorkspace(state => {
+    const educationByKey = new Map(state.education.map(row => [educationKey(row), row]));
     for (const item of data.education) {
-      const key = educationKey(item.record);
-      const existingEducation = educationByKey.get(key);
-      let educationRecordId: string;
-      if (existingEducation) {
-        educationRecordId = existingEducation.id;
-        skippedDuplicates += 1;
-      } else {
-        const [created] = await transaction
-          .insert(educationRecords)
-          .values({ userId, ...item.record })
-          .returning({ id: educationRecords.id });
-        educationRecordId = created.id;
-        educationByKey.set(key, {
-          id: created.id,
-          scoreScale: item.record.scoreScale,
-        });
-        imported.education += 1;
+      let row = educationByKey.get(educationKey(item.record));
+      if (row) skippedDuplicates++;
+      else {
+        row = { ...item.record, id: crypto.randomUUID(), transcriptEntries: [] };
+        state.education.push(row); educationByKey.set(educationKey(item.record), row); imported.education++;
       }
-
-      if (
-        existingEducation &&
-        existingEducation.scoreScale !== item.record.scoreScale
-      ) {
-        skippedDuplicates += item.transcriptEntries.length;
-        continue;
-      }
-
-      const transcriptKeys =
-        transcriptKeysByEducation.get(educationRecordId) ?? new Set<string>();
+      if (row.scoreScale !== item.record.scoreScale) { skippedDuplicates += item.transcriptEntries.length; continue; }
+      const keys = new Set(row.transcriptEntries.map(transcriptKey));
       for (const entry of item.transcriptEntries) {
         const key = transcriptKey(entry);
-        if (transcriptKeys.has(key)) {
-          skippedDuplicates += 1;
-          continue;
-        }
-
-        const [created] = await transaction
-          .insert(transcriptEntries)
-          .values({ educationRecordId, ...entry })
-          .onConflictDoNothing()
-          .returning({ id: transcriptEntries.id });
-        if (created) {
-          imported.transcriptEntries += 1;
-        } else {
-          skippedDuplicates += 1;
-        }
-        transcriptKeys.add(key);
+        if (keys.has(key)) { skippedDuplicates++; continue; }
+        row.transcriptEntries.push(entry); keys.add(key); imported.transcriptEntries++;
       }
-      transcriptKeysByEducation.set(educationRecordId, transcriptKeys);
     }
-
-    const certificateKeys = new Set(certificateRows.map(certificateKey));
-    for (const record of data.certificates) {
-      const key = certificateKey(record);
-      if (certificateKeys.has(key)) {
-        skippedDuplicates += 1;
-        continue;
-      }
-      await transaction.insert(certificates).values({ userId, ...record });
-      certificateKeys.add(key);
-      imported.certificates += 1;
+    const certificateKeys = new Set(state.certificates.map(certificateKey));
+    for (const row of data.certificates) {
+      const key = certificateKey(row);
+      if (certificateKeys.has(key)) { skippedDuplicates++; continue; }
+      state.certificates.push({ ...row, id: crypto.randomUUID(), attachment: null });
+      certificateKeys.add(key); imported.certificates++;
     }
-
-    const competitionKeys = new Set(competitionRows.map(competitionKey));
-    for (const record of data.competitions) {
-      const key = competitionKey(record);
-      if (competitionKeys.has(key)) {
-        skippedDuplicates += 1;
-        continue;
-      }
-      await transaction.insert(competitions).values({ userId, ...record });
-      competitionKeys.add(key);
-      imported.competitions += 1;
+    const competitionKeys = new Set(state.competitions.map(competitionKey));
+    for (const row of data.competitions) {
+      const key = competitionKey(row);
+      if (competitionKeys.has(key)) { skippedDuplicates++; continue; }
+      state.competitions.push({ ...row, id: crypto.randomUUID() }); competitionKeys.add(key); imported.competitions++;
     }
-
-    const activityKeys = new Set(activityRows.map(activityKey));
-    for (const record of data.activities) {
-      const key = activityKey(record);
-      if (activityKeys.has(key)) {
-        skippedDuplicates += 1;
-        continue;
-      }
-      await transaction.insert(profileActivities).values({ userId, ...record });
-      activityKeys.add(key);
-      imported.activities += 1;
+    const activityKeys = new Set(state.activities.map(activityKey));
+    for (const row of data.activities) {
+      const key = activityKey(row);
+      if (activityKeys.has(key)) { skippedDuplicates++; continue; }
+      state.activities.push({ ...row, id: crypto.randomUUID() }); activityKeys.add(key); imported.activities++;
     }
-
-    const workKeys = new Set(workRows.map(workKey));
-    for (const record of data.workExperiences) {
-      const key = workKey(record);
-      if (workKeys.has(key)) {
-        skippedDuplicates += 1;
-        continue;
-      }
-      await transaction.insert(workExperiences).values({ userId, ...record });
-      workKeys.add(key);
-      imported.workExperiences += 1;
+    const workKeys = new Set(state.workExperiences.map(workKey));
+    for (const row of data.workExperiences) {
+      const key = workKey(row);
+      if (workKeys.has(key)) { skippedDuplicates++; continue; }
+      state.workExperiences.push({ ...row, id: crypto.randomUUID() }); workKeys.add(key); imported.workExperiences++;
     }
-
-    return { imported, skippedDuplicates };
   });
+  return { imported, skippedDuplicates };
 }

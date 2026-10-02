@@ -1,9 +1,9 @@
 {
   "Common": {
     "skipToContent": "Đi đến nội dung",
-    "homeAria": "Trang chủ CareerLens",
-    "brandName": "CareerLens",
-    "developedBy": "Phát triển bởi MeshMind-AI",
+    "homeAria": "Trang chủ VinhVu CareerLen",
+    "brandName": "VinhVu CareerLen",
+    "developedBy": "Phát triển bởi VinhVu",
     "legalNavigation": "Điều hướng pháp lý",
     "termsOfService": "Điều khoản dịch vụ",
     "privacyPolicy": "Chính sách bảo mật",
@@ -15,7 +15,7 @@
     }
   },
   "Preloader": {
-    "loading": "Đang chuẩn bị CareerLens",
+    "loading": "Đang chuẩn bị VinhVu CareerLen",
     "progressLabel": "Tiến trình tải",
     "percent": "{percent}%",
     "messages": {
@@ -37,7 +37,7 @@
   "Landing": {
     "meta": {
       "title": "AI định hướng nghề nghiệp cho học sinh, sinh viên",
-      "description": "CareerLens kết nối năng lực, mong muốn và tín hiệu thị trường để tạo lộ trình nghề nghiệp có thể hành động."
+      "description": "VinhVu CareerLen kết nối năng lực, mong muốn và tín hiệu thị trường để tạo lộ trình nghề nghiệp có thể hành động."
     },
     "primaryNavigation": "Điều hướng chính",
     "navigation": {
@@ -46,9 +46,9 @@
       "market": "Dữ liệu thị trường",
       "menu": "Khám phá"
     },
-    "account": "Tài khoản",
+    "account": "Mở không gian làm việc",
     "hero": {
-      "badge": "Tầm nhìn CareerLens",
+      "badge": "Tầm nhìn VinhVu CareerLen",
       "titleLine1": "Hiểu mình hôm nay.",
       "titleLine2": "Vững hướng đi ngày mai.",
       "description": "Kết nối năng lực, mong muốn và tín hiệu nghề nghiệp thành một lộ trình có thể hành động.",
@@ -58,16 +58,16 @@
       "imageAlt": "Nhóm sinh viên cùng trao đổi trong khuôn viên trường",
       "preview": {
         "title": "Career agent",
-        "status": "Đang đối chiếu nguồn mới",
+        "status": "So sánh hồ sơ và tín hiệu mẫu",
         "badge": "Minh họa",
         "searching": "Tìm tín hiệu kỹ năng và nghề nghiệp phù hợp với hồ sơ của bạn",
-        "sourcesLabel": "Nguồn đang được đối chiếu",
+        "sourcesLabel": "Ví dụ nguồn tham khảo",
         "result": "Ba hướng đi để so sánh và kiểm chứng"
       }
     },
     "intelligence": {
       "title": "Một hồ sơ. Ba lớp thấu hiểu.",
-      "description": "CareerLens không khóa bạn vào một bài test. Hệ thống kết nối dữ liệu cá nhân, tiến trình thật và bối cảnh nghề nghiệp đang thay đổi.",
+      "description": "VinhVu CareerLen không khóa bạn vào một bài test. Hệ thống kết nối dữ liệu cá nhân, tiến trình thật và bối cảnh nghề nghiệp đang thay đổi.",
       "profile": {
         "title": "Hiểu bản thân",
         "description": "Tổng hợp năng lực, sở thích, phong cách học và điều kiện thực tế thay vì chỉ dựa trên một nhãn tính cách."
@@ -78,7 +78,7 @@
       },
       "market": {
         "title": "Đọc chuyển động thị trường",
-        "description": "Đối chiếu hồ sơ với nghề, kỹ năng, tin tuyển dụng và các tín hiệu toàn cầu có nguồn dẫn rõ ràng."
+        "description": "So sánh hồ sơ với tín hiệu nghề nghiệp và kỹ năng mẫu. Mở liên kết tìm việc để xem tin tuyển dụng hiện tại."
       }
     },
     "assessment": {
@@ -197,7 +197,7 @@
             "description": "AI nói rõ khi bằng chứng chưa đủ để kết luận."
           }
         },
-        "note": "CareerLens phân biệt dữ liệu quan sát, ước tính và dự báo; không tự tạo phần trăm độ chính xác."
+        "note": "VinhVu CareerLen phân biệt dữ liệu quan sát, ước tính và dự báo; không tự tạo phần trăm độ chính xác."
       }
     },
     "cv": {
@@ -233,7 +233,7 @@
       "description": "Mỗi gợi ý cần được truy ngược về dữ liệu, giới hạn và quyền quyết định của chính người học.",
       "citations": {
         "title": "Nguồn dẫn có thể mở",
-        "description": "Nhận định thị trường, nghề và kỹ năng luôn đi cùng URL, ngày xuất bản và thời điểm truy cập."
+        "description": "Mở tài liệu học tập được gợi ý và tự kiểm chứng. Tín hiệu thị trường là dữ liệu mẫu."
       },
       "privacy": {
         "title": "Quyền riêng tư từ đầu",
@@ -245,20 +245,20 @@
       },
       "autonomy": {
         "title": "Người học giữ quyền quyết định",
-        "description": "CareerLens đề xuất để bạn thử và kiểm chứng, không lựa chọn tương lai thay bạn."
+        "description": "VinhVu CareerLen đề xuất để bạn thử và kiểm chứng, không lựa chọn tương lai thay bạn."
       },
       "scope": {
         "title": "Phạm vi hiện tại",
-        "description": "AI chat và bản tạo ba lộ trình đang hoạt động ở mức POC. Assessment dài hạn, CV review và dữ liệu web realtime thuộc tầm nhìn sản phẩm đang được xây dựng.",
+        "description": "Hướng nghiệp, nhập CV, trắc nghiệm tính cách, trò chuyện và theo dõi hành trình chạy trong trình duyệt. Dữ liệu lưu trên thiết bị; yêu cầu AI dùng khóa nhà cung cấp của bạn.",
         "badge": "Roadmap công khai"
       }
     },
     "faq": {
       "title": "Những điều nên biết trước khi bắt đầu.",
-      "description": "CareerLens được thiết kế như một công cụ hỗ trợ suy nghĩ và thử nghiệm, không phải máy chấm điểm tương lai.",
+      "description": "VinhVu CareerLen được thiết kế như một công cụ hỗ trợ suy nghĩ và thử nghiệm, không phải máy chấm điểm tương lai.",
       "items": {
         "one": {
-          "question": "CareerLens có quyết định nghề nghiệp thay tôi không?",
+          "question": "VinhVu CareerLen có quyết định nghề nghiệp thay tôi không?",
           "answer": "Không. Hệ thống đưa ra các hướng để so sánh, câu hỏi cần kiểm chứng và bước hành động tiếp theo; quyết định cuối cùng luôn thuộc về bạn."
         },
         "two": {
@@ -278,137 +278,6 @@
     "finalCta": {
       "title": "Tương lai không cần một câu trả lời vội.",
       "description": "Bắt đầu bằng việc hiểu mình rõ hơn, thử một hướng nhỏ và để bằng chứng dẫn bạn tới bước tiếp theo."
-    }
-  },
-  "Auth": {
-    "common": {
-      "email": "Email",
-      "password": "Mật khẩu",
-      "backToLogin": "Quay lại đăng nhập",
-      "continue": "Tiếp tục",
-      "passwordMismatch": "Mật khẩu xác nhận không khớp.",
-      "showField": "Hiện {field}",
-      "hideField": "Ẩn {field}"
-    },
-    "login": {
-      "metadataTitle": "Đăng nhập",
-      "title": "Chào mừng bạn trở lại",
-      "description": "Nhập thông tin của bạn để tiếp tục đến CareerLens.",
-      "forgotPassword": "Quên mật khẩu?",
-      "submitting": "Đang đăng nhập...",
-      "submit": "Đăng nhập",
-      "newUser": "Bạn mới sử dụng CareerLens?",
-      "createAccount": "Tạo tài khoản"
-    },
-    "signup": {
-      "metadataTitle": "Đăng ký",
-      "title": "Tạo tài khoản của bạn",
-      "description": "Hoàn thành ba bước ngắn dưới đây để thiết lập hồ sơ.",
-      "steps": {
-        "account": "Tài khoản",
-        "about": "Thông tin cá nhân",
-        "security": "Bảo mật"
-      },
-      "stepTitles": {
-        "email": "Bắt đầu với email của bạn",
-        "about": "Giới thiệu về bạn",
-        "password": "Chọn mật khẩu"
-      },
-      "stepCount": "Bước {current} / {total}",
-      "progress": "Tiến trình đăng ký",
-      "fullName": "Họ và tên",
-      "fullNamePlaceholder": "Nhập họ và tên",
-      "dateOfBirth": "Ngày sinh",
-      "birthDay": "Ngày",
-      "birthMonth": "Tháng sinh",
-      "birthYear": "Năm sinh",
-      "day": "Ngày",
-      "month": "Tháng",
-      "year": "Năm",
-      "months": {
-        "1": "Tháng 1",
-        "2": "Tháng 2",
-        "3": "Tháng 3",
-        "4": "Tháng 4",
-        "5": "Tháng 5",
-        "6": "Tháng 6",
-        "7": "Tháng 7",
-        "8": "Tháng 8",
-        "9": "Tháng 9",
-        "10": "Tháng 10",
-        "11": "Tháng 11",
-        "12": "Tháng 12"
-      },
-      "confirmPassword": "Xác nhận mật khẩu",
-      "passwordHint": "Sử dụng ít nhất 8 ký tự.",
-      "consent": "Tôi đồng ý để CareerLens thu thập, lưu trữ và xử lý dữ liệu liên quan đến tài khoản của tôi, đồng thời chấp thuận <terms>Điều khoản dịch vụ</terms> và <privacy>Chính sách bảo mật</privacy>.",
-      "back": "Quay lại",
-      "submitting": "Đang tạo tài khoản...",
-      "submit": "Tạo tài khoản",
-      "continue": "Tiếp tục",
-      "existingUser": "Bạn đã có tài khoản?",
-      "login": "Đăng nhập"
-    },
-    "forgot": {
-      "metadataTitle": "Khôi phục mật khẩu",
-      "title": "Khôi phục mật khẩu của bạn",
-      "description": "Nhập email để bắt đầu quy trình đặt lại mật khẩu.",
-      "successTitle": "Kiểm tra hộp thư của bạn",
-      "submitting": "Đang gửi...",
-      "submit": "Gửi liên kết đặt lại"
-    },
-    "reset": {
-      "metadataTitle": "Đặt lại mật khẩu",
-      "title": "Đặt mật khẩu mới",
-      "description": "Chọn và xác nhận mật khẩu bạn muốn sử dụng.",
-      "successTitle": "Đã đặt lại mật khẩu",
-      "continueToLogin": "Tiếp tục đến đăng nhập",
-      "newPassword": "Mật khẩu mới",
-      "confirmNewPassword": "Xác nhận mật khẩu mới",
-      "submitting": "Đang đặt lại...",
-      "submit": "Đặt lại mật khẩu"
-    },
-    "superadmin": {
-      "metadataTitle": "Truy cập vận hành",
-      "title": "Truy cập vận hành",
-      "description": "Khu vực hạn chế này yêu cầu thông tin đăng nhập tích hợp và mã xác thực hiện hành.",
-      "authenticationCode": "Mã xác thực",
-      "operationsIdentifier": "Mã định danh vận hành",
-      "submitting": "Đang xác minh...",
-      "verify": "Xác minh và tiếp tục"
-    },
-    "actions": {
-      "checkFields": "Kiểm tra các trường được đánh dấu rồi thử lại.",
-      "serviceUnavailable": "Dịch vụ xác thực tạm thời không khả dụng. Vui lòng thử lại.",
-      "invalidCredentials": "Email hoặc mật khẩu không đúng.",
-      "signupRateLimit": "Bạn đã đăng ký quá nhiều lần. Vui lòng thử lại sau.",
-      "accountCreationFailed": "Không thể tạo tài khoản với thông tin này.",
-      "emailInUse": "Email này đã được sử dụng. Hãy đăng nhập hoặc dùng một email khác.",
-      "accountCreatedLoginUnavailable": "Tài khoản đã được tạo nhưng chưa thể tự động đăng nhập. Vui lòng thử đăng nhập lại sau ít phút.",
-      "loginRateLimit": "Bạn đã đăng nhập quá nhiều lần. Vui lòng thử lại sau.",
-      "tooManyAttemptsRestart": "Bạn đã thử quá nhiều lần. Vui lòng bắt đầu lại quy trình đăng nhập sau.",
-      "invalidAuthenticationCode": "Mã xác thực không hợp lệ hoặc đã hết hạn.",
-      "invalidSuperadminCredentials": "Thông tin đăng nhập không hợp lệ.",
-      "tooManyAttempts": "Bạn đã thử quá nhiều lần. Vui lòng thử lại sau.",
-      "recoverySent": "Nếu tài khoản tồn tại, hướng dẫn đặt lại mật khẩu đã được gửi.",
-      "resetRateLimit": "Bạn đã đặt lại mật khẩu quá nhiều lần. Vui lòng thử lại sau.",
-      "invalidResetLink": "Liên kết đặt lại mật khẩu không hợp lệ hoặc đã hết hạn.",
-      "resetSuccess": "Mật khẩu đã được đặt lại. Bạn có thể đăng nhập ngay bây giờ."
-    },
-    "validation": {
-      "passwordMin": "Mật khẩu phải có ít nhất 8 ký tự.",
-      "dataConsent": "Bạn phải đồng ý cho phép thu thập và xử lý dữ liệu để tạo tài khoản.",
-      "passwordMax": "Mật khẩu không được vượt quá 128 ký tự.",
-      "passwordLong": "Mật khẩu quá dài.",
-      "emailInvalid": "Nhập địa chỉ email hợp lệ.",
-      "fullNameInvalid": "Nhập họ và tên của bạn.",
-      "birthDayInvalid": "Nhập ngày trong tháng hợp lệ.",
-      "birthMonthInvalid": "Chọn tháng sinh hợp lệ.",
-      "birthYearInvalid": "Nhập năm sinh hợp lệ.",
-      "birthDateInvalid": "Nhập ngày sinh hợp lệ.",
-      "birthDateFuture": "Ngày sinh không thể ở tương lai.",
-      "passwordMismatch": "Mật khẩu xác nhận không khớp.",
-      "totpInvalid": "Nhập mã xác thực gồm sáu chữ số."
     }
   },
   "Dashboard": {
@@ -435,13 +304,13 @@
   },
   "Roadmap": {
     "metadataTitle": "Lộ trình AI",
-    "eyebrow": "CareerLens Guidance AI",
+    "eyebrow": "VinhVu CareerLen Guidance AI",
     "title": "Từ hiểu mình đến chọn hướng đi",
     "description": "Kết nối sở thích, trải nghiệm và điều kiện thực tế với tín hiệu tuyển dụng mẫu tại Việt Nam.",
     "brief": {
       "status": "Quy trình phân tích",
       "title": "Bản định hướng, không phải phán quyết",
-      "description": "CareerLens chuyển thông tin bạn chia sẻ thành ba hướng đi để so sánh và kiểm chứng."
+      "description": "VinhVu CareerLen chuyển thông tin bạn chia sẻ thành ba hướng đi để so sánh và kiểm chứng."
     },
     "steps": {
       "profile": {
@@ -893,7 +762,7 @@
     "messageLabel": "Tin nhắn gửi trợ lý AI",
     "send": "Gửi tin nhắn",
     "stop": "Dừng trả lời",
-    "disclaimer": "MeshMind AI hỗ trợ các câu hỏi về giáo dục và định hướng nghề nghiệp.",
+    "disclaimer": "VinhVu CareerLen hỗ trợ các câu hỏi về giáo dục và định hướng nghề nghiệp.",
     "emptyTitle": "Bắt đầu một câu hỏi",
     "emptyDescription": "Trợ lý AI có thể giúp bạn khám phá ngành học, xây lộ trình và chuẩn bị cho cơ hội đầu tiên.",
     "sessionsError": "Không thể tải danh sách cuộc trò chuyện.",
@@ -948,6 +817,19 @@
       "university": "Cần chuẩn bị gì để thi đỗ vào đại học top đầu Việt Nam?",
       "skills": "Những kỹ năng quan trọng nhất sinh viên cần có trong thời đại AI?",
       "scholarship": "Học bổng du học Nhật Bản và Hàn Quốc dành cho sinh viên Việt Nam?"
+    },
+    "browser": {
+      "configure": "Thêm khóa API trong Cài đặt",
+      "chats": "Cuộc trò chuyện đã lưu",
+      "delete": "Xóa cuộc trò chuyện",
+      "confirmDelete": "Xóa cuộc trò chuyện và tin nhắn khỏi trình duyệt này?",
+      "welcome": "Xin chào, {name}",
+      "intro": "Khám phá nghề nghiệp, kế hoạch học tập và bước tiếp theo của bạn.",
+      "thinking": "Đang suy nghĩ…",
+      "message": "Đặt câu hỏi cho VinhVu CareerLen",
+      "send": "Gửi tin nhắn",
+      "stop": "Dừng yêu cầu",
+      "notice": "Tin nhắn được lưu trên thiết bị này. AI có thể sai; hãy kiểm chứng các quyết định quan trọng."
     }
   },
   "StartingPoint": {
@@ -961,7 +843,7 @@
       "fileLabel": "CV của bạn",
       "fileHint": "Chấp nhận PDF tối đa 6 MB và 15 trang. File cần có lớp văn bản có thể chọn được.",
       "selectedFile": "Đã chọn: {name}",
-      "privacy": "CV chỉ được xử lý trong lần nhập này và không được lưu dưới dạng tệp. Bạn có thể chỉnh sửa từng mục sau khi hoàn tất.",
+      "privacy": "PDF được đọc trong trình duyệt. Văn bản trích xuất được gửi đến nhà cung cấp AI bạn cấu hình; file gốc không được lưu. Dữ liệu nhập được lưu trong localStorage.",
       "submit": "Phân tích và bổ sung hồ sơ",
       "processing": "Đang đọc và chuẩn hoá CV...",
       "successTitle": "Đã cập nhật Điểm xuất phát",
@@ -997,7 +879,7 @@
   "Profile": {
     "metadataTitle": "Thông tin cá nhân",
     "title": "Thông tin cá nhân",
-    "description": "Cập nhật thông tin giúp CareerLens cá nhân hóa trải nghiệm của bạn.",
+    "description": "Cập nhật thông tin giúp VinhVu CareerLen cá nhân hóa trải nghiệm của bạn.",
     "summary": "Thông tin này được dùng để nhận diện tài khoản và điều chỉnh trải nghiệm phù hợp với bạn.",
     "personality": {
       "emptyTitle": "Khám phá phong cách của bạn",
@@ -1009,7 +891,7 @@
       "retake": "Làm lại bài test",
       "viewDetails": "Xem chi tiết"
     },
-  "form": {
+    "form": {
       "title": "Chi tiết hồ sơ",
       "description": "Chỉnh sửa thông tin tài khoản của bạn bên dưới.",
       "fullName": "Họ và tên",
@@ -1022,196 +904,196 @@
       "birthMonth": "Tháng sinh",
       "birthYear": "Năm sinh",
       "save": "Lưu thay đổi",
-    "saving": "Đang lưu..."
-  },
-  "extended": {
-    "title": "Hồ sơ học tập và kinh nghiệm",
-    "description": "Bổ sung các dấu mốc quan trọng để hồ sơ phản ánh đầy đủ năng lực và hành trình của bạn.",
-    "common": {
-      "add": "Thêm mới",
-      "edit": "Chỉnh sửa",
-      "delete": "Xoá",
-      "cancel": "Huỷ",
-      "save": "Lưu thông tin",
-      "saving": "Đang lưu...",
-      "deleting": "Đang xoá...",
-      "deleteTitle": "Xoá thông tin này?",
-      "deleteDescription": "Thông tin đã xoá không thể khôi phục.",
-      "optional": "Không bắt buộc",
-      "period": "Khoảng thời gian",
-      "startDate": "Bắt đầu",
-      "endDate": "Kết thúc",
-      "month": "Tháng",
-      "year": "Năm"
+      "saving": "Đang lưu..."
     },
-    "education": {
-      "title": "Học vấn",
-      "description": "Sắp xếp theo lộ trình từ Trung học phổ thông đến Cao học.",
-      "empty": "Chưa có thông tin học vấn.",
-      "add": "Thêm học vấn",
-      "editTitle": "Chỉnh sửa học vấn",
-      "addTitle": "Thêm thông tin học vấn",
-      "dialogDescription": "Ghi lại trường học, thời gian học và nhập bảng điểm đúng theo từng bậc.",
-      "level": "Bậc học",
-      "levels": {
-        "HIGH_SCHOOL": "Trung học phổ thông",
-        "UNDERGRADUATE": "Đại học",
-        "GRADUATE": "Cao học"
+    "extended": {
+      "title": "Hồ sơ học tập và kinh nghiệm",
+      "description": "Bổ sung các dấu mốc quan trọng để hồ sơ phản ánh đầy đủ năng lực và hành trình của bạn.",
+      "common": {
+        "add": "Thêm mới",
+        "edit": "Chỉnh sửa",
+        "delete": "Xoá",
+        "cancel": "Huỷ",
+        "save": "Lưu thông tin",
+        "saving": "Đang lưu...",
+        "deleting": "Đang xoá...",
+        "deleteTitle": "Xoá thông tin này?",
+        "deleteDescription": "Thông tin đã xoá không thể khôi phục.",
+        "optional": "Không bắt buộc",
+        "period": "Khoảng thời gian",
+        "startDate": "Bắt đầu",
+        "endDate": "Kết thúc",
+        "month": "Tháng",
+        "year": "Năm"
       },
-      "institutionName": "Tên trường",
-      "fieldOfStudy": "Ngành học, chương trình hoặc chuyên ban",
-      "fieldOfStudyHint": "Ví dụ: Khoa học máy tính, Toán chuyên hoặc chương trình Thạc sĩ Quản trị kinh doanh.",
-      "fieldLabels": {
-        "HIGH_SCHOOL": "Chuyên ban, tổ hợp hoặc lớp chuyên",
-        "UNDERGRADUATE": "Ngành học",
-        "GRADUATE": "Chuyên ngành hoặc chương trình cao học"
+      "education": {
+        "title": "Học vấn",
+        "description": "Sắp xếp theo lộ trình từ Trung học phổ thông đến Cao học.",
+        "empty": "Chưa có thông tin học vấn.",
+        "add": "Thêm học vấn",
+        "editTitle": "Chỉnh sửa học vấn",
+        "addTitle": "Thêm thông tin học vấn",
+        "dialogDescription": "Ghi lại trường học, thời gian học và nhập bảng điểm đúng theo từng bậc.",
+        "level": "Bậc học",
+        "levels": {
+          "HIGH_SCHOOL": "Trung học phổ thông",
+          "UNDERGRADUATE": "Đại học",
+          "GRADUATE": "Cao học"
+        },
+        "institutionName": "Tên trường",
+        "fieldOfStudy": "Ngành học, chương trình hoặc chuyên ban",
+        "fieldOfStudyHint": "Ví dụ: Khoa học máy tính, Toán chuyên hoặc chương trình Thạc sĩ Quản trị kinh doanh.",
+        "fieldLabels": {
+          "HIGH_SCHOOL": "Chuyên ban, tổ hợp hoặc lớp chuyên",
+          "UNDERGRADUATE": "Ngành học",
+          "GRADUATE": "Chuyên ngành hoặc chương trình cao học"
+        },
+        "fieldHints": {
+          "HIGH_SCHOOL": "Ví dụ: lớp chuyên Toán, tổ hợp Khoa học tự nhiên.",
+          "UNDERGRADUATE": "Ví dụ: Khoa học máy tính, Kinh tế quốc tế.",
+          "GRADUATE": "Ví dụ: Thạc sĩ Trí tuệ nhân tạo, Tiến sĩ Kinh tế học."
+        },
+        "transcriptImport": "Nhập bảng điểm Excel",
+        "downloadTemplate": "Tải file Excel mẫu",
+        "grade10File": "Bảng điểm lớp 10",
+        "grade11File": "Bảng điểm lớp 11",
+        "grade12File": "Bảng điểm lớp 12",
+        "transcriptFile": "Bảng điểm tích luỹ",
+        "optionalOnEdit": "Tệp .xlsx tối đa 2 MB. Để trống nếu không muốn thay bảng điểm đã lưu.",
+        "highSchoolTranscriptHint": "Mỗi khối nhập một tệp .xlsx gồm 2 cột: Môn học và Điểm trung bình cả năm. Hệ thống tự tính điểm trung bình trên thang 10.",
+        "higherEducationTranscriptHint": "Tệp .xlsx tối đa 2 MB gồm 3 cột: Môn học, Tín chỉ và Điểm. Hệ thống tự tính điểm trung bình tích luỹ có trọng số tín chỉ.",
+        "scoreScale": "Thang điểm",
+        "scoreScaleHint": "Chọn đúng thang điểm dùng trong tệp Excel.",
+        "scale4": "Thang 4",
+        "scale10": "Thang 10",
+        "transcriptStages": {
+          "GRADE_10": "Lớp 10",
+          "GRADE_11": "Lớp 11",
+          "GRADE_12": "Lớp 12",
+          "CUMULATIVE": "Điểm tích luỹ"
+        },
+        "subjectCount": "{count} môn",
+        "creditCount": "{count} tín chỉ",
+        "noTranscript": "Chưa nhập bảng điểm.",
+        "research": "Nghiên cứu khoa học",
+        "researchHint": "Chỉ áp dụng cho Đại học và Cao học. Nhập đầy đủ tên và mô tả nếu có nghiên cứu.",
+        "researchTitle": "Tên nghiên cứu",
+        "researchDescription": "Mô tả nghiên cứu"
       },
-      "fieldHints": {
-        "HIGH_SCHOOL": "Ví dụ: lớp chuyên Toán, tổ hợp Khoa học tự nhiên.",
-        "UNDERGRADUATE": "Ví dụ: Khoa học máy tính, Kinh tế quốc tế.",
-        "GRADUATE": "Ví dụ: Thạc sĩ Trí tuệ nhân tạo, Tiến sĩ Kinh tế học."
+      "certificate": {
+        "title": "Chứng chỉ",
+        "description": "Các chứng chỉ chuyên môn kèm bản mềm minh chứng.",
+        "empty": "Chưa có chứng chỉ nào.",
+        "add": "Thêm chứng chỉ",
+        "editTitle": "Chỉnh sửa chứng chỉ",
+        "addTitle": "Thêm chứng chỉ",
+        "dialogDescription": "Nhập tên chứng chỉ, năm cấp và tải lên PDF hoặc ảnh minh chứng.",
+        "name": "Tên chứng chỉ",
+        "issuedYear": "Năm cấp",
+        "evidence": "Bản mềm minh chứng",
+        "evidenceHint": "PDF, JPG, PNG hoặc WebP, tối đa 5 MB.",
+        "replaceEvidenceHint": "Chỉ chọn tệp mới nếu muốn thay minh chứng hiện tại.",
+        "viewEvidence": "Xem minh chứng",
+        "issuedIn": "cấp năm {year}"
       },
-      "transcriptImport": "Nhập bảng điểm Excel",
-      "downloadTemplate": "Tải file Excel mẫu",
-      "grade10File": "Bảng điểm lớp 10",
-      "grade11File": "Bảng điểm lớp 11",
-      "grade12File": "Bảng điểm lớp 12",
-      "transcriptFile": "Bảng điểm tích luỹ",
-      "optionalOnEdit": "Tệp .xlsx tối đa 2 MB. Để trống nếu không muốn thay bảng điểm đã lưu.",
-      "highSchoolTranscriptHint": "Mỗi khối nhập một tệp .xlsx gồm 2 cột: Môn học và Điểm trung bình cả năm. Hệ thống tự tính điểm trung bình trên thang 10.",
-      "higherEducationTranscriptHint": "Tệp .xlsx tối đa 2 MB gồm 3 cột: Môn học, Tín chỉ và Điểm. Hệ thống tự tính điểm trung bình tích luỹ có trọng số tín chỉ.",
-      "scoreScale": "Thang điểm",
-      "scoreScaleHint": "Chọn đúng thang điểm dùng trong tệp Excel.",
-      "scale4": "Thang 4",
-      "scale10": "Thang 10",
-      "transcriptStages": {
-        "GRADE_10": "Lớp 10",
-        "GRADE_11": "Lớp 11",
-        "GRADE_12": "Lớp 12",
-        "CUMULATIVE": "Điểm tích luỹ"
+      "work": {
+        "title": "Kinh nghiệm làm việc",
+        "description": "Hiển thị công việc gần nhất trước, cùng điều đã học và kỹ năng tích luỹ.",
+        "empty": "Chưa có kinh nghiệm làm việc.",
+        "add": "Thêm kinh nghiệm",
+        "editTitle": "Chỉnh sửa kinh nghiệm",
+        "addTitle": "Thêm kinh nghiệm làm việc",
+        "dialogDescription": "Mô tả nơi làm việc, khoảng thời gian và những giá trị bạn tích luỹ được.",
+        "workplaceName": "Nơi làm việc",
+        "position": "Vị trí hoặc vai trò",
+        "startDate": "Thời gian bắt đầu",
+        "endDate": "Thời gian kết thúc",
+        "month": "Tháng",
+        "year": "Năm",
+        "isCurrent": "Tôi đang làm việc tại đây",
+        "present": "Hiện tại",
+        "learnings": "Điều đã học được",
+        "learningsHint": "Những kiến thức, bài học hoặc trải nghiệm đáng chú ý.",
+        "skills": "Kỹ năng tích luỹ",
+        "skillsHint": "Ví dụ: quản lý dự án, giao tiếp, phân tích dữ liệu."
       },
-      "subjectCount": "{count} môn",
-      "creditCount": "{count} tín chỉ",
-      "noTranscript": "Chưa nhập bảng điểm.",
-      "research": "Nghiên cứu khoa học",
-      "researchHint": "Chỉ áp dụng cho Đại học và Cao học. Nhập đầy đủ tên và mô tả nếu có nghiên cứu.",
-      "researchTitle": "Tên nghiên cứu",
-      "researchDescription": "Mô tả nghiên cứu"
-    },
-    "certificate": {
-      "title": "Chứng chỉ",
-      "description": "Các chứng chỉ chuyên môn kèm bản mềm minh chứng.",
-      "empty": "Chưa có chứng chỉ nào.",
-      "add": "Thêm chứng chỉ",
-      "editTitle": "Chỉnh sửa chứng chỉ",
-      "addTitle": "Thêm chứng chỉ",
-      "dialogDescription": "Nhập tên chứng chỉ, năm cấp và tải lên PDF hoặc ảnh minh chứng.",
-      "name": "Tên chứng chỉ",
-      "issuedYear": "Năm cấp",
-      "evidence": "Bản mềm minh chứng",
-      "evidenceHint": "PDF, JPG, PNG hoặc WebP, tối đa 5 MB.",
-      "replaceEvidenceHint": "Chỉ chọn tệp mới nếu muốn thay minh chứng hiện tại.",
-      "viewEvidence": "Xem minh chứng",
-      "issuedIn": "cấp năm {year}"
-    },
-    "work": {
-      "title": "Kinh nghiệm làm việc",
-      "description": "Hiển thị công việc gần nhất trước, cùng điều đã học và kỹ năng tích luỹ.",
-      "empty": "Chưa có kinh nghiệm làm việc.",
-      "add": "Thêm kinh nghiệm",
-      "editTitle": "Chỉnh sửa kinh nghiệm",
-      "addTitle": "Thêm kinh nghiệm làm việc",
-      "dialogDescription": "Mô tả nơi làm việc, khoảng thời gian và những giá trị bạn tích luỹ được.",
-      "workplaceName": "Nơi làm việc",
-      "position": "Vị trí hoặc vai trò",
-      "startDate": "Thời gian bắt đầu",
-      "endDate": "Thời gian kết thúc",
-      "month": "Tháng",
-      "year": "Năm",
-      "isCurrent": "Tôi đang làm việc tại đây",
-      "present": "Hiện tại",
-      "learnings": "Điều đã học được",
-      "learningsHint": "Những kiến thức, bài học hoặc trải nghiệm đáng chú ý.",
-      "skills": "Kỹ năng tích luỹ",
-      "skillsHint": "Ví dụ: quản lý dự án, giao tiếp, phân tích dữ liệu."
-    },
-    "competition": {
-      "title": "Cuộc thi và thành tích",
-      "description": "Các cuộc thi đã tham gia, ưu tiên năm gần nhất.",
-      "empty": "Chưa có thông tin cuộc thi.",
-      "add": "Thêm cuộc thi",
-      "editTitle": "Chỉnh sửa cuộc thi",
-      "addTitle": "Thêm cuộc thi",
-      "dialogDescription": "Ghi tên cuộc thi, giải thưởng đạt được nếu có và năm tham gia.",
-      "name": "Tên cuộc thi",
-      "awardName": "Tên giải hoặc thành tích",
-      "awardHint": "Để trống nếu chỉ tham gia.",
-      "participated": "Đã tham gia",
-      "resultYear": "Năm tham gia hoặc nhận giải"
-    },
-    "activity": {
-      "title": "Hoạt động khác",
-      "description": "Hoạt động ngoại khoá, cộng đồng, tình nguyện hoặc dự án cá nhân.",
-      "empty": "Chưa có hoạt động khác.",
-      "add": "Thêm hoạt động",
-      "editTitle": "Chỉnh sửa hoạt động",
-      "addTitle": "Thêm hoạt động khác",
-      "dialogDescription": "Nhập tên hoạt động hoặc dự án bạn muốn ghi lại.",
-      "name": "Tên hoạt động"
-    },
-    "actions": {
-      "saved": "Đã lưu thông tin.",
-      "deleted": "Đã xoá thông tin.",
-      "checkFields": "Kiểm tra các trường được đánh dấu rồi thử lại.",
-      "failed": "Chưa thể lưu thông tin. Vui lòng thử lại.",
-      "deleteFailed": "Chưa thể xoá thông tin. Vui lòng thử lại.",
-      "notFound": "Không tìm thấy thông tin hoặc bạn không có quyền chỉnh sửa.",
-      "unavailable": "Tài khoản này không có hồ sơ để chỉnh sửa."
-    },
-    "validation": {
-      "id": "Thông tin không hợp lệ.",
-      "level": "Chọn một bậc học hợp lệ.",
-      "institutionName": "Nhập tên trường.",
-      "fieldOfStudy": "Nội dung ngành học hoặc chuyên ban quá dài.",
-      "scoreScale": "Chọn thang điểm 4 hoặc 10.",
-      "researchTitle": "Tên nghiên cứu quá dài.",
-      "researchDescription": "Mô tả nghiên cứu quá dài.",
-      "research": "Nhập đầy đủ cả tên và mô tả nghiên cứu.",
-      "name": "Nhập tên hợp lệ.",
-      "issuedYear": "Nhập năm cấp hợp lệ.",
-      "awardName": "Tên giải hoặc thành tích quá dài.",
-      "year": "Nhập năm hợp lệ.",
-      "workplaceName": "Nhập tên nơi làm việc.",
-      "position": "Tên vị trí hoặc vai trò quá dài.",
-      "startMonth": "Chọn tháng bắt đầu hợp lệ.",
-      "startYear": "Nhập năm bắt đầu hợp lệ.",
-      "endMonth": "Chọn tháng kết thúc hợp lệ.",
-      "endYear": "Nhập năm kết thúc hợp lệ.",
-      "endDate": "Nhập thời gian kết thúc hợp lệ.",
-      "isCurrent": "Trạng thái công việc không hợp lệ.",
-      "learnings": "Nội dung bài học quá dài.",
-      "skills": "Nội dung kỹ năng quá dài.",
-      "endDateRequired": "Nhập đầy đủ tháng và năm kết thúc hoặc chọn đang làm việc tại đây.",
-      "endDateBeforeStart": "Thời gian kết thúc không được trước thời gian bắt đầu.",
-      "transcriptFile": {
-        "fileTooLarge": "Tệp bảng điểm phải nhỏ hơn hoặc bằng 2 MB.",
-        "invalidFile": "Chọn một tệp Excel .xlsx hợp lệ.",
-        "missingHeaders": "Tệp Excel thiếu hoặc đặt sai tên cột yêu cầu.",
-        "empty": "Tệp Excel chưa có dữ liệu môn học.",
-        "tooManyRows": "Bảng điểm chỉ được có tối đa 200 môn học.",
-        "invalidRow": "Dữ liệu tại dòng {row} không hợp lệ hoặc vượt quá thang điểm.",
-        "duplicateSubject": "Môn học tại dòng {row} bị trùng.",
-        "reimportRequired": "Khi đổi thang điểm, hãy nhập lại bảng điểm tích luỹ."
+      "competition": {
+        "title": "Cuộc thi và thành tích",
+        "description": "Các cuộc thi đã tham gia, ưu tiên năm gần nhất.",
+        "empty": "Chưa có thông tin cuộc thi.",
+        "add": "Thêm cuộc thi",
+        "editTitle": "Chỉnh sửa cuộc thi",
+        "addTitle": "Thêm cuộc thi",
+        "dialogDescription": "Ghi tên cuộc thi, giải thưởng đạt được nếu có và năm tham gia.",
+        "name": "Tên cuộc thi",
+        "awardName": "Tên giải hoặc thành tích",
+        "awardHint": "Để trống nếu chỉ tham gia.",
+        "participated": "Đã tham gia",
+        "resultYear": "Năm tham gia hoặc nhận giải"
       },
-      "evidence": {
-        "required": "Tải lên bản mềm minh chứng.",
-        "tooLarge": "Tệp minh chứng phải nhỏ hơn hoặc bằng 5 MB.",
-        "invalidType": "Chỉ chấp nhận PDF, JPG, PNG hoặc WebP.",
-        "invalidContent": "Nội dung tệp không khớp với định dạng được khai báo."
+      "activity": {
+        "title": "Hoạt động khác",
+        "description": "Hoạt động ngoại khoá, cộng đồng, tình nguyện hoặc dự án cá nhân.",
+        "empty": "Chưa có hoạt động khác.",
+        "add": "Thêm hoạt động",
+        "editTitle": "Chỉnh sửa hoạt động",
+        "addTitle": "Thêm hoạt động khác",
+        "dialogDescription": "Nhập tên hoạt động hoặc dự án bạn muốn ghi lại.",
+        "name": "Tên hoạt động"
+      },
+      "actions": {
+        "saved": "Đã lưu thông tin.",
+        "deleted": "Đã xoá thông tin.",
+        "checkFields": "Kiểm tra các trường được đánh dấu rồi thử lại.",
+        "failed": "Chưa thể lưu thông tin. Vui lòng thử lại.",
+        "deleteFailed": "Chưa thể xoá thông tin. Vui lòng thử lại.",
+        "notFound": "Không tìm thấy thông tin hoặc bạn không có quyền chỉnh sửa.",
+        "unavailable": "Tài khoản này không có hồ sơ để chỉnh sửa."
+      },
+      "validation": {
+        "id": "Thông tin không hợp lệ.",
+        "level": "Chọn một bậc học hợp lệ.",
+        "institutionName": "Nhập tên trường.",
+        "fieldOfStudy": "Nội dung ngành học hoặc chuyên ban quá dài.",
+        "scoreScale": "Chọn thang điểm 4 hoặc 10.",
+        "researchTitle": "Tên nghiên cứu quá dài.",
+        "researchDescription": "Mô tả nghiên cứu quá dài.",
+        "research": "Nhập đầy đủ cả tên và mô tả nghiên cứu.",
+        "name": "Nhập tên hợp lệ.",
+        "issuedYear": "Nhập năm cấp hợp lệ.",
+        "awardName": "Tên giải hoặc thành tích quá dài.",
+        "year": "Nhập năm hợp lệ.",
+        "workplaceName": "Nhập tên nơi làm việc.",
+        "position": "Tên vị trí hoặc vai trò quá dài.",
+        "startMonth": "Chọn tháng bắt đầu hợp lệ.",
+        "startYear": "Nhập năm bắt đầu hợp lệ.",
+        "endMonth": "Chọn tháng kết thúc hợp lệ.",
+        "endYear": "Nhập năm kết thúc hợp lệ.",
+        "endDate": "Nhập thời gian kết thúc hợp lệ.",
+        "isCurrent": "Trạng thái công việc không hợp lệ.",
+        "learnings": "Nội dung bài học quá dài.",
+        "skills": "Nội dung kỹ năng quá dài.",
+        "endDateRequired": "Nhập đầy đủ tháng và năm kết thúc hoặc chọn đang làm việc tại đây.",
+        "endDateBeforeStart": "Thời gian kết thúc không được trước thời gian bắt đầu.",
+        "transcriptFile": {
+          "fileTooLarge": "Tệp bảng điểm phải nhỏ hơn hoặc bằng 2 MB.",
+          "invalidFile": "Chọn một tệp Excel .xlsx hợp lệ.",
+          "missingHeaders": "Tệp Excel thiếu hoặc đặt sai tên cột yêu cầu.",
+          "empty": "Tệp Excel chưa có dữ liệu môn học.",
+          "tooManyRows": "Bảng điểm chỉ được có tối đa 200 môn học.",
+          "invalidRow": "Dữ liệu tại dòng {row} không hợp lệ hoặc vượt quá thang điểm.",
+          "duplicateSubject": "Môn học tại dòng {row} bị trùng.",
+          "reimportRequired": "Khi đổi thang điểm, hãy nhập lại bảng điểm tích luỹ."
+        },
+        "evidence": {
+          "required": "Tải lên bản mềm minh chứng.",
+          "tooLarge": "Tệp minh chứng phải nhỏ hơn hoặc bằng 5 MB.",
+          "invalidType": "Chỉ chấp nhận PDF, JPG, PNG hoặc WebP.",
+          "invalidContent": "Nội dung tệp không khớp với định dạng được khai báo."
+        }
       }
-    }
-  },
-  "months": {
+    },
+    "months": {
       "1": "Tháng 1",
       "2": "Tháng 2",
       "3": "Tháng 3",
@@ -1312,22 +1194,54 @@
       }
     },
     "types": {
-      "INTJ": { "title": "Nhà chiến lược" },
-      "INTP": { "title": "Nhà phân tích" },
-      "ENTJ": { "title": "Người kiến tạo" },
-      "ENTP": { "title": "Người khám phá" },
-      "INFJ": { "title": "Người định hướng" },
-      "INFP": { "title": "Người hòa giải" },
-      "ENFJ": { "title": "Người truyền cảm hứng" },
-      "ENFP": { "title": "Người khơi mở" },
-      "ISTJ": { "title": "Người tổ chức" },
-      "ISFJ": { "title": "Người đồng hành" },
-      "ESTJ": { "title": "Người điều phối" },
-      "ESFJ": { "title": "Người kết nối" },
-      "ISTP": { "title": "Người giải quyết" },
-      "ISFP": { "title": "Người trải nghiệm" },
-      "ESTP": { "title": "Người hành động" },
-      "ESFP": { "title": "Người tạo năng lượng" }
+      "INTJ": {
+        "title": "Nhà chiến lược"
+      },
+      "INTP": {
+        "title": "Nhà phân tích"
+      },
+      "ENTJ": {
+        "title": "Người kiến tạo"
+      },
+      "ENTP": {
+        "title": "Người khám phá"
+      },
+      "INFJ": {
+        "title": "Người định hướng"
+      },
+      "INFP": {
+        "title": "Người hòa giải"
+      },
+      "ENFJ": {
+        "title": "Người truyền cảm hứng"
+      },
+      "ENFP": {
+        "title": "Người khơi mở"
+      },
+      "ISTJ": {
+        "title": "Người tổ chức"
+      },
+      "ISFJ": {
+        "title": "Người đồng hành"
+      },
+      "ESTJ": {
+        "title": "Người điều phối"
+      },
+      "ESFJ": {
+        "title": "Người kết nối"
+      },
+      "ISTP": {
+        "title": "Người giải quyết"
+      },
+      "ISFP": {
+        "title": "Người trải nghiệm"
+      },
+      "ESTP": {
+        "title": "Người hành động"
+      },
+      "ESFP": {
+        "title": "Người tạo năng lượng"
+      }
     },
     "questions": {
       "0": {
@@ -1400,7 +1314,7 @@
   "Settings": {
     "metadataTitle": "Cài đặt",
     "title": "Cài đặt",
-    "description": "Quản lý cách các tính năng AI hoạt động cho tài khoản của bạn.",
+    "description": "Quản lý cài đặt AI và dữ liệu lưu trên thiết bị này.",
     "career": {
       "title": "Phân tích lộ trình",
       "description": "Model này được dùng tự động khi tạo hoặc cập nhật lộ trình.",
@@ -1431,6 +1345,20 @@
       "saved": "Đã lưu cài đặt lộ trình.",
       "roadmapDataSaved": "Đã lưu cách dùng dữ liệu cho lộ trình mới.",
       "roadmapDataReset": "Đã làm mới dữ liệu điền sẵn."
+    },
+    "browser": {
+      "title": "Nhà cung cấp AI của bạn",
+      "description": "Dùng khóa riêng với API tương thích OpenAI. Trình duyệt gửi yêu cầu trực tiếp đến nhà cung cấp.",
+      "url": "URL gốc của API",
+      "model": "Tên mô hình",
+      "key": "Khóa API",
+      "privacy": "Khóa API được lưu trong localStorage trên thiết bị này. Người có quyền truy cập trình duyệt có thể đọc khóa. Nhà cung cấp nhận dữ liệu bạn gửi khi dùng AI. Hãy dùng thiết bị cá nhân. Nhà cung cấp cần cho phép yêu cầu từ trình duyệt (CORS).",
+      "save": "Lưu cài đặt AI",
+      "saved": "Đã lưu cài đặt AI trên thiết bị này.",
+      "failed": "Không thể lưu cài đặt.",
+      "remove": "Xóa khóa API",
+      "removed": "Đã xóa khóa API.",
+      "export": "Xuất dữ liệu (không kèm khóa API)"
     }
   }
 }

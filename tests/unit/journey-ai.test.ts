@@ -75,21 +75,18 @@ describe("Journey AI deletion", () => {
     const result = await applyJourneyAiRequest({
       locale: "vi",
       prompt: "Xoá mục cần xoá",
-      userId: "user-1",
     });
 
     expect(mocks.deleteJourneyEntry).toHaveBeenCalledOnce();
     expect(mocks.deleteJourneyEntry).toHaveBeenCalledWith({
       entryId: deletedEntryId,
-      userId: "user-1",
     });
     expect(mocks.updateJourneyEntry).toHaveBeenCalledOnce();
     expect(mocks.updateJourneyEntry).toHaveBeenCalledWith(
       expect.objectContaining({
         completed: true,
         entryId: updatedEntryId,
-        userId: "user-1",
-      }),
+        }),
     );
     expect(result.changedEntries).toEqual(changedEntries);
 

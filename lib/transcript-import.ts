@@ -2,7 +2,7 @@ import {
   readSheet,
   type CellValue,
   type SheetData,
-} from "read-excel-file/node";
+} from "read-excel-file/browser";
 
 import {
   TRANSCRIPT_FILE_MAX_BYTES,
@@ -90,7 +90,7 @@ export async function parseTranscriptFile(
 
   let rows: SheetData;
   try {
-    rows = await readSheet(Buffer.from(bytes));
+    rows = await readSheet(bytes.buffer);
   } catch {
     throw new TranscriptImportError("invalidFile");
   }

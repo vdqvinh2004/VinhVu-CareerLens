@@ -7,7 +7,7 @@ afterEach(() => {
   vi.unstubAllGlobals();
 });
 
-describe("CareerLens profile helpers", () => {
+describe("VinhVu CareerLen profile helpers", () => {
   it("provides subject-specific interest suggestions", () => {
     expect(getInterestSuggestions("Toán và lập trình")).toEqual(
       expect.arrayContaining(["Phân tích dữ liệu", "Phát triển phần mềm", "AI và học máy"]),
@@ -27,24 +27,9 @@ describe("CareerLens profile helpers", () => {
     expect(VIETNAM_PROVINCES).toContain("Tỉnh Cà Mau");
   });
 
-  it("loads province names from the open province API", async () => {
-    vi.stubGlobal(
-      "fetch",
-      vi.fn().mockResolvedValue(
-        new Response(
-          JSON.stringify([
-            { name: "Thành phố Test", code: 1 },
-            { name: "Thành phố Test", code: 1 },
-            { name: "Tỉnh Demo", code: 2 },
-          ]),
-          { status: 200, headers: { "Content-Type": "application/json" } },
-        ),
-      ),
-    );
-
-    await expect(getVietnamProvinceNames()).resolves.toEqual([
-      "Thành phố Test",
-      "Tỉnh Demo",
-    ]);
+  it("uses bundled provinces without network access", () => {
+    const fetch = vi.fn(); vi.stubGlobal("fetch", fetch);
+    expect(getVietnamProvinceNames()).toEqual([...VIETNAM_PROVINCES]);
+    expect(fetch).not.toHaveBeenCalled();
   });
 });

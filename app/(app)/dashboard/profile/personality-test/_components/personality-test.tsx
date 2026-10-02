@@ -41,12 +41,12 @@ import {
   type PersonalityAnswer,
   type PersonalityType,
 } from "@/lib/personality-test";
-import type { PersonalityScores } from "@/lib/db/schema";
+import type { PersonalityScores } from "@/lib/personality-test";
 
 import {
   submitPersonalityTestAction,
   type PersonalityTestActionState,
-} from "../actions";
+} from "../operations";
 
 const initialActionState: PersonalityTestActionState = { status: "idle" };
 const questionKeys = [

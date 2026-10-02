@@ -1,23 +1,7 @@
 import type { NextConfig } from "next";
-import createNextIntlPlugin from "next-intl/plugin";
-
 const nextConfig: NextConfig = {
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "images.unsplash.com",
-      },
-    ],
-  },
-  output: "standalone",
-  experimental: {
-    serverActions: {
-      bodySizeLimit: "8mb",
-    },
-  },
+  output: "export",
+  trailingSlash: true,
+  images: { unoptimized: true },
 };
-
-const withNextIntl = createNextIntlPlugin();
-
-export default withNextIntl(nextConfig);
+export default nextConfig;

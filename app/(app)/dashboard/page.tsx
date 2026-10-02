@@ -1,9 +1,8 @@
-import { AVAILABLE_MODELS } from "@/lib/ai";
-import { requirePermission } from "@/lib/auth/dal";
-import { PERMISSIONS } from "@/lib/auth/permissions";
+"use client";
+import { useWorkspace } from "@/lib/browser-storage";
 import { getFollowedCareerRoadmap } from "@/lib/careerlens/roadmaps";
 import type { CareerRecommendation } from "@/lib/careerlens/schemas";
-import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
 
 import { AIChat } from "./ai-assistant/_components/ai-chat";
 
@@ -19,15 +18,10 @@ function countRoadmapTasks(recommendation: CareerRecommendation) {
   }, 0);
 }
 
-export default async function DashboardPage() {
-  const [viewer, t] = await Promise.all([
-    requirePermission(PERMISSIONS.DASHBOARD_ACCESS),
-    getTranslations("Dashboard"),
-  ]);
-  const followedRoadmap =
-    viewer.actor.kind === "user"
-      ? await getFollowedCareerRoadmap(viewer.actor.userId)
-      : null;
+export default function DashboardPage() {
+  const { profile, ai } = useWorkspace();
+  const t = useTranslations("Dashboard");
+  const followedRoadmap = getFollowedCareerRoadmap();
   const recommendation = followedRoadmap
     ? followedRoadmap.guidanceOutput.recommendations[followedRoadmap.selectedRecommendationIndex] ??
       followedRoadmap.guidanceOutput.recommendations[0]
@@ -50,8 +44,8 @@ export default async function DashboardPage() {
       <h1 className="sr-only">{t("homeHeading")}</h1>
       <AIChat
         followedRoadmap={followedProgress}
-        initialModels={AVAILABLE_MODELS}
-        viewerName={viewer.displayName}
+        initialModels={[ai.model]}
+        viewerName={profile.fullName}
       />
     </div>
   );

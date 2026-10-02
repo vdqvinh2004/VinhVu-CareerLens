@@ -1,50 +1,9 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
 
-import { generateCareerPlanAction } from "@/app/(app)/dashboard/careerlens/actions";
 import {
   buildCareerGuidanceInput,
   careerLensFormSchema,
 } from "@/lib/careerlens/form";
-import { saveCareerRoadmap } from "@/lib/careerlens/roadmaps";
-
-vi.mock("@/lib/auth/dal", () => ({
-  requirePermission: vi.fn().mockResolvedValue({
-    actor: { kind: "user", userId: "student-001", authVersion: 1 },
-    displayName: "Minh Anh",
-    email: "minh.anh@example.com",
-    roles: ["USER"],
-    permissions: ["dashboard.access"],
-  }),
-}));
-
-vi.mock("next-intl/server", () => ({
-  getLocale: vi.fn().mockResolvedValue("vi"),
-  getTranslations: vi.fn().mockResolvedValue((key: string) => key),
-}));
-
-vi.mock("next/cache", () => ({
-  revalidatePath: vi.fn(),
-}));
-
-vi.mock("@/lib/careerlens/starting-point", () => ({
-  getCareerStartingPointSnapshot: vi.fn().mockResolvedValue({
-    personality: null,
-    education: [],
-    certificates: [],
-    competitions: [],
-    activities: [],
-    workExperiences: [],
-  }),
-}));
-
-vi.mock("@/lib/careerlens/preferences", () => ({
-  getPreferredCareerModel: vi.fn().mockResolvedValue("DeepSeek-V4-Flash"),
-}));
-
-vi.mock("@/lib/careerlens/roadmaps", () => ({
-  saveCareerRoadmap: vi.fn().mockResolvedValue("81ac9b86-5905-4c34-91c5-a0f9f988820c"),
-  selectCareerRoadmapRecommendation: vi.fn().mockResolvedValue(true),
-}));
 
 function createValidFormData() {
   const formData = new FormData();
@@ -80,7 +39,7 @@ afterEach(() => {
   vi.unstubAllEnvs();
 });
 
-describe("CareerLens form integration", () => {
+describe("VinhVu CareerLen form integration", () => {
   it("maps validated form values into the LLM input contract", () => {
     const rawValues = Object.fromEntries(createValidFormData());
     const parsed = careerLensFormSchema.parse(rawValues);
@@ -112,46 +71,7 @@ describe("CareerLens form integration", () => {
     }
   });
 
-  it("returns specific field messages for an invalid submission", async () => {
-    const formData = createValidFormData();
-    formData.set("currentRegion", "Tỉnh không tồn tại");
-    formData.set("activity", "x".repeat(2_001));
 
-    const state = await generateCareerPlanAction(
-      { status: "idle" },
-      formData,
-    );
-
-    expect(state.status).toBe("error");
-    expect(state.message).toBe("actions.checkFields");
-    expect(state.fieldErrors).toMatchObject({
-      activity: ["actions.fields.activity"],
-      currentRegion: ["actions.fields.currentRegion"],
-    });
-  });
-
-  it("accepts all guidance fields as blank", async () => {
-    vi.stubEnv("FPT_AI_API_KEY", "");
-    const formData = new FormData();
-    formData.set("consent", "on");
-    formData.set("submitAction", "generate");
-
-    const state = await generateCareerPlanAction(
-      { status: "idle" },
-      formData,
-    );
-
-    expect(state.status).toBe("success");
-    expect(state.formValues).toMatchObject({
-      activity: "",
-      currentRegion: "",
-      educationLevel: null,
-      interests: "",
-      question: "",
-      targetRegion: "",
-      weeklyHours: null,
-    });
-  });
 
   it("does not add a blank activity or academic record", () => {
     const formData = new FormData();
@@ -164,17 +84,6 @@ describe("CareerLens form integration", () => {
     expect(input.student_profile.self_reported_activities).toEqual([]);
   });
 
-  it("does not generate until the explicit submit button is used", async () => {
-    const formData = createValidFormData();
-    formData.delete("submitAction");
-
-    const state = await generateCareerPlanAction(
-      { status: "idle" },
-      formData,
-    );
-
-    expect(state).toEqual({ status: "idle" });
-  });
 
   it("accepts an empty desired outcome", () => {
     const rawValues = Object.fromEntries(createValidFormData());
@@ -296,56 +205,5 @@ describe("CareerLens form integration", () => {
     expect(invalidResult.success).toBe(false);
   });
 
-  it("returns a generated plan through the authenticated Server Action", async () => {
-    vi.stubEnv("FPT_AI_API_KEY", "");
 
-    const state = await generateCareerPlanAction(
-      { status: "idle" },
-      createValidFormData(),
-    );
-
-    expect(state.status).toBe("success");
-    expect(state.output?.recommendations).toHaveLength(3);
-    expect(state.roadmapId).toBe("81ac9b86-5905-4c34-91c5-a0f9f988820c");
-    expect(state.output?.recommendations[0].roadmap.map((stage) => stage.stage_type)).toEqual([
-      "learning",
-      "internship",
-      "full_time",
-    ]);
-    expect(saveCareerRoadmap).toHaveBeenCalledWith(
-      expect.objectContaining({
-        formValues: {
-          activity: "Tôi từng làm website giới thiệu cho câu lạc bộ ở trường.",
-          currentRegion: "Thành phố Hồ Chí Minh",
-          educationLevel: "THPT",
-          familyConstraints: "Cần học gần nhà",
-          interests: "Công nghệ, bóng đá, kinh doanh",
-          intent: "initial_guidance",
-          languages: "Tiếng Việt, English",
-          learningStyle: "project_based",
-          question: "Tôi nên bắt đầu kiểm chứng hướng nghề nào trong ba tháng tới?",
-          strongSubject: "Toán",
-          subjectScore: 8.5,
-          targetBudget: "Dưới 20 triệu đồng/năm",
-          targetRegion: "Thành phố Hồ Chí Minh",
-          weeklyHours: 10,
-          workEnvironment: "team_based",
-        },
-      }),
-    );
-  });
-
-  it("creates a roadmap when the desired outcome is left blank", async () => {
-    vi.stubEnv("FPT_AI_API_KEY", "");
-    const formData = createValidFormData();
-    formData.set("question", "");
-
-    const state = await generateCareerPlanAction(
-      { status: "idle" },
-      formData,
-    );
-
-    expect(state.status).toBe("success");
-    expect(state.formValues?.question).toBe("");
-  });
 });

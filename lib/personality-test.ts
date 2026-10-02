@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-import type { PersonalityScores } from "@/lib/db/schema";
+export type PersonalityScores = Record<"E" | "I" | "S" | "N" | "T" | "F" | "J" | "P", number>;
 
 export const PERSONALITY_TEST_VERSION = 1;
 

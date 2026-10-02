@@ -1,4 +1,3 @@
-import "server-only";
 
 import { extractText, getDocumentProxy } from "unpdf";
 

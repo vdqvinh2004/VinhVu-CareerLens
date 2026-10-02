@@ -1,7 +1,7 @@
 import writeXlsxFile, {
   type CellObject,
   type SheetData,
-} from "write-excel-file/node";
+} from "write-excel-file/browser";
 
 import type { EducationLevel } from "@/lib/profile-records";
 
@@ -100,7 +100,7 @@ export async function createTranscriptTemplate(
   const normalizedScale = level === "HIGH_SCHOOL" ? 10 : scoreScale;
   const transcriptSheet = locale === "vi" ? "Bảng điểm" : "Transcript";
   const guideSheet = locale === "vi" ? "Hướng dẫn" : "Guide";
-  const buffer = await writeXlsxFile(
+  const blob = await writeXlsxFile(
     [
       {
         data: transcriptData(level, normalizedScale, locale),
@@ -120,9 +120,9 @@ export async function createTranscriptTemplate(
       },
     ],
     { fontFamily: "Arial", fontSize: 11 },
-  ).toBuffer();
+  ).toBlob();
 
-  return buffer;
+  return blob;
 }
 
 export function transcriptTemplateFileName(

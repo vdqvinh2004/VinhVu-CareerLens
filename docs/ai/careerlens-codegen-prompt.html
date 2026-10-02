@@ -1,7 +1,7 @@
 <codegen-prompt id="careerlens-poc-whole-system" version="0.1-poc" lang="vi">
   <role>
-    Bạn là senior full-stack engineer. Hãy xây POC CareerLens trong codebase hiện có:
-    Next.js 16 App Router, React 19, TypeScript strict, Drizzle ORM, PostgreSQL, Redis,
+    Bạn là senior full-stack engineer. Hãy xây POC VinhVu CareerLen trong codebase hiện có:
+    Next.js 16 App Router, React 19, TypeScript strict, browser localStorage,
     next-intl, shadcn/base-ui style primitives, existing auth/RBAC.
   </role>
 
@@ -17,7 +17,7 @@
   </read-first>
 
   <product-context>
-    CareerLens giải quyết lệch pha hướng nghiệp tại Việt Nam: học sinh chọn ngành theo cảm tính,
+    VinhVu CareerLen giải quyết lệch pha hướng nghiệp tại Việt Nam: học sinh chọn ngành theo cảm tính,
     xu hướng, hoặc kỳ vọng gia đình; thị trường lại thiếu kỹ năng cục bộ. POC phải nối 3 lớp dữ liệu:
     profile học sinh, tín hiệu năng lực-sở thích qua tương tác, và tín hiệu tuyển dụng thực tế.
   </product-context>
@@ -98,7 +98,7 @@
       <item>Each card shows why-fit, market evidence, skill gap, roadmap stages, and on-demand live related jobs.</item>
     </route>
     <route path="/dashboard/careerlens/actions.ts">
-      <item>Server Actions: saveProfile, generateRecommendation, saveStudentDecision.</item>
+      <item>Browser operations: saveProfile, generateRecommendation, saveStudentDecision; persist in localStorage.</item>
       <item>Authenticate actor. Validate input. Enforce consent_data_usage.</item>
     </route>
   </routes-and-ui>
@@ -122,9 +122,9 @@
   </ethics-acceptance-criteria>
 
   <implementation-rules>
-    <item>Keep POC small. Prefer simple tables, simple Server Actions, simple Zod schemas.</item>
-    <item>Use existing auth and RBAC helpers. Do not expose server-only modules to client.</item>
-    <item>Use Drizzle migrations with schema changes.</item>
+    <item>Keep POC small. Prefer existing UI components, localStorage, direct provider fetch, and simple Zod schemas.</item>
+    <item>No login or RBAC. Keep API keys in browser localStorage and disclose browser/provider privacy boundaries.</item>
+    <item>Version localStorage data; report quota errors without replacing existing data.</item>
     <item>Use Vietnamese UI copy first, English messages only where existing i18n needs parity.</item>
     <item>Add focused tests for bias filter, consent gate, mock recommendation, switch-major memory reuse.</item>
     <item>Run npm run lint, npx tsc --noEmit, npm test before handoff when feasible.</item>
@@ -135,7 +135,7 @@
     <item>Seed data for labor market postings and skill demands.</item>
     <item>Typed AI input/output schemas.</item>
     <item>Recommendation service with mock fallback.</item>
-    <item>Dashboard UI for CareerLens POC.</item>
+    <item>Dashboard UI for VinhVu CareerLen POC.</item>
     <item>Tests for core guardrails.</item>
     <item>Short README section explaining local use.</item>
   </deliverables>

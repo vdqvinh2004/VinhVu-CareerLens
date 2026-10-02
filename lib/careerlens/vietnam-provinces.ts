@@ -41,35 +41,4 @@ export const VIETNAM_PROVINCES = [
 
 export type VietnamProvince = string;
 
-const VIETNAM_PROVINCES_API_URL = "https://provinces.open-api.vn/api/v2/";
-
-type ProvinceApiItem = {
-  name: string;
-};
-
-function isProvinceApiItem(value: unknown): value is ProvinceApiItem {
-  return Boolean(
-    value &&
-      typeof value === "object" &&
-      "name" in value &&
-      typeof value.name === "string" &&
-      value.name.trim(),
-  );
-}
-
-export async function getVietnamProvinceNames(): Promise<string[]> {
-  try {
-    const response = await fetch(VIETNAM_PROVINCES_API_URL, {
-      next: { revalidate: 60 * 60 * 24 },
-    });
-    if (!response.ok) return [...VIETNAM_PROVINCES];
-
-    const data: unknown = await response.json();
-    if (!Array.isArray(data)) return [...VIETNAM_PROVINCES];
-
-    const names = data.filter(isProvinceApiItem).map((province) => province.name.trim());
-    return names.length > 0 ? [...new Set(names)] : [...VIETNAM_PROVINCES];
-  } catch {
-    return [...VIETNAM_PROVINCES];
-  }
-}
+export function getVietnamProvinceNames(): string[] { return [...VIETNAM_PROVINCES]; }

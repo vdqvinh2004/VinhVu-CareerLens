@@ -1,10 +1,7 @@
-import "server-only";
 
 import { generateAIJson } from "@/lib/ai/generate";
 
 import { cvImportSchema, type CvImportData } from "./schema";
-
-export const CV_IMPORT_MODEL = "Qwen3.6-27B";
 
 const systemPrompt = `You extract structured education and career profile data from a CV for a Vietnamese career guidance product.
 
@@ -67,30 +64,24 @@ Return exactly this object shape:
 Use empty arrays when a category is absent.`;
 
 export class CvAiExtractionError extends Error {
-  constructor() {
-    super("invalidAiOutput");
+  constructor(message = "AI returned invalid CV data.") {
+    super(message);
     this.name = "CvAiExtractionError";
   }
 }
 
 export async function extractCvProfileData(input: {
   text: string;
-  userId: string;
 }): Promise<CvImportData> {
   try {
     const { data } = await generateAIJson({
       systemPrompt,
       userPrompt: "Extract the supported profile records from this CV.",
       rawInput: { cvText: input.text },
-      model: CV_IMPORT_MODEL,
-      traceName: "cv-profile-import",
-      userId: input.userId,
-      disableTracing: true,
-      logResponse: false,
     });
 
     return cvImportSchema.parse(data);
-  } catch {
-    throw new CvAiExtractionError();
+  } catch (error) {
+    throw new CvAiExtractionError(error instanceof Error ? error.message : "AI returned invalid CV data.");
   }
 }

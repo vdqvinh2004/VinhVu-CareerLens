@@ -1,4 +1,3 @@
-import "server-only";
 
 import type { LaborMarketSignals } from "./schemas";
 import { getVietnamProvinceNames, VIETNAM_PROVINCES } from "./vietnam-provinces";

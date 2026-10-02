@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist_Mono, Inter } from "next/font/google";
-import { NextIntlClientProvider } from "next-intl";
-import { getLocale } from "next-intl/server";
+import { LocaleProvider } from "@/i18n/client";
 import "./globals.css";
 import { AppPreloader } from "@/components/app-preloader";
 import { MotionProvider } from "@/components/motion-provider";
@@ -21,27 +20,26 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  applicationName: "CareerLens",
-  authors: [{ name: "MeshMind-AI" }],
-  creator: "MeshMind-AI",
+  applicationName: "VinhVu CareerLen",
+  authors: [{ name: "VinhVu" }],
+  creator: "VinhVu",
   title: {
-    default: "CareerLens",
-    template: "%s | CareerLens",
+    default: "VinhVu CareerLen",
+    template: "%s | VinhVu CareerLen",
   },
-  description: "CareerLens",
+  description: "VinhVu CareerLen",
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const locale = await getLocale();
   const daySeed = new Date().toISOString().slice(0, 10);
 
   return (
     <html
-      lang={locale}
+      lang="en"
       data-scroll-behavior="smooth"
       suppressHydrationWarning
       className={cn(
@@ -58,13 +56,13 @@ export default async function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: preloaderInitializationScript }} />
       </head>
       <body className="min-h-dvh" suppressHydrationWarning>
-        <NextIntlClientProvider>
+        <LocaleProvider>
           <ThemeProvider>
             <MotionProvider>
               <AppPreloader daySeed={daySeed}>{children}</AppPreloader>
             </MotionProvider>
           </ThemeProvider>
-        </NextIntlClientProvider>
+        </LocaleProvider>
       </body>
     </html>
   );

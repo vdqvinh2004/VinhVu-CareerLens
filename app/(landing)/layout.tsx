@@ -1,16 +1,18 @@
+"use client";
+
 import Link from "next/link";
-import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
 
 import { SkipLink } from "@/components/skip-link";
 
 import { LandingHeader } from "./_components/landing-header";
 
-export default async function LandingLayout({
+export default function LandingLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const t = await getTranslations("Common");
+  const t = useTranslations("Common");
 
   return (
     <div className="flex min-h-dvh flex-col">

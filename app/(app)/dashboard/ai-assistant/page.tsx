@@ -1,5 +1,1 @@
-import { redirect } from "next/navigation";
-
-export default function AIAssistantPage(): never {
-  redirect("/dashboard");
-}
+export { default } from "../page";

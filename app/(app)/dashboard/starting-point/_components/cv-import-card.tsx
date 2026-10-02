@@ -12,7 +12,7 @@ import { useTranslations } from "next-intl";
 import {
   importCvAction,
   type CvImportActionState,
-} from "@/app/(app)/dashboard/starting-point/actions";
+} from "@/app/(app)/dashboard/starting-point/operations";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";

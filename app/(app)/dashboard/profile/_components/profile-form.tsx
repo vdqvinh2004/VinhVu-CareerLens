@@ -1,7 +1,6 @@
 "use client";
 
-import { useActionState, useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { useActionState } from "react";
 import { CheckCircle2, Save } from "lucide-react";
 import { useTranslations } from "next-intl";
 
@@ -31,7 +30,7 @@ import { cn } from "@/lib/utils";
 import {
   updateProfileAction,
   type ProfileActionState,
-} from "../actions";
+} from "../operations";
 
 const monthNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] as const;
 const initialState: ProfileActionState = { status: "idle" };
@@ -49,17 +48,11 @@ type ProfileFormProps = {
 
 function ProfileForm({ currentYear, profile }: ProfileFormProps) {
   const t = useTranslations("Profile");
-  const router = useRouter();
   const [state, formAction, pending] = useActionState(
     updateProfileAction,
     initialState,
   );
 
-  useEffect(() => {
-    if (state.status === "success") {
-      router.refresh();
-    }
-  }, [router, state.status]);
 
   function fieldError(field: string) {
     return state.fieldErrors?.[field]?.[0];

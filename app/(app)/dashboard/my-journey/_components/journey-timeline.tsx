@@ -87,13 +87,14 @@ import type {
   JourneyEntryView,
 } from "@/lib/journey";
 import { cn } from "@/lib/utils";
+import { useWorkspace, updateWorkspace } from "@/lib/browser-storage";
 
 import {
   askJourneyAiAction,
   createJourneyEntryAction,
   deleteJourneyEntryAction,
   updateJourneyEntryAction,
-} from "../actions";
+} from "../operations";
 
 type EntryDraft = {
   title: string;
@@ -621,17 +622,26 @@ function AiJourneyDialog({
   const [prompt, setPrompt] = useState("");
   const [pending, setPending] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [messages, setMessages] = useState<ChatMessage[]>([
-    { id: "welcome", role: "assistant", content: t("ai.welcome") },
-  ]);
+  const { journeyMessages } = useWorkspace();
+  const messages = journeyMessages.length ? journeyMessages : [
+    { id: "welcome", role: "assistant" as const, content: t("ai.welcome") },
+  ];
+  function setMessages(change: (messages: ChatMessage[]) => ChatMessage[]) {
+    updateWorkspace(state => { state.journeyMessages = change(state.journeyMessages); });
+  }
 
   function sendPrompt() {
     const content = prompt.trim();
     if (!content || pending) return;
-    setMessages((current) => [
-      ...current,
-      { id: `user-${Date.now()}`, role: "user", content },
-    ]);
+    try {
+      setMessages((current) => [
+        ...current,
+        { id: `user-${Date.now()}`, role: "user", content },
+      ]);
+    } catch (error) {
+      setError(error instanceof Error ? error.message : t("ai.error"));
+      return;
+    }
     setPrompt("");
     setError(null);
     setPending(true);
@@ -648,8 +658,8 @@ function AiJourneyDialog({
             content: result.assistantMessage,
           },
         ]);
-      } catch {
-        setError(t("ai.error"));
+      } catch (error) {
+        setError(error instanceof Error ? error.message : t("ai.error"));
       } finally {
         setPending(false);
       }

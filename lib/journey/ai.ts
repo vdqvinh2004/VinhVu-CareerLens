@@ -1,4 +1,3 @@
-import "server-only";
 
 import { z } from "zod";
 
@@ -64,13 +63,11 @@ export type JourneyAiResult = {
 export async function applyJourneyAiRequest({
   locale,
   prompt,
-  userId,
 }: {
   locale: string;
   prompt: string;
-  userId: string;
 }): Promise<JourneyAiResult> {
-  const entries = await getJourneyEntries(userId);
+  const entries = await getJourneyEntries();
   const entryIds = new Set(entries.map((entry) => entry.id));
   const today = new Date().toISOString().slice(0, 10);
   const language = locale === "vi" ? "Vietnamese" : "English";
@@ -91,9 +88,6 @@ export async function applyJourneyAiRequest({
     ].join("\n"),
     userPrompt: `Today is ${today}. Apply this request to my journey: ${prompt}`,
     rawInput: { entries },
-    traceName: "journey-ai-edit",
-    userId,
-    logResponse: false,
   });
 
   const parsed = journeyAiOutputSchema.parse(result.data);
@@ -109,7 +103,7 @@ export async function applyJourneyAiRequest({
 
   await Promise.all([
     ...Array.from(deletionIds).map((entryId) =>
-      deleteJourneyEntry({ entryId, userId }),
+      deleteJourneyEntry({ entryId }),
     ),
     ...updates.map((update) =>
       updateJourneyEntry({
@@ -118,8 +112,7 @@ export async function applyJourneyAiRequest({
         entryId: update.entryId,
         targetDate: update.targetDate,
         title: update.title,
-        userId,
-      }),
+            }),
     ),
     ...parsed.newEntries.map((entry) =>
       createJourneyEntry({
@@ -128,13 +121,12 @@ export async function applyJourneyAiRequest({
         source: "ai",
         targetDate: entry.targetDate,
         title: entry.title,
-        userId,
-      }),
+            }),
     ),
   ]);
 
   return {
     assistantMessage: parsed.assistantMessage,
-    changedEntries: await getJourneyEntries(userId),
+    changedEntries: await getJourneyEntries(),
   };
 }

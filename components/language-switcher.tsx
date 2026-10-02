@@ -3,7 +3,6 @@
 import { useTransition, type SVGProps } from "react";
 import { ChevronDown } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
-import { useRouter } from "next/navigation";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -15,7 +14,7 @@ import {
   DropdownMenuRadioItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { setUserLocale } from "@/i18n/actions";
+import { setUserLocale } from "@/i18n/client";
 import { isLocale, type Locale } from "@/i18n/config";
 import { cn } from "@/lib/utils";
 
@@ -61,7 +60,6 @@ function LanguageSwitcher({
   compact = false,
 }: LanguageSwitcherProps) {
   const locale = useLocale();
-  const router = useRouter();
   const t = useTranslations("Common.language");
   const [pending, startTransition] = useTransition();
   const currentLocale: Locale = locale === "vi" ? "vi" : "en";
@@ -79,7 +77,6 @@ function LanguageSwitcher({
 
     startTransition(async () => {
       await setUserLocale(nextLocale);
-      router.refresh();
     });
   }
 

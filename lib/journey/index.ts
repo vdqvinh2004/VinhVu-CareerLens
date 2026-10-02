@@ -1,12 +1,6 @@
-import "server-only";
-
-import { and, asc, eq } from "drizzle-orm";
-
+import { readWorkspace, updateWorkspace } from "@/lib/browser-storage";
 import { getCareerRoadmap } from "@/lib/careerlens/roadmaps";
 import type { CareerRecommendation } from "@/lib/careerlens/schemas";
-import { getDb } from "@/lib/db";
-import { journeyEntries, journeyImports } from "@/lib/db/schema";
-
 export type JourneyEntrySource = "manual" | "roadmap" | "ai";
 export type JourneyEntryCategory =
   | "learning"
@@ -28,11 +22,7 @@ export type JourneyEntryView = {
   updatedAt: string;
 };
 
-type JourneyEntryDraft = Omit<
-  typeof journeyEntries.$inferInsert,
-  "id" | "userId" | "importId" | "createdAt" | "updatedAt"
->;
-
+type JourneyEntryDraft = Omit<JourneyEntryView, "id" | "createdAt" | "updatedAt">;
 function addMonths(base: Date, months: number) {
   const result = new Date(
     Date.UTC(base.getUTCFullYear(), base.getUTCMonth() + months, 10),
@@ -124,171 +114,42 @@ function roadmapDrafts(
   return drafts;
 }
 
-function toView(row: typeof journeyEntries.$inferSelect): JourneyEntryView {
-  return {
-    id: row.id,
-    source: row.source,
-    category: row.category,
-    title: row.title,
-    description: row.description,
-    targetDate: row.targetDate,
-    completed: row.completed,
-    completedAt: row.completedAt?.toISOString() ?? null,
-    sourceLabel: row.sourceLabel,
-    createdAt: row.createdAt.toISOString(),
-    updatedAt: row.updatedAt.toISOString(),
-  };
+
+export function getJourneyEntries(): JourneyEntryView[] {
+  return [...readWorkspace().journey].sort((a,b) => a.targetDate.localeCompare(b.targetDate));
 }
-
-export async function getJourneyEntries(
-  userId: string,
-): Promise<JourneyEntryView[]> {
-  const rows = await getDb()
-    .select()
-    .from(journeyEntries)
-    .where(eq(journeyEntries.userId, userId))
-    .orderBy(asc(journeyEntries.targetDate), asc(journeyEntries.createdAt));
-
-  return rows.map(toView);
-}
-
-export async function appendRoadmapToJourney({
-  roadmapId,
-  userId,
-}: {
-  roadmapId: string;
-  userId: string;
-}) {
-  const roadmap = await getCareerRoadmap(userId, roadmapId);
+export async function appendRoadmapToJourney({ roadmapId }: { roadmapId: string }) {
+  const roadmap = getCareerRoadmap(roadmapId);
   if (!roadmap) return null;
-
-  const recommendation =
-    roadmap.guidanceOutput.recommendations[
-      roadmap.selectedRecommendationIndex
-    ] ?? roadmap.guidanceOutput.recommendations[0];
+  const recommendation = roadmap.guidanceOutput.recommendations[roadmap.selectedRecommendationIndex];
   if (!recommendation) return null;
-
-  const drafts = roadmapDrafts(recommendation);
-  if (drafts.length === 0) return null;
-
-  return getDb().transaction(async (tx) => {
-    const [journeyImport] = await tx
-      .insert(journeyImports)
-      .values({
-        directionTitle: recommendation.path_title,
-        roadmapId,
-        userId,
-      })
-      .returning({ id: journeyImports.id });
-
-    if (!journeyImport) throw new Error("Could not create journey import");
-
-    const inserted = await tx
-      .insert(journeyEntries)
-      .values(
-        drafts.map((draft) => ({
-          ...draft,
-          importId: journeyImport.id,
-          userId,
-        })),
-      )
-      .returning();
-
-    return {
-      directionTitle: recommendation.path_title,
-      entries: inserted.map(toView),
-    };
+  const now = new Date().toISOString();
+  const entries = roadmapDrafts(recommendation).map(draft => ({ ...draft, id: crypto.randomUUID(), createdAt: now, updatedAt: now }));
+  updateWorkspace(state => { state.journey.push(...entries); });
+  return { directionTitle: recommendation.path_title, entries };
+}
+export function createJourneyEntry(input: { category: JourneyEntryCategory; description: string; source?: JourneyEntrySource; targetDate: string; title: string }) {
+  const now = new Date().toISOString();
+  const fields = input;
+  const entry: JourneyEntryView = { ...fields, id: crypto.randomUUID(), source: input.source ?? "manual", sourceLabel: null, completed: false, completedAt: null, createdAt: now, updatedAt: now };
+  updateWorkspace(state => { state.journey.push(entry); });
+  return entry;
+}
+export function updateJourneyEntry(input: { category?: JourneyEntryCategory; completed?: boolean; description?: string; entryId: string; targetDate?: string; title?: string }) {
+  let updated: JourneyEntryView | null = null;
+  updateWorkspace(state => {
+    const entry = state.journey.find(row => row.id === input.entryId);
+    if (!entry) return;
+    const { entryId: _id, ...fields } = input;
+    void _id;
+    Object.assign(entry, Object.fromEntries(Object.entries(fields).filter(([,value]) => value !== undefined)));
+    entry.updatedAt = new Date().toISOString();
+    if (input.completed !== undefined) entry.completedAt = input.completed ? entry.updatedAt : null;
+    updated = entry;
   });
+  return updated as JourneyEntryView | null;
 }
-
-export async function createJourneyEntry({
-  category,
-  description,
-  source = "manual",
-  targetDate,
-  title,
-  userId,
-}: {
-  category: JourneyEntryCategory;
-  description: string;
-  source?: JourneyEntrySource;
-  targetDate: string;
-  title: string;
-  userId: string;
-}) {
-  const [entry] = await getDb()
-    .insert(journeyEntries)
-    .values({
-      category,
-      description,
-      source,
-      targetDate,
-      title,
-      userId,
-    })
-    .returning();
-
-  if (!entry) throw new Error("Could not create journey entry");
-  return toView(entry);
-}
-
-export async function updateJourneyEntry({
-  category,
-  completed,
-  description,
-  entryId,
-  targetDate,
-  title,
-  userId,
-}: {
-  category?: JourneyEntryCategory;
-  completed?: boolean;
-  description?: string;
-  entryId: string;
-  targetDate?: string;
-  title?: string;
-  userId: string;
-}) {
-  const now = new Date();
-  const [entry] = await getDb()
-    .update(journeyEntries)
-    .set({
-      ...(category === undefined ? {} : { category }),
-      ...(completed === undefined
-        ? {}
-        : { completed, completedAt: completed ? now : null }),
-      ...(description === undefined ? {} : { description }),
-      ...(targetDate === undefined ? {} : { targetDate }),
-      ...(title === undefined ? {} : { title }),
-      updatedAt: now,
-    })
-    .where(
-      and(
-        eq(journeyEntries.id, entryId),
-        eq(journeyEntries.userId, userId),
-      ),
-    )
-    .returning();
-
-  return entry ? toView(entry) : null;
-}
-
-export async function deleteJourneyEntry({
-  entryId,
-  userId,
-}: {
-  entryId: string;
-  userId: string;
-}) {
-  const [entry] = await getDb()
-    .delete(journeyEntries)
-    .where(
-      and(
-        eq(journeyEntries.id, entryId),
-        eq(journeyEntries.userId, userId),
-      ),
-    )
-    .returning({ id: journeyEntries.id });
-
-  return entry?.id ?? null;
+export function deleteJourneyEntry({ entryId }: { entryId: string }) {
+  updateWorkspace(state => { state.journey = state.journey.filter(row => row.id !== entryId); });
+  return entryId;
 }

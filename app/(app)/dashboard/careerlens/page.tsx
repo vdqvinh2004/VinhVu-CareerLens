@@ -1,6 +1,6 @@
-import type { Metadata } from "next";
-import { redirect } from "next/navigation";
-import { getLocale, getTranslations } from "next-intl/server";
+"use client";
+import { useWorkspace } from "@/lib/browser-storage";
+import { useLocale, useTranslations } from "next-intl";
 
 import { Badge } from "@/components/ui/badge";
 import {
@@ -11,8 +11,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { requirePermission } from "@/lib/auth/dal";
-import { PERMISSIONS } from "@/lib/auth/permissions";
 import {
   createCareerLensMarketSeed,
   MARKET_INDUSTRY_COUNT,
@@ -33,52 +31,21 @@ import { getVietnamProvinceNames } from "@/lib/careerlens/vietnam-provinces";
 
 import { CareerWorkspace } from "./_components/career-workspace";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("Roadmap");
-  return { title: t("metadataTitle") };
-}
 
-export default async function CareerLensPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ roadmap?: string | string[] }>;
-}) {
-  const viewer = await requirePermission(PERMISSIONS.DASHBOARD_ACCESS);
-  if (viewer.actor.kind !== "user") redirect("/dashboard");
-
-  const requestedRoadmap = (await searchParams).roadmap;
-  const requestedRoadmapId = Array.isArray(requestedRoadmap)
-    ? requestedRoadmap[0]
-    : requestedRoadmap;
-
-  const [
-    t,
-    locale,
-    startingPoint,
-    savedRoadmaps,
-    requestedSavedRoadmap,
-    latestRoadmap,
-    latestCreatedRoadmap,
-    preferences,
-    provinces,
-    followedRoadmap,
-    followedRoadmapHistory,
-  ] =
-    await Promise.all([
-      getTranslations("Roadmap"),
-      getLocale(),
-      getCareerStartingPointSnapshot(viewer.actor.userId),
-      getCareerRoadmapSummaries(viewer.actor.userId),
-      requestedRoadmapId
-        ? getCareerRoadmap(viewer.actor.userId, requestedRoadmapId)
-        : Promise.resolve(null),
-      getLatestCareerRoadmap(viewer.actor.userId),
-      getLatestCreatedCareerRoadmap(viewer.actor.userId),
-      getCareerPreferences(viewer.actor.userId),
-      getVietnamProvinceNames(),
-      getFollowedCareerRoadmap(viewer.actor.userId),
-      getFollowedCareerRoadmapHistory(viewer.actor.userId),
-    ]);
+export default function CareerLensPage() {
+  useWorkspace();
+  const t = useTranslations("Roadmap");
+  const locale = useLocale();
+  const requestedRoadmapId = new URLSearchParams(window.location.search).get("roadmap");
+  const startingPoint = getCareerStartingPointSnapshot();
+  const savedRoadmaps = getCareerRoadmapSummaries();
+  const requestedSavedRoadmap = requestedRoadmapId ? getCareerRoadmap(requestedRoadmapId) : null;
+  const latestRoadmap = getLatestCareerRoadmap();
+  const latestCreatedRoadmap = getLatestCreatedCareerRoadmap();
+  const preferences = getCareerPreferences();
+  const provinces = getVietnamProvinceNames();
+  const followedRoadmap = getFollowedCareerRoadmap();
+  const followedRoadmapHistory = getFollowedCareerRoadmapHistory();
   const marketSeed = createCareerLensMarketSeed(provinces);
   const savedRoadmap = requestedSavedRoadmap ?? latestRoadmap;
   const newRoadmapDefaults = getRoadmapPrefillDefaults({

@@ -10,7 +10,7 @@ describe("transcript Excel templates", () => {
   it("creates a high-school template accepted by the importer", async () => {
     const buffer = await createTranscriptTemplate("HIGH_SCHOOL", 10, "vi");
     const file = new File(
-      [new Uint8Array(buffer)],
+      [new Uint8Array(await buffer.arrayBuffer())],
       transcriptTemplateFileName("HIGH_SCHOOL", 10, "vi"),
       {
         type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
@@ -36,7 +36,7 @@ describe("transcript Excel templates", () => {
   it("creates a credit-based university template for the selected scale", async () => {
     const buffer = await createTranscriptTemplate("UNDERGRADUATE", 4, "en");
     const file = new File(
-      [new Uint8Array(buffer)],
+      [new Uint8Array(await buffer.arrayBuffer())],
       transcriptTemplateFileName("UNDERGRADUATE", 4, "en"),
       {
         type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",

@@ -26,7 +26,6 @@ import {
   PanelLeftOpen,
   Route,
   Settings,
-  LogOut,
   UserRound,
   X,
   ShieldCheck,
@@ -44,11 +43,9 @@ import {
   DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { cn } from "@/lib/utils";
-import { logoutAction } from "@/app/(auth)/actions";
 
 type NavigationItem = {
   exact: boolean;
@@ -361,19 +358,6 @@ function SidebarPanel({
                 </DropdownMenuItem>
                 <ThemeMenuToggleGroup />
               </DropdownMenuGroup>
-              <DropdownMenuSeparator />
-              <form action={logoutAction}>
-                <DropdownMenuGroup>
-                  <DropdownMenuItem
-                    variant="destructive"
-                    nativeButton
-                    render={<button type="submit" className="w-full" />}
-                  >
-                    <LogOut aria-hidden="true" />
-                    {t("logout")}
-                  </DropdownMenuItem>
-                </DropdownMenuGroup>
-              </form>
             </DropdownMenuContent>
           </DropdownMenu>
         </div>

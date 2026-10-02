@@ -27,7 +27,7 @@ import {
   resetRoadmapPrefillDataAction,
   saveRoadmapDataSettingsAction,
   type CareerSettingsActionState,
-} from "../actions";
+} from "../operations";
 
 const initialState: CareerSettingsActionState = { status: "idle" };
 

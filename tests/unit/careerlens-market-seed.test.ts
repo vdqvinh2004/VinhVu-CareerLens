@@ -9,7 +9,7 @@ import {
 import { laborMarketSignalsSchema } from "@/lib/careerlens/schemas";
 import { VIETNAM_PROVINCES } from "@/lib/careerlens/vietnam-provinces";
 
-describe("CareerLens market seed", () => {
+describe("VinhVu CareerLen market seed", () => {
   it("contains 200 distinct careers across 20 industries for every province", () => {
     expect(MARKET_ROLE_COUNT_PER_REGION).toBe(200);
     expect(MARKET_INDUSTRY_COUNT).toBe(20);

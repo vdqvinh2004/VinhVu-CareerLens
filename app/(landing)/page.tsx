@@ -1,4 +1,5 @@
-import type { Metadata } from "next";
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -30,11 +31,10 @@ import {
   UsersRound,
   Waypoints,
 } from "lucide-react";
-import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
 
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
-import { getViewer } from "@/lib/auth/dal";
 import { cn } from "@/lib/utils";
 
 import { LandingReveal } from "./_components/landing-motion";
@@ -44,32 +44,11 @@ const HERO_IMAGE =
 const CV_IMAGE =
   "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1800&q=86";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("Landing.meta");
 
-  return {
-    title: t("title"),
-    description: t("description"),
-    openGraph: {
-      title: t("title"),
-      description: t("description"),
-      type: "website",
-    },
-  };
-}
-
-export default async function LandingPage() {
-  const [t, viewer] = await Promise.all([
-    getTranslations("Landing"),
-    getViewer().catch(() => null),
-  ]);
-  const isLearner = viewer?.actor.kind === "user";
-  const primaryHref = viewer
-    ? isLearner
-      ? "/dashboard/careerlens"
-      : "/dashboard"
-    : "/signup";
-  const primaryLabel = viewer ? t("hero.primaryAuthenticated") : t("hero.primary");
+export default function LandingPage() {
+  const t = useTranslations("Landing");
+  const primaryHref = "/dashboard/careerlens";
+  const primaryLabel = t("hero.primaryAuthenticated");
 
   const intelligenceLayers = [
     {

@@ -1,21 +1,19 @@
+"use client";
+
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
 
 import { BrandLink } from "@/components/brand";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { ThemeSelector } from "@/components/theme-selector";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { getViewer } from "@/lib/auth/dal";
 
 import { LandingMobileNavigation } from "./landing-mobile-navigation";
 
-async function LandingHeader() {
-  const [viewer, t] = await Promise.all([
-    getViewer().catch(() => null),
-    getTranslations("Landing"),
-  ]);
+function LandingHeader() {
+  const t = useTranslations("Landing");
   const navigation = [
     { href: "#features", label: t("navigation.features") },
     { href: "#journey", label: t("navigation.journey") },
@@ -50,7 +48,7 @@ async function LandingHeader() {
           <ThemeSelector />
 
           <Link
-            href={viewer ? "/dashboard" : "/login"}
+            href={"/dashboard"}
             className={cn(buttonVariants({ variant: "default", size: "sm" }))}
           >
             <ArrowUpRight data-icon="inline-end" aria-hidden="true" />

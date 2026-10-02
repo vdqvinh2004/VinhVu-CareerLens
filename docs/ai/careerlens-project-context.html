@@ -1,8 +1,8 @@
 <project-context id="careerlens" version="0.1-poc" lang="vi">
   <project>
-    <name>CareerLens</name>
+    <name>VinhVu CareerLen</name>
     <one-liner>
-      CareerLens là hệ thống hướng nghiệp cá nhân hóa cho học sinh Việt Nam, nối hồ sơ năng lực-sở thích
+      VinhVu CareerLen là hệ thống hướng nghiệp cá nhân hóa cho học sinh Việt Nam, nối hồ sơ năng lực-sở thích
       với tín hiệu tuyển dụng thật để tạo lộ trình học tập, nghề nghiệp, và việc làm liên quan.
     </one-liner>
   </project>
@@ -92,8 +92,8 @@
   </success-criteria>
 
   <engineering-notes>
-    <stack>Next.js 16 App Router, React 19, TypeScript, Drizzle, PostgreSQL, Redis, next-intl.</stack>
-    <style>Keep POC lean. Use Server Components by default. Keep AI and DB code server-only.</style>
+    <stack>Next.js 16 App Router, React 19, TypeScript, browser localStorage, next-intl.</stack>
+    <style>Keep POC lean. Use Client Components for interactive flows. Persist data in localStorage and call the user-configured AI provider directly.</style>
     <testing>Focus tests on consent gate, bias filter, recommendation mock, switch-major memory reuse.</testing>
     <docs>
       <file>docs/ai/careerlens-ai-system-rule.html</file>

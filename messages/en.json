@@ -1,9 +1,9 @@
 {
   "Common": {
     "skipToContent": "Skip to content",
-    "homeAria": "CareerLens home",
-    "brandName": "CareerLens",
-    "developedBy": "Developed by MeshMind-AI",
+    "homeAria": "VinhVu CareerLen home",
+    "brandName": "VinhVu CareerLen",
+    "developedBy": "Developed by VinhVu",
     "legalNavigation": "Legal navigation",
     "termsOfService": "Terms of Service",
     "privacyPolicy": "Privacy Policy",
@@ -15,7 +15,7 @@
     }
   },
   "Preloader": {
-    "loading": "Preparing CareerLens",
+    "loading": "Preparing VinhVu CareerLen",
     "progressLabel": "Loading progress",
     "percent": "{percent}%",
     "messages": {
@@ -37,7 +37,7 @@
   "Landing": {
     "meta": {
       "title": "AI career guidance for students",
-      "description": "CareerLens connects strengths, aspirations, and market signals into an actionable career roadmap."
+      "description": "VinhVu CareerLen connects strengths, aspirations, and market signals into an actionable career roadmap."
     },
     "primaryNavigation": "Primary navigation",
     "navigation": {
@@ -46,9 +46,9 @@
       "market": "Market data",
       "menu": "Explore"
     },
-    "account": "Account",
+    "account": "Open workspace",
     "hero": {
-      "badge": "The CareerLens vision",
+      "badge": "The VinhVu CareerLen vision",
       "titleLine1": "Understand who you are.",
       "titleLine2": "Build where you go next.",
       "description": "Turn strengths, aspirations, and career signals into a roadmap you can act on.",
@@ -58,16 +58,16 @@
       "imageAlt": "A group of students talking together on campus",
       "preview": {
         "title": "Career agent",
-        "status": "Cross-checking new sources",
+        "status": "Comparing your profile and sample signals",
         "badge": "Preview",
         "searching": "Finding skills and career signals that match your profile",
-        "sourcesLabel": "Sources being compared",
+        "sourcesLabel": "Reference examples",
         "result": "Three directions to compare and test"
       }
     },
     "intelligence": {
       "title": "One profile. Three layers of insight.",
-      "description": "CareerLens does not lock you into a single test. It connects personal signals, real progress, and a changing world of work.",
+      "description": "VinhVu CareerLen does not lock you into a single test. It connects personal signals, real progress, and a changing world of work.",
       "profile": {
         "title": "Understand yourself",
         "description": "Combine strengths, interests, learning style, and real constraints instead of relying on one personality label."
@@ -78,7 +78,7 @@
       },
       "market": {
         "title": "Read the market",
-        "description": "Compare your profile with careers, skills, job signals, and global developments backed by visible sources."
+        "description": "Compare your profile with sample career and skill signals. Open job-search links to inspect current postings."
       }
     },
     "assessment": {
@@ -197,7 +197,7 @@
             "description": "AI says when the available data cannot support a conclusion."
           }
         },
-        "note": "CareerLens separates observed, estimated, and forecast data. It never invents an accuracy percentage."
+        "note": "VinhVu CareerLen separates observed, estimated, and forecast data. It never invents an accuracy percentage."
       }
     },
     "cv": {
@@ -233,7 +233,7 @@
       "description": "Every recommendation should trace back to evidence, limitations, and the learner's right to decide.",
       "citations": {
         "title": "Sources you can open",
-        "description": "Market, career, and skill claims include a URL, publication date, and retrieval time."
+        "description": "Open suggested learning resources and verify them yourself. Market signals are sample data."
       },
       "privacy": {
         "title": "Privacy from the start",
@@ -245,20 +245,20 @@
       },
       "autonomy": {
         "title": "Learners stay in control",
-        "description": "CareerLens suggests paths to test. It never chooses your future for you."
+        "description": "VinhVu CareerLen suggests paths to test. It never chooses your future for you."
       },
       "scope": {
         "title": "Current scope",
-        "description": "AI chat and the three-path roadmap work today as a POC. Long-term assessment, CV review, and realtime web data are part of the product vision now being built.",
+        "description": "Career guidance, CV import, personality assessment, chat, and journey tracking run in your browser. Saved data stays on this device; AI requests use your own provider key.",
         "badge": "Public roadmap"
       }
     },
     "faq": {
       "title": "What to know before you begin.",
-      "description": "CareerLens is a tool for reflection and experimentation, not a machine that scores your future.",
+      "description": "VinhVu CareerLen is a tool for reflection and experimentation, not a machine that scores your future.",
       "items": {
         "one": {
-          "question": "Will CareerLens choose a career for me?",
+          "question": "Will VinhVu CareerLen choose a career for me?",
           "answer": "No. It gives you directions to compare, questions to test, and practical next steps. The final decision always remains yours."
         },
         "two": {
@@ -278,137 +278,6 @@
     "finalCta": {
       "title": "Your future does not need a rushed answer.",
       "description": "Start by understanding yourself, test one small direction, and let real evidence guide the next move."
-    }
-  },
-  "Auth": {
-    "common": {
-      "email": "Email",
-      "password": "Password",
-      "backToLogin": "Back to login",
-      "continue": "Continue",
-      "passwordMismatch": "Passwords do not match.",
-      "showField": "Show {field}",
-      "hideField": "Hide {field}"
-    },
-    "login": {
-      "metadataTitle": "Log in",
-      "title": "Welcome back",
-      "description": "Enter your details to continue to CareerLens.",
-      "forgotPassword": "Forgot password?",
-      "submitting": "Logging in...",
-      "submit": "Log in",
-      "newUser": "New to CareerLens?",
-      "createAccount": "Create an account"
-    },
-    "signup": {
-      "metadataTitle": "Sign up",
-      "title": "Create your account",
-      "description": "Complete the three short steps below to set up your profile.",
-      "steps": {
-        "account": "Account",
-        "about": "About you",
-        "security": "Security"
-      },
-      "stepTitles": {
-        "email": "Start with your email",
-        "about": "Tell us about you",
-        "password": "Choose a password"
-      },
-      "stepCount": "Step {current} of {total}",
-      "progress": "Signup progress",
-      "fullName": "Full name",
-      "fullNamePlaceholder": "Your full name",
-      "dateOfBirth": "Date of birth",
-      "birthDay": "Day of birth",
-      "birthMonth": "Birth month",
-      "birthYear": "Birth year",
-      "day": "Day",
-      "month": "Month",
-      "year": "Year",
-      "months": {
-        "1": "January",
-        "2": "February",
-        "3": "March",
-        "4": "April",
-        "5": "May",
-        "6": "June",
-        "7": "July",
-        "8": "August",
-        "9": "September",
-        "10": "October",
-        "11": "November",
-        "12": "December"
-      },
-      "confirmPassword": "Confirm password",
-      "passwordHint": "Use at least 8 characters.",
-      "consent": "I consent to CareerLens collecting, storing, and processing data related to my account, and I agree to the <terms>Terms of Service</terms> and <privacy>Privacy Policy</privacy>.",
-      "back": "Back",
-      "submitting": "Creating account...",
-      "submit": "Create account",
-      "continue": "Continue",
-      "existingUser": "Already have an account?",
-      "login": "Log in"
-    },
-    "forgot": {
-      "metadataTitle": "Recover password",
-      "title": "Recover your password",
-      "description": "Enter your email and we’ll prepare the reset flow.",
-      "successTitle": "Check your inbox",
-      "submitting": "Sending...",
-      "submit": "Send reset link"
-    },
-    "reset": {
-      "metadataTitle": "Reset password",
-      "title": "Set a new password",
-      "description": "Choose and confirm the password you want to use next.",
-      "successTitle": "Password reset complete",
-      "continueToLogin": "Continue to login",
-      "newPassword": "New password",
-      "confirmNewPassword": "Confirm new password",
-      "submitting": "Resetting...",
-      "submit": "Reset password"
-    },
-    "superadmin": {
-      "metadataTitle": "Operations access",
-      "title": "Operations access",
-      "description": "This restricted sign-in requires the built-in credentials and a current authentication code.",
-      "authenticationCode": "Authentication code",
-      "operationsIdentifier": "Operations identifier",
-      "submitting": "Verifying...",
-      "verify": "Verify and continue"
-    },
-    "actions": {
-      "checkFields": "Check the highlighted fields and try again.",
-      "serviceUnavailable": "Authentication is temporarily unavailable. Please try again.",
-      "invalidCredentials": "Invalid email or password.",
-      "signupRateLimit": "Too many signup attempts. Please try again later.",
-      "accountCreationFailed": "Could not create an account with those details.",
-      "emailInUse": "An account with this email already exists. Log in or use a different email.",
-      "accountCreatedLoginUnavailable": "Your account was created, but automatic sign-in is unavailable. Try logging in again shortly.",
-      "loginRateLimit": "Too many login attempts. Please try again later.",
-      "tooManyAttemptsRestart": "Too many attempts. Start the sign-in process again later.",
-      "invalidAuthenticationCode": "Invalid or expired authentication code.",
-      "invalidSuperadminCredentials": "Invalid credentials.",
-      "tooManyAttempts": "Too many attempts. Please try again later.",
-      "recoverySent": "If that account exists, password reset instructions have been sent.",
-      "resetRateLimit": "Too many reset attempts. Please try again later.",
-      "invalidResetLink": "This password reset link is invalid or has expired.",
-      "resetSuccess": "Your password has been reset. You can now log in."
-    },
-    "validation": {
-      "passwordMin": "Password must be at least 8 characters.",
-      "dataConsent": "You must consent to data collection and processing to create an account.",
-      "passwordMax": "Password must be at most 128 characters.",
-      "passwordLong": "Password is too long.",
-      "emailInvalid": "Enter a valid email address.",
-      "fullNameInvalid": "Enter your full name.",
-      "birthDayInvalid": "Enter a valid day of birth.",
-      "birthMonthInvalid": "Enter a valid birth month.",
-      "birthYearInvalid": "Enter a valid birth year.",
-      "birthDateInvalid": "Enter a valid date of birth.",
-      "birthDateFuture": "Date of birth cannot be in the future.",
-      "passwordMismatch": "Passwords do not match.",
-      "totpInvalid": "Enter the six-digit authentication code."
     }
   },
   "Dashboard": {
@@ -435,13 +304,13 @@
   },
   "Roadmap": {
     "metadataTitle": "AI Roadmap",
-    "eyebrow": "CareerLens Guidance AI",
+    "eyebrow": "VinhVu CareerLen Guidance AI",
     "title": "Turn self-knowledge into a next step",
     "description": "Connect interests, experience, and real constraints with sample hiring signals from Vietnam.",
     "brief": {
       "status": "Analysis protocol",
       "title": "A decision brief, not a verdict",
-      "description": "CareerLens turns the information you share into three directions you can compare and test."
+      "description": "VinhVu CareerLen turns the information you share into three directions you can compare and test."
     },
     "steps": {
       "profile": {
@@ -893,7 +762,7 @@
     "messageLabel": "Message to the AI assistant",
     "send": "Send message",
     "stop": "Stop response",
-    "disclaimer": "MeshMind AI supports questions about education and career guidance.",
+    "disclaimer": "VinhVu CareerLen supports questions about education and career guidance.",
     "emptyTitle": "Start with a question",
     "emptyDescription": "Explore majors, build a roadmap, or prepare for your first opportunity.",
     "sessionsError": "Could not load conversations.",
@@ -948,6 +817,19 @@
       "university": "How should I prepare for a top university entrance exam in Vietnam?",
       "skills": "Which skills matter most for students in the age of AI?",
       "scholarship": "What scholarships in Japan and South Korea are available to Vietnamese students?"
+    },
+    "browser": {
+      "configure": "Add your API key in Settings",
+      "chats": "Saved chats",
+      "delete": "Delete chat",
+      "confirmDelete": "Delete this chat and its messages from this browser?",
+      "welcome": "Hello, {name}",
+      "intro": "Explore career options, learning plans, and your next steps.",
+      "thinking": "Thinking…",
+      "message": "Ask VinhVu CareerLen a question",
+      "send": "Send message",
+      "stop": "Stop request",
+      "notice": "Chats are saved on this device. AI guidance can be inaccurate; verify important decisions."
     }
   },
   "StartingPoint": {
@@ -961,7 +843,7 @@
       "fileLabel": "Your CV",
       "fileHint": "PDF only, up to 6 MB and 15 pages. The file must contain selectable text.",
       "selectedFile": "Selected: {name}",
-      "privacy": "Your CV is processed only for this import and is not stored as a file. You can edit every imported item afterward.",
+      "privacy": "Your PDF is read in this browser. Extracted text is sent to your configured AI provider for this import; the original file is not saved. Imported records stay in localStorage.",
       "submit": "Analyze and complete profile",
       "processing": "Reading and organizing your CV...",
       "successTitle": "Starting point updated",
@@ -997,7 +879,7 @@
   "Profile": {
     "metadataTitle": "Personal information",
     "title": "Personal information",
-    "description": "Keep your details current so CareerLens can personalize your experience.",
+    "description": "Keep your details current so VinhVu CareerLen can personalize your experience.",
     "summary": "These details identify your account and help tailor your experience to you.",
     "personality": {
       "emptyTitle": "Discover your personal style",
@@ -1009,7 +891,7 @@
       "retake": "Retake the test",
       "viewDetails": "View details"
     },
-  "form": {
+    "form": {
       "title": "Profile details",
       "description": "Edit your account information below.",
       "fullName": "Full name",
@@ -1022,32 +904,196 @@
       "birthMonth": "Birth month",
       "birthYear": "Birth year",
       "save": "Save changes",
-    "saving": "Saving..."
-  },
-  "extended": {
-    "title": "Education and experience",
-    "description": "Add meaningful milestones so your profile reflects your capabilities and journey.",
-    "common": { "add": "Add", "edit": "Edit", "delete": "Delete", "cancel": "Cancel", "save": "Save information", "saving": "Saving...", "deleting": "Deleting...", "deleteTitle": "Delete this information?", "deleteDescription": "Deleted information cannot be recovered.", "optional": "Optional", "period": "Period", "startDate": "Start", "endDate": "End", "month": "Month", "year": "Year" },
-    "education": {
-      "title": "Education", "description": "Ordered from high school through graduate study.", "empty": "No education information yet.", "add": "Add education", "editTitle": "Edit education", "addTitle": "Add education", "dialogDescription": "Record your school, study period, and transcript in the format for that level.", "level": "Education level",
-      "levels": { "HIGH_SCHOOL": "High school", "UNDERGRADUATE": "University", "GRADUATE": "Graduate study" },
-      "institutionName": "School name", "fieldOfStudy": "Field, program, or concentration", "fieldOfStudyHint": "For example: Computer Science, advanced Mathematics, or MBA.",
-      "fieldLabels": { "HIGH_SCHOOL": "Concentration or advanced class", "UNDERGRADUATE": "Field of study", "GRADUATE": "Graduate specialization or program" },
-      "fieldHints": { "HIGH_SCHOOL": "For example: advanced Mathematics or Natural Sciences.", "UNDERGRADUATE": "For example: Computer Science or International Economics.", "GRADUATE": "For example: MSc in Artificial Intelligence or PhD in Economics." },
-      "transcriptImport": "Import Excel transcript", "downloadTemplate": "Download Excel template", "grade10File": "Grade 10 transcript", "grade11File": "Grade 11 transcript", "grade12File": "Grade 12 transcript", "transcriptFile": "Cumulative transcript", "optionalOnEdit": "A .xlsx file up to 2 MB. Leave empty to keep the saved transcript.", "highSchoolTranscriptHint": "Upload one .xlsx file per grade with 2 columns: Subject and Year average. The system calculates the average on a 10-point scale.", "higherEducationTranscriptHint": "Upload a .xlsx file up to 2 MB with 3 columns: Subject, Credits, and Score. The system calculates the credit-weighted cumulative average.", "scoreScale": "Score scale", "scoreScaleHint": "Choose the scale used in the Excel file.", "scale4": "4-point scale", "scale10": "10-point scale", "transcriptStages": { "GRADE_10": "Grade 10", "GRADE_11": "Grade 11", "GRADE_12": "Grade 12", "CUMULATIVE": "Cumulative average" }, "subjectCount": "{count} subjects", "creditCount": "{count} credits", "noTranscript": "No transcript imported yet.", "research": "Scientific research", "researchHint": "Available for university and graduate study only. Enter both a title and description when adding research.", "researchTitle": "Research title", "researchDescription": "Research description"
+      "saving": "Saving..."
     },
-    "certificate": { "title": "Certificates", "description": "Professional certificates with supporting documents.", "empty": "No certificates yet.", "add": "Add certificate", "editTitle": "Edit certificate", "addTitle": "Add certificate", "dialogDescription": "Enter the certificate name, issue year, and upload supporting evidence.", "name": "Certificate name", "issuedYear": "Issue year", "evidence": "Supporting document", "evidenceHint": "PDF, JPG, PNG, or WebP, up to 5 MB.", "replaceEvidenceHint": "Choose a new file only if you want to replace the current evidence.", "viewEvidence": "View evidence", "issuedIn": "issued in {year}" },
-    "work": { "title": "Work experience", "description": "Most recent roles appear first, with learnings and skills gained.", "empty": "No work experience yet.", "add": "Add experience", "editTitle": "Edit experience", "addTitle": "Add work experience", "dialogDescription": "Describe the workplace, period, and value you gained.", "workplaceName": "Workplace", "position": "Position or role", "startDate": "Start date", "endDate": "End date", "month": "Month", "year": "Year", "isCurrent": "I currently work here", "present": "Present", "learnings": "What you learned", "learningsHint": "Notable knowledge, lessons, or experiences.", "skills": "Skills gained", "skillsHint": "For example: project management, communication, data analysis." },
-    "competition": { "title": "Competitions and achievements", "description": "Competitions you joined, with recent years first.", "empty": "No competition information yet.", "add": "Add competition", "editTitle": "Edit competition", "addTitle": "Add competition", "dialogDescription": "Record the competition, any award, and participation year.", "name": "Competition name", "awardName": "Award or achievement", "awardHint": "Leave blank if you participated without an award.", "participated": "Participated", "resultYear": "Participation or award year" },
-    "activity": { "title": "Other activities", "description": "Extracurricular, community, volunteer, or personal projects.", "empty": "No other activities yet.", "add": "Add activity", "editTitle": "Edit activity", "addTitle": "Add other activity", "dialogDescription": "Enter the activity or project you want to record.", "name": "Activity name" },
-    "actions": { "saved": "Information saved.", "deleted": "Information deleted.", "checkFields": "Check the highlighted fields and try again.", "failed": "We could not save this information. Please try again.", "deleteFailed": "We could not delete this information. Please try again.", "notFound": "The information was not found or you cannot edit it.", "unavailable": "This account has no editable profile." },
-    "validation": {
-      "id": "Invalid information.", "level": "Choose a valid education level.", "institutionName": "Enter the school name.", "fieldOfStudy": "The field or concentration is too long.", "scoreScale": "Choose a 4-point or 10-point scale.", "researchTitle": "The research title is too long.", "researchDescription": "The research description is too long.", "research": "Enter both the research title and description.", "name": "Enter a valid name.", "issuedYear": "Enter a valid issue year.", "awardName": "The award name is too long.", "year": "Enter a valid year.", "workplaceName": "Enter the workplace name.", "position": "The position or role is too long.", "startMonth": "Choose a valid start month.", "startYear": "Enter a valid start year.", "endMonth": "Choose a valid end month.", "endYear": "Enter a valid end year.", "endDate": "Enter a valid end date.", "isCurrent": "Invalid employment status.", "learnings": "The learnings are too long.", "skills": "The skills are too long.", "endDateRequired": "Enter both an end month and year, or mark this as your current role.", "endDateBeforeStart": "The end date cannot be before the start date.",
-      "transcriptFile": { "fileTooLarge": "The transcript file must be 2 MB or smaller.", "invalidFile": "Choose a valid .xlsx Excel file.", "missingHeaders": "The Excel file is missing required column headers.", "empty": "The Excel file has no subject data.", "tooManyRows": "A transcript can contain at most 200 subjects.", "invalidRow": "Data on row {row} is invalid or outside the selected score scale.", "duplicateSubject": "The subject on row {row} is duplicated.", "reimportRequired": "Re-import the cumulative transcript when changing the score scale." },
-      "evidence": { "required": "Upload a supporting document.", "tooLarge": "The supporting file must be 5 MB or smaller.", "invalidType": "Only PDF, JPG, PNG, or WebP files are accepted.", "invalidContent": "The file content does not match its declared format." }
-    }
-  },
-  "months": {
+    "extended": {
+      "title": "Education and experience",
+      "description": "Add meaningful milestones so your profile reflects your capabilities and journey.",
+      "common": {
+        "add": "Add",
+        "edit": "Edit",
+        "delete": "Delete",
+        "cancel": "Cancel",
+        "save": "Save information",
+        "saving": "Saving...",
+        "deleting": "Deleting...",
+        "deleteTitle": "Delete this information?",
+        "deleteDescription": "Deleted information cannot be recovered.",
+        "optional": "Optional",
+        "period": "Period",
+        "startDate": "Start",
+        "endDate": "End",
+        "month": "Month",
+        "year": "Year"
+      },
+      "education": {
+        "title": "Education",
+        "description": "Ordered from high school through graduate study.",
+        "empty": "No education information yet.",
+        "add": "Add education",
+        "editTitle": "Edit education",
+        "addTitle": "Add education",
+        "dialogDescription": "Record your school, study period, and transcript in the format for that level.",
+        "level": "Education level",
+        "levels": {
+          "HIGH_SCHOOL": "High school",
+          "UNDERGRADUATE": "University",
+          "GRADUATE": "Graduate study"
+        },
+        "institutionName": "School name",
+        "fieldOfStudy": "Field, program, or concentration",
+        "fieldOfStudyHint": "For example: Computer Science, advanced Mathematics, or MBA.",
+        "fieldLabels": {
+          "HIGH_SCHOOL": "Concentration or advanced class",
+          "UNDERGRADUATE": "Field of study",
+          "GRADUATE": "Graduate specialization or program"
+        },
+        "fieldHints": {
+          "HIGH_SCHOOL": "For example: advanced Mathematics or Natural Sciences.",
+          "UNDERGRADUATE": "For example: Computer Science or International Economics.",
+          "GRADUATE": "For example: MSc in Artificial Intelligence or PhD in Economics."
+        },
+        "transcriptImport": "Import Excel transcript",
+        "downloadTemplate": "Download Excel template",
+        "grade10File": "Grade 10 transcript",
+        "grade11File": "Grade 11 transcript",
+        "grade12File": "Grade 12 transcript",
+        "transcriptFile": "Cumulative transcript",
+        "optionalOnEdit": "A .xlsx file up to 2 MB. Leave empty to keep the saved transcript.",
+        "highSchoolTranscriptHint": "Upload one .xlsx file per grade with 2 columns: Subject and Year average. The system calculates the average on a 10-point scale.",
+        "higherEducationTranscriptHint": "Upload a .xlsx file up to 2 MB with 3 columns: Subject, Credits, and Score. The system calculates the credit-weighted cumulative average.",
+        "scoreScale": "Score scale",
+        "scoreScaleHint": "Choose the scale used in the Excel file.",
+        "scale4": "4-point scale",
+        "scale10": "10-point scale",
+        "transcriptStages": {
+          "GRADE_10": "Grade 10",
+          "GRADE_11": "Grade 11",
+          "GRADE_12": "Grade 12",
+          "CUMULATIVE": "Cumulative average"
+        },
+        "subjectCount": "{count} subjects",
+        "creditCount": "{count} credits",
+        "noTranscript": "No transcript imported yet.",
+        "research": "Scientific research",
+        "researchHint": "Available for university and graduate study only. Enter both a title and description when adding research.",
+        "researchTitle": "Research title",
+        "researchDescription": "Research description"
+      },
+      "certificate": {
+        "title": "Certificates",
+        "description": "Professional certificates with supporting documents.",
+        "empty": "No certificates yet.",
+        "add": "Add certificate",
+        "editTitle": "Edit certificate",
+        "addTitle": "Add certificate",
+        "dialogDescription": "Enter the certificate name, issue year, and upload supporting evidence.",
+        "name": "Certificate name",
+        "issuedYear": "Issue year",
+        "evidence": "Supporting document",
+        "evidenceHint": "PDF, JPG, PNG, or WebP, up to 5 MB.",
+        "replaceEvidenceHint": "Choose a new file only if you want to replace the current evidence.",
+        "viewEvidence": "View evidence",
+        "issuedIn": "issued in {year}"
+      },
+      "work": {
+        "title": "Work experience",
+        "description": "Most recent roles appear first, with learnings and skills gained.",
+        "empty": "No work experience yet.",
+        "add": "Add experience",
+        "editTitle": "Edit experience",
+        "addTitle": "Add work experience",
+        "dialogDescription": "Describe the workplace, period, and value you gained.",
+        "workplaceName": "Workplace",
+        "position": "Position or role",
+        "startDate": "Start date",
+        "endDate": "End date",
+        "month": "Month",
+        "year": "Year",
+        "isCurrent": "I currently work here",
+        "present": "Present",
+        "learnings": "What you learned",
+        "learningsHint": "Notable knowledge, lessons, or experiences.",
+        "skills": "Skills gained",
+        "skillsHint": "For example: project management, communication, data analysis."
+      },
+      "competition": {
+        "title": "Competitions and achievements",
+        "description": "Competitions you joined, with recent years first.",
+        "empty": "No competition information yet.",
+        "add": "Add competition",
+        "editTitle": "Edit competition",
+        "addTitle": "Add competition",
+        "dialogDescription": "Record the competition, any award, and participation year.",
+        "name": "Competition name",
+        "awardName": "Award or achievement",
+        "awardHint": "Leave blank if you participated without an award.",
+        "participated": "Participated",
+        "resultYear": "Participation or award year"
+      },
+      "activity": {
+        "title": "Other activities",
+        "description": "Extracurricular, community, volunteer, or personal projects.",
+        "empty": "No other activities yet.",
+        "add": "Add activity",
+        "editTitle": "Edit activity",
+        "addTitle": "Add other activity",
+        "dialogDescription": "Enter the activity or project you want to record.",
+        "name": "Activity name"
+      },
+      "actions": {
+        "saved": "Information saved.",
+        "deleted": "Information deleted.",
+        "checkFields": "Check the highlighted fields and try again.",
+        "failed": "We could not save this information. Please try again.",
+        "deleteFailed": "We could not delete this information. Please try again.",
+        "notFound": "The information was not found or you cannot edit it.",
+        "unavailable": "This account has no editable profile."
+      },
+      "validation": {
+        "id": "Invalid information.",
+        "level": "Choose a valid education level.",
+        "institutionName": "Enter the school name.",
+        "fieldOfStudy": "The field or concentration is too long.",
+        "scoreScale": "Choose a 4-point or 10-point scale.",
+        "researchTitle": "The research title is too long.",
+        "researchDescription": "The research description is too long.",
+        "research": "Enter both the research title and description.",
+        "name": "Enter a valid name.",
+        "issuedYear": "Enter a valid issue year.",
+        "awardName": "The award name is too long.",
+        "year": "Enter a valid year.",
+        "workplaceName": "Enter the workplace name.",
+        "position": "The position or role is too long.",
+        "startMonth": "Choose a valid start month.",
+        "startYear": "Enter a valid start year.",
+        "endMonth": "Choose a valid end month.",
+        "endYear": "Enter a valid end year.",
+        "endDate": "Enter a valid end date.",
+        "isCurrent": "Invalid employment status.",
+        "learnings": "The learnings are too long.",
+        "skills": "The skills are too long.",
+        "endDateRequired": "Enter both an end month and year, or mark this as your current role.",
+        "endDateBeforeStart": "The end date cannot be before the start date.",
+        "transcriptFile": {
+          "fileTooLarge": "The transcript file must be 2 MB or smaller.",
+          "invalidFile": "Choose a valid .xlsx Excel file.",
+          "missingHeaders": "The Excel file is missing required column headers.",
+          "empty": "The Excel file has no subject data.",
+          "tooManyRows": "A transcript can contain at most 200 subjects.",
+          "invalidRow": "Data on row {row} is invalid or outside the selected score scale.",
+          "duplicateSubject": "The subject on row {row} is duplicated.",
+          "reimportRequired": "Re-import the cumulative transcript when changing the score scale."
+        },
+        "evidence": {
+          "required": "Upload a supporting document.",
+          "tooLarge": "The supporting file must be 5 MB or smaller.",
+          "invalidType": "Only PDF, JPG, PNG, or WebP files are accepted.",
+          "invalidContent": "The file content does not match its declared format."
+        }
+      }
+    },
+    "months": {
       "1": "January",
       "2": "February",
       "3": "March",
@@ -1148,22 +1194,54 @@
       }
     },
     "types": {
-      "INTJ": { "title": "The Strategist" },
-      "INTP": { "title": "The Analyst" },
-      "ENTJ": { "title": "The Builder" },
-      "ENTP": { "title": "The Explorer" },
-      "INFJ": { "title": "The Guide" },
-      "INFP": { "title": "The Mediator" },
-      "ENFJ": { "title": "The Inspirer" },
-      "ENFP": { "title": "The Catalyst" },
-      "ISTJ": { "title": "The Organizer" },
-      "ISFJ": { "title": "The Supporter" },
-      "ESTJ": { "title": "The Coordinator" },
-      "ESFJ": { "title": "The Connector" },
-      "ISTP": { "title": "The Problem Solver" },
-      "ISFP": { "title": "The Experiencer" },
-      "ESTP": { "title": "The Doer" },
-      "ESFP": { "title": "The Energizer" }
+      "INTJ": {
+        "title": "The Strategist"
+      },
+      "INTP": {
+        "title": "The Analyst"
+      },
+      "ENTJ": {
+        "title": "The Builder"
+      },
+      "ENTP": {
+        "title": "The Explorer"
+      },
+      "INFJ": {
+        "title": "The Guide"
+      },
+      "INFP": {
+        "title": "The Mediator"
+      },
+      "ENFJ": {
+        "title": "The Inspirer"
+      },
+      "ENFP": {
+        "title": "The Catalyst"
+      },
+      "ISTJ": {
+        "title": "The Organizer"
+      },
+      "ISFJ": {
+        "title": "The Supporter"
+      },
+      "ESTJ": {
+        "title": "The Coordinator"
+      },
+      "ESFJ": {
+        "title": "The Connector"
+      },
+      "ISTP": {
+        "title": "The Problem Solver"
+      },
+      "ISFP": {
+        "title": "The Experiencer"
+      },
+      "ESTP": {
+        "title": "The Doer"
+      },
+      "ESFP": {
+        "title": "The Energizer"
+      }
     },
     "questions": {
       "0": {
@@ -1236,7 +1314,7 @@
   "Settings": {
     "metadataTitle": "Settings",
     "title": "Settings",
-    "description": "Manage how AI features work for your account.",
+    "description": "Manage AI settings and saved data on this device.",
     "career": {
       "title": "Roadmap analysis",
       "description": "This model is used automatically when creating or updating a roadmap.",
@@ -1267,6 +1345,20 @@
       "saved": "Roadmap settings saved.",
       "roadmapDataSaved": "New-roadmap data settings saved.",
       "roadmapDataReset": "Roadmap prefill data refreshed."
+    },
+    "browser": {
+      "title": "Your AI provider",
+      "description": "Use your own key with an OpenAI-compatible API. Requests go directly from this browser to your provider.",
+      "url": "API base URL",
+      "model": "Model name",
+      "key": "API key",
+      "privacy": "The API key is saved in localStorage on this device. Anyone with access to this browser can read it. Your provider receives the data you submit for AI features. Use a personal device. The provider must allow browser requests (CORS).",
+      "save": "Save AI settings",
+      "saved": "AI settings saved on this device.",
+      "failed": "Could not save settings.",
+      "remove": "Remove API key",
+      "removed": "API key removed.",
+      "export": "Export data (without API key)"
     }
   }
 }
